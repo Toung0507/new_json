@@ -1,0 +1,74 @@
+{
+    "difficultyData": [
+        {
+            "difficulty_id": 1,
+            "difficulty_name": "新手入門"
+        },
+        {
+            "difficulty_id": 2,
+            "difficulty_name": "中度玩家"
+        },
+        {
+            "difficulty_id": 3,
+            "difficulty_name": "重度解謎"
+        }
+    ],
+    "propertyData": [
+        {
+            "property_id": 1,
+            "property_name": "偵探推理"
+        },
+        {
+            "property_id": 2,
+            "property_name": "機關重重"
+        },
+        {
+            "property_id": 3,
+            "property_name": "劇情厲害"
+        },
+        {
+            "property_id": 4,
+            "property_name": "場景逼真"
+        },
+        {
+            "property_id": 5,
+            "property_name": "互動操作"
+        },
+        {
+            "property_id": 6,
+            "property_name": "謎題邏輯"
+        },
+        {
+            "property_id": 7,
+            "property_name": "輕鬆歡樂"
+        },
+        {
+            "property_id": 8,
+            "property_name": "恐怖驚悚"
+        },
+        {
+            "property_id": 9,
+            "property_name": "緊張刺激"
+        },
+        {
+            "property_id": 10,
+            "property_name": "勾心鬥角"
+        },
+        {
+            "property_id": 11,
+            "property_name": "團隊合作"
+        },
+        {
+            "property_id": 12,
+            "property_name": "親子同遊"
+        },
+        {
+            "property_id": 13,
+            "property_name": "玩法特殊"
+        },
+        {
+            "property_id": 14,
+            "property_name": "角色扮演"
+        }
+    ]
+}
