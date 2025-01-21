@@ -107,16 +107,16 @@
             "price_count": 1,
             "price_day_type": "weekend",
             "price_mix": 2400,
-            "price_people": "2-4人",
+            "price_people": "2-4人"
         },
         {
             "price_id": 2,
             "game_id": 1,
             "price_is_difference": 1,
-            "price_count": 1,
+            "price_count": 2,
             "price_day_type": "weekday",
             "price_mix": 2000,
-            "price_people": "2-4人",
+            "price_people": "2-4人"
         }
     ]
 }
