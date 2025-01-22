@@ -1,5 +1,5 @@
 {
-    "difficultyData": [
+    "difficultys_fixed_Data": [
         {
             "difficulty_id": 1,
             "difficulty_name": "新手入門"
@@ -13,7 +13,7 @@
             "difficulty_name": "重度解謎"
         }
     ],
-    "propertyData": [
+    "propertys_fixed_Data": [
         {
             "property_id": 1,
             "property_name": "偵探推理"
@@ -71,10 +71,43 @@
             "property_name": "角色扮演"
         }
     ],
+    "usersData": [
+        {
+            "user_id": 5,
+            "user_role": "店家",
+            "user_reg_method": "信箱",
+            "user_name": "神不在場有限公司",
+            "user_email": "waldner9527@taog-game.com",
+            "user_bhd": "",
+            "user_tel": "(04)2223-0406",
+            "user_password": "123456789",
+            "user_create_at": "",
+            "user_update_at": "",
+            "user_sex": ""
+        }
+    ],
+    "storesData": [
+        {
+            "store_id": 1,
+            "user_id": 5,
+            "store_contact": "鄭先生",
+            "store_method": "統一編號",
+            "store_tax_id": "90549850",
+            "store_documentation": "",
+            "store_self_tel": "(04)2223-0406",
+            "store_self_address": "臺中市中區光復里平等街32號",
+            "store_website": "https://www.taog-game.com/",
+            "store_name": "神不在場實境遊戲",
+            "store_address": "台南市永康區中華路1-2號3樓",
+            "store_email": "waldner9527@taog-game.com",
+            "store_tel": "(06)3120-792",
+            "store_open_time": "10:00-22:00"
+        }
+    ],
     "gamesData": [
         {
             "game_id": 1,
-            "store_id": 1,
+            "store_id": 5,
             "game_name": "童話的繼承者",
             "game_address": "台南市永康區中華路1-2號3樓",
             "game_tel": "(06)3120-792",
