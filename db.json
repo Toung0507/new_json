@@ -71,9 +71,9 @@
             "property_name": "角色扮演"
         }
     ],
-    "users": [
+    "usersData": [
         {
-            "id": 5,
+            "user_id": 5,
             "user_role": "店家",
             "user_reg_method": "信箱",
             "user_name": "神不在場有限公司",
@@ -86,10 +86,10 @@
             "user_sex": ""
         }
     ],
-    "stores": [
+    "storesData": [
         {
             "store_id": 1,
-            "userId": 5,
+            "user_id": 5,
             "store_contact": "鄭先生",
             "store_method": "統一編號",
             "store_tax_id": "90549850",
