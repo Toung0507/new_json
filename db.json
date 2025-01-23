@@ -1,81 +1,96 @@
 {
     "difficultys_fixed_Data": [
         {
-            "id":1,
+            "id": 1,
             "difficulty_id": 1,
             "difficulty_name": "新手入門"
         },
         {
-            "id":2,
+            "id": 2,
             "difficulty_id": 2,
             "difficulty_name": "中度玩家"
         },
         {
-            "id":3,
+            "id": 3,
             "difficulty_id": 3,
             "difficulty_name": "重度解謎"
         }
     ],
     "propertys_fixed_Data": [
         {
+            "id": 1,
             "property_id": 1,
             "property_name": "偵探推理"
         },
         {
+            "id": 2,
             "property_id": 2,
             "property_name": "機關重重"
         },
         {
+            "id": 3,
             "property_id": 3,
             "property_name": "劇情厲害"
         },
         {
+            "id": 4,
             "property_id": 4,
             "property_name": "場景逼真"
         },
         {
+            "id": 5,
             "property_id": 5,
             "property_name": "互動操作"
         },
         {
+            "id": 6,
             "property_id": 6,
             "property_name": "謎題邏輯"
         },
         {
+            "id": 7,
             "property_id": 7,
             "property_name": "輕鬆歡樂"
         },
         {
+            "id": 8,
             "property_id": 8,
             "property_name": "恐怖驚悚"
         },
         {
+            "id": 9,
             "property_id": 9,
             "property_name": "緊張刺激"
         },
         {
+            "id": 10,
             "property_id": 10,
             "property_name": "勾心鬥角"
         },
         {
+            "id": 11,
             "property_id": 11,
             "property_name": "團隊合作"
         },
         {
+            "id": 12,
             "property_id": 12,
             "property_name": "親子同遊"
         },
         {
+            "id": 13,
             "property_id": 13,
             "property_name": "玩法特殊"
         },
         {
+            "id": 14,
             "property_id": 14,
             "property_name": "角色扮演"
         }
     ],
     "usersData": [
         {
+            "id": 1,
             "user_id": 5,
             "user_role": "店家",
             "user_reg_method": "信箱",
@@ -91,6 +106,7 @@
     ],
     "storesData": [
         {
+            "id": 1,
             "store_id": 5,
             "user_id": 5,
             "store_contact": "鄭先生",
@@ -109,6 +125,7 @@
     ],
     "gamesData": [
         {
+            "id": 1,
             "game_id": 1,
             "store_id": 5,
             "game_name": "童話的繼承者",
@@ -137,6 +154,7 @@
     ],
     "pricesData": [
         {
+            "id": 1,
             "price_id": 1,
             "game_id": 1,
             "price_is_difference": 1,
@@ -146,6 +164,7 @@
             "price_people": "2-4人"
         },
         {
+            "id": 2,
             "price_id": 2,
             "game_id": 1,
             "price_is_difference": 1,
