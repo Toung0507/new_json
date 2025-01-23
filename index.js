@@ -4,12 +4,30 @@ const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 4000; // you can use any port number here; i chose to use 3001
 
-server.use(middlewares);
+// 引入不同的處理邏輯
+const getHandler = require("./routes/getHandler")(router, router.db);
+const postHandler = require("./routes/postHandler")(router, router.db);
+const deleteHandler = require("./routes/deleteHandler")(router, router.db);
+const patchHandler = require("./routes/patchHandler")(router, router.db);
 
-// 新增測試
+// 使用 middleware
+server.use(middlewares);
+server.use(jsonServer.bodyParser);
+
+// GET 請求
+server.get("/:tableName/:primaryKey", getHandler);
+
+// POST 請求
+server.post("/:tableName", postHandler);
+
+// DELETE 請求
+server.delete("/:tableName/:primaryKey", deleteHandler);
+
+// PATCH 請求
+server.patch("/:tableName/:primaryKey", patchHandler);
 
 // 將store資料補全
-server.get("/storesAllDatas", (req, res) => {
+server.get("/storesData", (req, res) => {
     const db = router.db; //jsonserver的db.json中
     const users = db.get("usersData").value(); //抓出users的資料
     const stores = db.get("storesData").value(); //抓出stores的資料
@@ -27,7 +45,7 @@ server.get("/storesAllDatas", (req, res) => {
 });
 
 // 將game資料補全
-server.get("/gamesAllDatas", (req, res) => {
+server.get("/gamesData", (req, res) => {
     const db = router.db; //jsonserver的db.json中
     const stores = db.get("storesData").value(); //抓出stores的資料
     const games = db.get("gamesData").value(); //抓出games的資料
@@ -51,7 +69,6 @@ server.get("/gamesAllDatas", (req, res) => {
     });
     res.json(gamesAllData);
 });
-// 新增結束
 
 server.use(router);
 
