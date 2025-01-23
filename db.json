@@ -1,14 +1,17 @@
 {
     "difficultys_fixed_Data": [
         {
+            "id":1,
             "difficulty_id": 1,
             "difficulty_name": "新手入門"
         },
         {
+            "id":2,
             "difficulty_id": 2,
             "difficulty_name": "中度玩家"
         },
         {
+            "id":3,
             "difficulty_id": 3,
             "difficulty_name": "重度解謎"
         }
