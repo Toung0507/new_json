@@ -10,6 +10,9 @@ module.exports = (router, db) => {
             usersData: "user_id",
             storesData: "store_id",
             gamesData: "game_id",
+            pricesData: "price_id",
+            commentsData: "comment_id",
+            groupsData: "group_id"
         };
 
         if (!primaryKeyFields[tableName]) {

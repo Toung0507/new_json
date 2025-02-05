@@ -1,159 +1,181 @@
 {
-  "difficultys_fixed_Data": [
-    {
-      "difficulty_id": 1,
-      "difficulty_name": "新手入門"
-    },
-    {
-      "difficulty_id": 2,
-      "difficulty_name": "中度玩家"
-    },
-    {
-      "difficulty_id": 3,
-      "difficulty_name": "重度解謎"
-    }
-  ],
-  "propertys_fixed_Data": [
-    {
-      "property_id": 1,
-      "property_name": "偵探推理"
-    },
-    {
-      "property_id": 2,
-      "property_name": "機關重重"
-    },
-    {
-      "property_id": 3,
-      "property_name": "劇情厲害"
-    },
-    {
-      "property_id": 4,
-      "property_name": "場景逼真"
-    },
-    {
-      "property_id": 5,
-      "property_name": "互動操作"
-    },
-    {
-      "property_id": 6,
-      "property_name": "謎題邏輯"
-    },
-    {
-      "property_id": 7,
-      "property_name": "輕鬆歡樂"
-    },
-    {
-      "property_id": 8,
-      "property_name": "恐怖驚悚"
-    },
-    {
-      "property_id": 9,
-      "property_name": "緊張刺激"
-    },
-    {
-      "property_id": 10,
-      "property_name": "勾心鬥角"
-    },
-    {
-      "property_id": 11,
-      "property_name": "團隊合作"
-    },
-    {
-      "property_id": 12,
-      "property_name": "親子同遊"
-    },
-    {
-      "property_id": 13,
-      "property_name": "玩法特殊"
-    },
-    {
-      "property_id": 14,
-      "property_name": "角色扮演"
-    },
-    {
-      "property_id": 22,
-      "property_name": "測試測試"
-    }
-  ],
-  "usersData": [
-    {
-      "user_id": 5,
-      "user_role": "店家",
-      "user_reg_method": "信箱",
-      "user_name": "神不在場有限公司",
-      "user_email": "waldner9527@taog-game.com",
-      "user_bhd": "",
-      "user_tel": "(04)2223-0406",
-      "user_password": "123456789",
-      "user_create_at": "",
-      "user_update_at": "",
-      "user_sex": ""
-    }
-  ],
-  "storesData": [
-    {
-      "store_id": 5,
-      "user_id": 5,
-      "store_contact": "鄭先生",
-      "store_method": "統一編號",
-      "store_tax_id": "90549850",
-      "store_documentation": "",
-      "store_self_tel": "(04)2223-0406",
-      "store_self_address": "臺中市中區光復里平等街32號",
-      "store_website": "https://www.taog-game.com/",
-      "store_name": "神不在場實境遊戲",
-      "store_address": "台南市永康區中華路1-2號3樓",
-      "store_email": "waldner9527@taog-game.com",
-      "store_tel": "(06)3120-792",
-      "store_open_time": "10:00-22:00"
-    }
-  ],
-  "gamesData": [
-    {
-      "game_id": 1,
-      "store_id": 5,
-      "game_name": "童話的繼承者",
-      "game_address": "台南市永康區中華路1-2號3樓",
-      "game_tel": "(06)3120-792",
-      "game_time": 120,
-      "game_minNum_Players": 2,
-      "game_maxNum_Players": 4,
-      "game_dif_tag": 1,
-      "game_main_tag1": 7,
-      "game_main_tag2": 4,
-      "game_score": 4.6,
-      "game_img": [
-        "https://www.taog-game.com/wp-content/uploads/MB3_poster1.4m-scaled-700x990.jpg",
-        "https://www.taog-game.com/wp-content/uploads/MB3_poster1.4m-1448x2048.jpg"
-      ],
-      "game_isLimited": 0,
-      "game_start_date": "2020-03-16",
-      "game_end_date": "",
-      "game_info": "近日越來越多魔書發生異常，紛紛出現在人類世界，負責維持童話秩序的 『童話維護局 』，立即派遣你們前往調查，卻發現魔書無法開啟，只能從一旁的破洞進入調查。探員們，為了維護童話的秩序，再次進入魔書吧！",
-      "game_remark": "",
-      "game_score_num": 486,
-      "game_isStock": 1,
-      "game_website": "https://www.taog-game.com/%e7%ab%a5%e8%a9%b1%e7%9a%84%e7%b9%bc%e6%89%bf%e8%80%85/"
-    }
-  ],
-  "pricesData": [
-    {
-      "price_id": 1,
-      "game_id": 1,
-      "price_is_difference": 1,
-      "price_count": 1,
-      "price_day_type": "weekend",
-      "price_mix": 2400,
-      "price_people": "2-4人"
-    },
-    {
-      "price_id": 2,
-      "game_id": 1,
-      "price_is_difference": 1,
-      "price_count": 2,
-      "price_day_type": "weekday",
-      "price_mix": 2000,
-      "price_people": "2-4人"
-    }
-  ]
+    "difficultys_fixed_Data": [
+        {
+            "difficulty_id": 1,
+            "difficulty_name": "新手入門"
+        },
+        {
+            "difficulty_id": 2,
+            "difficulty_name": "中度玩家"
+        },
+        {
+            "difficulty_id": 3,
+            "difficulty_name": "重度解謎"
+        }
+    ],
+    "propertys_fixed_Data": [
+        {
+            "property_id": 1,
+            "property_name": "偵探推理"
+        },
+        {
+            "property_id": 2,
+            "property_name": "機關重重"
+        },
+        {
+            "property_id": 3,
+            "property_name": "劇情厲害"
+        },
+        {
+            "property_id": 4,
+            "property_name": "場景逼真"
+        },
+        {
+            "property_id": 5,
+            "property_name": "互動操作"
+        },
+        {
+            "property_id": 6,
+            "property_name": "謎題邏輯"
+        },
+        {
+            "property_id": 7,
+            "property_name": "輕鬆歡樂"
+        },
+        {
+            "property_id": 8,
+            "property_name": "恐怖驚悚"
+        },
+        {
+            "property_id": 9,
+            "property_name": "緊張刺激"
+        },
+        {
+            "property_id": 10,
+            "property_name": "勾心鬥角"
+        },
+        {
+            "property_id": 11,
+            "property_name": "團隊合作"
+        },
+        {
+            "property_id": 12,
+            "property_name": "親子同遊"
+        },
+        {
+            "property_id": 13,
+            "property_name": "玩法特殊"
+        },
+        {
+            "property_id": 14,
+            "property_name": "角色扮演"
+        }
+    ],
+    "usersData": [
+        {
+            "user_id": 10,
+            "user_role": "會員",
+            "user_reg_method": "信箱",
+            "user_name": "Toung",
+            "user_email": "spexial110@gmail.com",
+            "user_bhd": "2001/05/07",
+            "user_tel": "0912345788",
+            "user_password": "202502051",
+            "user_create_at": "",
+            "user_update_at": "",
+            "user_sex": "女"
+        },
+        {
+            "user_id": 5,
+            "user_role": "店家",
+            "user_reg_method": "信箱",
+            "user_name": "神不在場有限公司",
+            "user_email": "waldner9527@taog-game.com",
+            "user_bhd": "",
+            "user_tel": "(04)2223-0406",
+            "user_password": "123456789",
+            "user_create_at": "",
+            "user_update_at": "",
+            "user_sex": ""
+        }
+    ],
+    "storesData": [
+        {
+            "store_id": 5,
+            "user_id": 5,
+            "store_contact": "鄭先生",
+            "store_method": "統一編號",
+            "store_tax_id": "90549850",
+            "store_documentation": "",
+            "store_self_tel": "(04)2223-0406",
+            "store_self_address": "臺中市中區光復里平等街32號",
+            "store_website": "https://www.taog-game.com/",
+            "store_name": "神不在場實境遊戲",
+            "store_address": "台南市永康區中華路1-2號3樓",
+            "store_email": "waldner9527@taog-game.com",
+            "store_tel": "(06)3120-792",
+            "store_open_time": "10:00-22:00"
+        }
+    ],
+    "gamesData": [
+        {
+            "game_id": 1,
+            "store_id": 5,
+            "game_name": "童話的繼承者",
+            "game_address": "台南市永康區中華路1-2號3樓",
+            "game_tel": "(06)3120-792",
+            "game_time": 120,
+            "game_minNum_Players": 2,
+            "game_maxNum_Players": 4,
+            "game_dif_tag": 1,
+            "game_main_tag1": 7,
+            "game_main_tag2": 4,
+            "game_score": 4.6,
+            "game_img": [
+                "https://www.taog-game.com/wp-content/uploads/MB3_poster1.4m-scaled-700x990.jpg",
+                "https://www.taog-game.com/wp-content/uploads/MB3_poster1.4m-1448x2048.jpg"
+            ],
+            "game_isLimited": 0,
+            "game_start_date": "2020-03-16",
+            "game_end_date": "",
+            "game_info": "近日越來越多魔書發生異常，紛紛出現在人類世界，負責維持童話秩序的 『童話維護局 』，立即派遣你們前往調查，卻發現魔書無法開啟，只能從一旁的破洞進入調查。探員們，為了維護童話的秩序，再次進入魔書吧！",
+            "game_remark": "",
+            "game_score_num": 486,
+            "game_isStock": 1,
+            "game_website": "https://www.taog-game.com/%e7%ab%a5%e8%a9%b1%e7%9a%84%e7%b9%bc%e6%89%bf%e8%80%85/"
+        }
+    ],
+    "pricesData": [
+        {
+            "price_id": 1,
+            "game_id": 1,
+            "price_is_difference": 1,
+            "price_count": 1,
+            "price_day_type": "weekend",
+            "price_mix": 2400,
+            "price_people": "2-4人"
+        },
+        {
+            "price_id": 2,
+            "game_id": 1,
+            "price_is_difference": 1,
+            "price_count": 2,
+            "price_day_type": "weekday",
+            "price_mix": 2000,
+            "price_people": "2-4人"
+        }
+    ],
+    "commentsData": [
+        {
+            "comment_id": 1,
+            "user_id": 10,
+            "game_id": 5,
+            "comment_isSpoilered": true,
+            "coment_content": "真好玩真好玩",
+            "coment_star": 4.8,
+            "commet_played_time": "2025-02-01",
+            "comment_isPass": true
+        }
+    ],
+    "groupsData": []
 }

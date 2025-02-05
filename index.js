@@ -6,6 +6,7 @@ const port = process.env.PORT || 4000; // you can use any port number here; i ch
 
 // 引入不同的處理邏輯
 const getHandler = require("./routes/getHandler")(router, router.db);
+
 const postHandler = require("./routes/postHandler")(router, router.db);
 const deleteHandler = require("./routes/deleteHandler")(router, router.db);
 const patchHandler = require("./routes/patchHandler")(router, router.db);
@@ -15,7 +16,8 @@ server.use(middlewares);
 server.use(jsonServer.bodyParser);
 
 // GET 請求
-server.get("/:tableName/:primaryKey", getHandler);
+// server.get("/:tableName/:primaryKey", getHandler);
+server.get("/:tableName/:primaryKey/:subTable?", getHandler);
 
 // POST 請求
 server.post("/:tableName", postHandler);
