@@ -3,10 +3,28 @@ const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 4000; // you can use any port number here; i chose to use 3001
+const swaggerJsdoc = require("swagger-jsdoc");
+const swaggerUi = require("swagger-ui-express");
+// const middlewares = jsonServer.defaults({ static: 'public' }); // 指定 public 資料夾
+
+
+// 引入 Swagger 配置
+const swaggerOptions = {
+    definition: {
+        openapi: '3.0.0',
+        info: {
+            title: 'D-04 密室搜搜 API 說明',
+            version: '1.0.0',
+            description: '專題使用的API文件'
+        },
+    },
+    apis: ['./swagger/*.js']
+};
+
+const swaggerDocs = swaggerJsdoc(swaggerOptions);
 
 // 引入不同的處理邏輯
 const getHandler = require("./routes/getHandler")(router, router.db);
-
 const postHandler = require("./routes/postHandler")(router, router.db);
 const deleteHandler = require("./routes/deleteHandler")(router, router.db);
 const patchHandler = require("./routes/patchHandler")(router, router.db);
@@ -14,6 +32,9 @@ const patchHandler = require("./routes/patchHandler")(router, router.db);
 // 使用 middleware
 server.use(middlewares);
 server.use(jsonServer.bodyParser);
+
+// 使用 Swagger 路由
+server.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 // GET 請求
 // server.get("/:tableName/:primaryKey", getHandler);

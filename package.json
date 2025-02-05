@@ -12,6 +12,8 @@
     "description": "",
     "dependencies": {
         "json-server": "^0.17.4",
-        "nodemon": "^3.1.9"
+        "nodemon": "^3.1.9",
+        "swagger-jsdoc": "^6.2.8",
+        "swagger-ui-express": "^5.0.1"
     }
 }
