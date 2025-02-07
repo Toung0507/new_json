@@ -72,9 +72,9 @@ function pushToRepo() {
                         if (error) return console.error(`exec error: ${error}`);
                         console.log('remote set-url ok');
 
-                        exec('git push origin main', (error) => {
+                        exec('git remote -v', (error) => {
                             if (error) return console.error(`exec error: ${error}`);
-                            console.log('push ok');
+                            console.log('確認remote ok');
                         });
                     });
                 });
