@@ -27,7 +27,7 @@ const swaggerDocs = swaggerJsdoc(swaggerOptions);
 
 // 使用 curl 命令來抓取 Render 上的 db.json
 function syncDbToRepo() {
-    exec('curl -o dbdb.json https://new-json.onrender.com/db', (error, stdout, stderr) => {
+    exec('curl -o db.json https://new-json.onrender.com/db', (error, stdout, stderr) => {
         if (error) {
             console.error(`exec error: ${error}`);
             return;
@@ -78,11 +78,11 @@ async function pushToRepo() {
         }
 
         // 添加更動
-        await execPromise('git add dbdb.json');
+        await execPromise('git add db.json');
         console.log('add ok');
 
         // 提交更動
-        await execPromise('git commit -m "Update dbdb.json from Render"');
+        await execPromise('git commit -m "Update db.json from Render"');
         console.log('commit ok');
 
         // 檢查 git status，確保沒有未提交的更動
