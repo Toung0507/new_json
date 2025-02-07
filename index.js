@@ -26,6 +26,7 @@ const swaggerOptions = {
 const swaggerDocs = swaggerJsdoc(swaggerOptions);
 
 // 使用 curl 命令來抓取 Render 上的 db.json
+// 使用 curl 命令來抓取 Render 上的 db.json
 function syncDbToRepo() {
     exec('curl -v -o db.json https://new-json.onrender.com/db', (error, stdout, stderr) => {
         if (error) {
@@ -34,7 +35,6 @@ function syncDbToRepo() {
             return;
         }
 
-        // 顯示 stdout 內容來確認是否抓取到 db.json
         console.log("stdout:", stdout);
 
         // 顯示 db.json 內容來檢查
@@ -46,10 +46,28 @@ function syncDbToRepo() {
             console.log('db.json content:', stdout);  // 顯示 db.json 內容
         });
 
-        console.log('Successfully fetched db.json from Render');
-        pushToRepo();
+        // 檢查 git status，確認有變更
+        exec('git status', (error, stdout, stderr) => {
+            if (error) {
+                console.error(`exec error: ${error}`);
+                return;
+            }
+            console.log('Git status before commit:', stdout);  // 查看 git 狀態
+
+            exec('git diff', (error, stdout, stderr) => {
+                if (error) {
+                    console.error(`exec error: ${error}`);
+                    return;
+                }
+                console.log('Git diff result:', stdout);  // 查看檔案差異
+            });
+
+            // 執行推送到 GitHub
+            pushToRepo();
+        });
     });
 }
+
 
 
 // 將 db.json 推送到 GitHub
