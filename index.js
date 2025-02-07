@@ -41,7 +41,7 @@ function syncDbToRepo() {
 
 // 將 db.json 推送到 GitHub
 function pushToRepo() {
-    exec('git add db-last.json && git commit -m "Update db-last.json from Render" && git push origin main', (error, stdout, stderr) => {
+    exec('git config --global user.email "spexial110@gmail.com" && git config --global user.name "Toung" && git add db-last.json && git commit -m "Update db-last.json from Render" && git push origin main', (error, stdout, stderr) => {
         if (error) {
             console.error(`exec error: ${error}`);
             return;
