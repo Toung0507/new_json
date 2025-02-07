@@ -64,7 +64,7 @@
  *       - in: path
  *         name: tableName
  *         required: true
- *         description: 對應的資料表：gamesData、commentsData、groupsData
+ *         description: 對應的資料表：storesData、commentsData、groupsData
  *         schema:
  *           type: string
  *     responses:

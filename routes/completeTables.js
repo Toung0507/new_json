@@ -14,10 +14,14 @@ module.exports = (router) => {
             const games = db.get("gamesData").value();
             const difficultys_fixed_Data = db.get("difficultys_fixed_Data").value();
             const propertys_fixed_Data = db.get("propertys_fixed_Data").value();
-            if ((Array.isArray(filteredData) && filteredData.some(item => typeof item === "string" && item.includes("無相關資料"))) ||
+            console.log('gamexu3ua042k7', filteredData);
+
+            if ((Array.isArray(filteredData) && filteredData.some(item => typeof item === "string" && (item.includes("無相關資料") || item.includes("重新確認API文件")))) ||
                 //(typeof filteredData === "string" && filteredData.includes("無相關資料")) || > 不應該是字串，因此不需判斷 typeof filteredData === "string"
-                (typeof filteredData === "object" && filteredData !== null && JSON.stringify(filteredData).includes("無相關資料"))) {
+                (typeof filteredData === "object" && filteredData !== null && (JSON.stringify(filteredData).includes("無相關資料") || JSON.stringify(filteredData).includes("重新確認API文件")))) {
                 // 檢查是否ID是否錯誤，若錯誤回傳原本的錯誤訊息
+                console.log('hiu/ e9 ao6y uxl4');
+
                 return filteredData;
             }
             else if (filteredData) {
@@ -85,12 +89,12 @@ module.exports = (router) => {
             const db = router.db;
             const users = db.get("usersData").value();
             const stores = db.get("storesData").value();
-            console.log(Array.isArray(filteredData)); // 應該要輸出 true
-            console.log(filteredData); // 檢查陣列內容
+            // console.log(Array.isArray(filteredData)); // 應該要輸出 true
+            // console.log(filteredData); // 檢查陣列內容
 
-            if ((Array.isArray(filteredData) && filteredData.some(item => typeof item === "string" && item.includes("無相關資料"))) ||
+            if ((Array.isArray(filteredData) && filteredData.some(item => typeof item === "string" && (item.includes("無相關資料") || item.includes("重新確認API文件")))) ||
                 //(typeof filteredData === "string" && filteredData.includes("無相關資料")) || > 不應該是字串，因此不需判斷 typeof filteredData === "string"
-                (typeof filteredData === "object" && filteredData !== null && JSON.stringify(filteredData).includes("無相關資料"))) {
+                (typeof filteredData === "object" && filteredData !== null && (JSON.stringify(filteredData).includes("無相關資料") || JSON.stringify(filteredData).includes("重新確認API文件")))) {
                 // 檢查是否ID是否錯誤，若錯誤回傳原本的錯誤訊息
                 return filteredData;
             }
@@ -174,6 +178,8 @@ module.exports = (router) => {
         }
         else {
             if (tableName === "gamesData") {
+
+
                 finallyData = games();
             }
             else if (tableName === "storesData") {
