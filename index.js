@@ -11,6 +11,7 @@ const { exec } = require('child_process'); // 引入 exec 用來執行 shell 命
 
 // 引入 Swagger 配置
 const schemas = require('./swagger/schemas'); // 引入 schemas.js
+const { stdout, stderr } = require("process");
 const swaggerOptions = {
     definition: {
         openapi: '3.0.0',
@@ -132,16 +133,23 @@ function commitAndPushChanges() {
                 console.error('Error committing db.json:', error);
                 return;
             }
-
-            console.log('Pushing changes...');
-            exec('git push origin main', (error, stdout, stderr) => {
+            exec('git status', (error, stdout, stderr) => {
                 if (error) {
-                    console.error('Error pushing to GitHub:', error);
+                    console.error('Error status:', error);
                     return;
                 }
-                console.log('Changes pushed successfully:', stdout);
-                console.log('Changes pushed err successfully:', stderr);
-            });
+                console.log('status successfully:', stdout);
+                console.log('status err successfully:', stderr);
+            })
+            // console.log('Pushing changes...');
+            // exec('git push origin main', (error, stdout, stderr) => {
+            //     if (error) {
+            //         console.error('Error pushing to GitHub:', error);
+            //         return;
+            //     }
+            //     console.log('Changes pushed successfully:', stdout);
+            //     console.log('Changes pushed err successfully:', stderr);
+            // });
         });
     });
 }
