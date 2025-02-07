@@ -136,11 +136,11 @@ function commitAndPushChanges() {
             console.log('Pushing changes...');
             exec('git checkout', (error, stdout, stderr) => {
                 if (error) {
-                    console.error('Error pushing to GitHub:', error);
+                    console.error('Error checkout:', error);
                     return;
                 }
-                console.log('Changes pushed successfully:', stdout);
-                console.log('Changes pushed err successfully:', stderr);
+                console.log('Changes checkout:', stdout);
+                console.log('Changes checkout err:', stderr);
             });
             //// 推送變更到 GitHub
             //console.log('Pushing changes...');
