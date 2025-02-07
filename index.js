@@ -28,6 +28,8 @@ const swaggerDocs = swaggerJsdoc(swaggerOptions);
 // 使用 curl 命令來抓取 Render 上的 db.json
 function syncDbToRepo() {
     exec('curl -o db.json https://new-json.onrender.com/db', (error, stdout, stderr) => {
+        console.log(stdout);
+
         if (error) {
             console.error(`exec error: ${error}`);
             return;
