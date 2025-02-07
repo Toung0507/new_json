@@ -85,13 +85,17 @@ async function pushToRepo() {
         await execPromise('git commit -m "Update dbdb.json from Render"');
         console.log('commit ok');
 
-        // 執行 push 並確認狀態
+        // 檢查 git status
         const { stdout: statusBeforePush } = await execPromise('git status --porcelain');
         console.log('Git status before push:', statusBeforePush);
 
+        // 拉取並解決衝突後再推送
+        await execPromise('git pull origin main --rebase');
+
         // push 到 GitHub
-        await execPromise('git push origin main');
-        console.log('push ok');
+        const { stdout: pushStdout, stderr: pushStderr } = await execPromise('git push origin main');
+        console.log('push stdout:', pushStdout);
+        console.log('push stderr:', pushStderr); // 印出錯誤訊息
 
         // 再次檢查 git status，確認是否有更動
         const { stdout: statusAfterPush } = await execPromise('git status --porcelain');
