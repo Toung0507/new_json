@@ -121,38 +121,39 @@ function pushToRepo() {
 
 // 提交並推送變更
 function commitAndPushChanges() {
-    console.log('Committing changes...');
-    exec('git add db.json', (error) => {
+    console.log('Switching to main branch...');
+    exec('git checkout main', (error, stdout, stderr) => {
         if (error) {
-            console.error('Error adding db.json to git:', error);
+            console.error('Error switching to main branch:', error);
             return;
         }
+        console.log('Switched to main:', stdout);
 
-        exec('git commit -m "Update db.json"', (error) => {
+        console.log('Committing changes...');
+        exec('git add db.json', (error) => {
             if (error) {
-                console.error('Error committing db.json:', error);
+                console.error('Error adding db.json to git:', error);
                 return;
             }
-            exec('git status', (error, stdout, stderr) => {
+
+            exec('git commit -m "Update db.json"', (error) => {
                 if (error) {
-                    console.error('Error status:', error);
+                    console.error('Error committing db.json:', error);
                     return;
                 }
-                console.log('status successfully:', stdout);
-                console.log('status err successfully:', stderr);
-            })
-            // console.log('Pushing changes...');
-            // exec('git push origin main', (error, stdout, stderr) => {
-            //     if (error) {
-            //         console.error('Error pushing to GitHub:', error);
-            //         return;
-            //     }
-            //     console.log('Changes pushed successfully:', stdout);
-            //     console.log('Changes pushed err successfully:', stderr);
-            // });
+
+                exec('git push origin main', (error, stdout, stderr) => {
+                    if (error) {
+                        console.error('Error pushing to GitHub:', error);
+                        return;
+                    }
+                    console.log('Changes pushed successfully:', stdout);
+                });
+            });
         });
     });
 }
+
 
 
 // 引入不同的處理邏輯 相關的函數設定
