@@ -134,27 +134,18 @@ function commitAndPushChanges() {
             }
 
             console.log('Pushing changes...');
-            exec('git checkout', (error, stdout, stderr) => {
+            exec('git push', (error, stdout, stderr) => {
                 if (error) {
-                    console.error('Error checkout:', error);
+                    console.error('Error pushing to GitHub:', error);
                     return;
                 }
-                console.log('Changes checkout:', stdout);
-                console.log('Changes checkout err:', stderr);
+                console.log('Changes pushed successfully:', stdout);
+                console.log('Changes pushed err successfully:', stderr);
             });
-            //// 推送變更到 GitHub
-            //console.log('Pushing changes...');
-            //exec('git push', (error, stdout, stderr) => {
-            //    if (error) {
-            //        console.error('Error pushing to GitHub:', error);
-            //        return;
-            //    }
-            //    console.log('Changes pushed successfully:', stdout);
-            //    console.log('Changes pushed err successfully:', stderr);
-            //});
         });
     });
 }
+
 
 // 引入不同的處理邏輯 相關的函數設定
 const getHandler = require("./routes/getHandler")(router, router.db);          // 處理GET
