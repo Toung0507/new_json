@@ -65,7 +65,7 @@ function pushToRepo() {
                         return;
                     }
                     console.log('commit ok');
-                    exec('git push"', (error, stdout, stderr) => {
+                    exec('git push', (error, stdout, stderr) => {
                         if (error) {
                             console.error(`exec error: ${error}`);
                             return;
