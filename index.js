@@ -25,48 +25,36 @@ const swaggerOptions = {
 };
 const swaggerDocs = swaggerJsdoc(swaggerOptions);
 
-const util = require('util');
-
-// Promise 化的 exec
-const execPromise = util.promisify(exec);
-
-// 用來抓取 db.json 並推送到 GitHub 的主要函數
-async function syncDbToRepo() {
-    try {
-        // 使用 curl 抓取 db.json
-        const { stdout: curlStdout, stderr: curlStderr } = await execPromise('curl -v -o db.json https://new-json.onrender.com/db');
-        if (curlStderr) {
-            console.error(`Error fetching db.json: ${curlStderr}`);
+function syncDbToRepo() {
+    // 抓取 db.json 資料
+    console.log('Fetching db.json from Render...');
+    exec('curl -v -o db.json https://new-json.onrender.com/db', (error, stdout, stderr) => {
+        if (error) {
+            console.error('Error fetching db.json:', error);
             return;
         }
-        console.log("Successfully fetched db.json from Render");
-        console.log("stdout:", curlStdout);
+        console.log('Fetch stdout:', stdout);
+        console.error('Fetch stderr:', stderr);
 
-        // 顯示 db.json 內容來檢查是否正確
-        const { stdout: dbContent } = await execPromise('cat db.json');
-        console.log('db.json content:', dbContent);  // 顯示 db.json 內容
+        // 檢查 db.json 內容
+        exec('cat db.json', (error, stdout, stderr) => {
+            if (error) {
+                console.error('Error reading db.json:', error);
+                return;
+            }
+            console.log('db.json content:', stdout);  // 顯示 db.json 內容
 
-        // 檢查 git status，確認是否有變更
-        const { stdout: statusBeforeCommit } = await execPromise('git status');
-        console.log('Git status before commit:', statusBeforeCommit);
-
-        // 檢查是否有檔案變更，如果有則提交
-        if (statusBeforeCommit.includes("modified:   db.json")) {
-            await pushToRepo();
-        } else {
-            console.log('No changes detected, skipping push.');
-        }
-
-    } catch (error) {
-        console.error(`Error in syncDbToRepo: ${error}`);
-    }
+            // 進行 Git 操作
+            pushToRepo();
+        });
+    });
 }
 
-// 用來將 db.json 推送到 GitHub 的函數
-async function pushToRepo() {
-    const GITHUB_USERNAME = "Toung0507";  // 你的 GitHub 使用者名稱
-    const REPO_NAME = "new_json";  // 你的 Repo 名稱
-    const GITHUB_TOKEN = process.env.GITHUB_TOKEN;  // 讀取 GitHub Token (確保在 Render 環境變數裡有設置)
+// 將 db.json 推送到 GitHub
+function pushToRepo() {
+    const GITHUB_USERNAME = "Toung0507"; // 你的 GitHub 使用者名稱
+    const REPO_NAME = "new_json"; // 你的 Repo 名稱
+    const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // 讀取 GitHub Token (確保在 Render 環境變數裡有設置)
 
     if (!GITHUB_TOKEN) {
         console.error("GITHUB_TOKEN is not set!");
@@ -75,67 +63,68 @@ async function pushToRepo() {
 
     const remoteUrl = `https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/${GITHUB_USERNAME}/${REPO_NAME}.git`;
 
-    try {
-        // 設定使用者名稱和電子郵件
-        await execPromise('git config --global user.email "spexial110@gmail.com"');
-        console.log('email ok');
-
-        await execPromise('git config --global user.name "Toung"');
-        console.log('name ok');
-
-        // 檢查 remote 是否存在
-        const { stdout: remoteStatus } = await execPromise('git remote -v');
-        if (!remoteStatus.includes("origin")) {
-            console.log('No remote origin found, adding one...');
-            await execPromise(`git remote add origin ${remoteUrl}`);
-            console.log('remote add ok');
-        } else {
-            console.log('Remote origin exists, updating URL...');
-            await execPromise(`git remote set-url origin ${remoteUrl}`);
-            console.log('remote set-url ok');
+    // 設定使用者名稱和電子郵件
+    exec('git config --global user.email "spexial110@gmail.com"', (error) => {
+        if (error) {
+            console.error('Error setting email:', error);
+            return;
         }
+        exec('git config --global user.name "Toung"', (error) => {
+            if (error) {
+                console.error('Error setting username:', error);
+                return;
+            }
 
-        // 添加更動
-        await execPromise('git add db.json');
-        console.log('add ok');
+            // 檢查 remote 是否存在
+            exec('git remote -v', (error, stdout) => {
+                if (error) {
+                    console.error('Error checking remote:', error);
+                    return;
+                }
+                if (!stdout.includes("origin")) {
+                    exec(`git remote add origin ${remoteUrl}`, (error) => {
+                        if (error) {
+                            console.error('Error adding remote:', error);
+                            return;
+                        }
+                        console.log('Remote added successfully.');
+                        pushChanges();
+                    });
+                } else {
+                    console.log('Remote exists.');
+                    pushChanges();
+                }
+            });
+        });
+    });
+}
+
+function pushChanges() {
+    // 添加更動
+    exec('git add db.json', (error) => {
+        if (error) {
+            console.error('Error adding changes:', error);
+            return;
+        }
 
         // 提交更動
-        await execPromise('git commit -m "Update db.json from Render"');
-        console.log('commit ok');
+        exec('git commit -m "Update db.json from Render"', (error) => {
+            if (error) {
+                console.error('Error committing changes:', error);
+                return;
+            }
 
-        // 檢查 git status，確保沒有未提交的更動
-        const { stdout: statusBeforePush } = await execPromise('git status --porcelain');
-        console.log('Git status before push:', statusBeforePush);
-
-        // 確保在 pull 之前提交或暫存未提交的更動
-        if (statusBeforePush.trim()) {
-            console.log('There are unstaged changes, committing them...');
-            await execPromise('git commit -am "Committing unstaged changes before pull"');
-            console.log('Committing unstaged changes...');
-        }
-
-        // 拉取並解決衝突後再推送
-        await execPromise('git pull origin main --rebase');
-
-        // push 到 GitHub
-        const { stdout: pushStdout, stderr: pushStderr } = await execPromise('git push origin main');
-        console.log('push stdout:', pushStdout);
-        console.log('push stderr:', pushStderr); // 印出錯誤訊息
-
-        // 再次檢查 git status，確認是否有更動
-        const { stdout: statusAfterPush } = await execPromise('git status --porcelain');
-        console.log('Git status after push:', statusAfterPush);
-
-        // 如果 git status 結果為空，代表已經 push 成功
-        if (!statusAfterPush.trim()) {
-            console.log('Successfully pushed changes to GitHub!');
-        } else {
-            console.log('Push failed or not successful.');
-        }
-
-    } catch (error) {
-        console.error(`Error in pushToRepo: ${error}`);
-    }
+            // 推送更動到 GitHub
+            exec('git push origin main', (error, stdout, stderr) => {
+                if (error) {
+                    console.error('Error pushing changes:', error);
+                    return;
+                }
+                console.log('Push stdout:', stdout);
+                console.error('Push stderr:', stderr);
+            });
+        });
+    });
 }
 
 // 引入不同的處理邏輯 相關的函數設定
