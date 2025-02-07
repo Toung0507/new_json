@@ -27,19 +27,30 @@ const swaggerDocs = swaggerJsdoc(swaggerOptions);
 
 // 使用 curl 命令來抓取 Render 上的 db.json
 function syncDbToRepo() {
-    exec('curl -o db.json https://new-json.onrender.com/db', (error, stdout, stderr) => {
-        console.log(stdout);
-
+    exec('curl -v -o db.json https://new-json.onrender.com/db', (error, stdout, stderr) => {
         if (error) {
             console.error(`exec error: ${error}`);
+            console.error(`stderr: ${stderr}`);  // 輸出錯誤訊息
             return;
         }
 
-        // 成功抓取 db.json 後，推送到 GitHub repository
+        // 顯示 stdout 內容來確認是否抓取到 db.json
+        console.log("stdout:", stdout);
+
+        // 顯示 db.json 內容來檢查
+        exec('cat db.json', (error, stdout, stderr) => {
+            if (error) {
+                console.error(`exec error: ${error}`);
+                return;
+            }
+            console.log('db.json content:', stdout);  // 顯示 db.json 內容
+        });
+
         console.log('Successfully fetched db.json from Render');
         pushToRepo();
     });
 }
+
 
 // 將 db.json 推送到 GitHub
 const util = require('util');
