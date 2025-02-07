@@ -25,61 +25,49 @@ const swaggerOptions = {
 };
 const swaggerDocs = swaggerJsdoc(swaggerOptions);
 
-// 使用 curl 命令來抓取 Render 上的 db.json
-// 使用 curl 命令來抓取 Render 上的 db.json
-function syncDbToRepo() {
-    exec('curl -v -o db.json https://new-json.onrender.com/db', (error, stdout, stderr) => {
-        if (error) {
-            console.error(`exec error: ${error}`);
-            console.error(`stderr: ${stderr}`);  // 輸出錯誤訊息
-            return;
-        }
-
-        console.log("stdout:", stdout);
-
-        // 顯示 db.json 內容來檢查
-        exec('cat db.json', (error, stdout, stderr) => {
-            if (error) {
-                console.error(`exec error: ${error}`);
-                return;
-            }
-            console.log('db.json content:', stdout);  // 顯示 db.json 內容
-        });
-
-        // 檢查 git status，確認有變更
-        exec('git status', (error, stdout, stderr) => {
-            if (error) {
-                console.error(`exec error: ${error}`);
-                return;
-            }
-            console.log('Git status before commit:', stdout);  // 查看 git 狀態
-
-            exec('git diff', (error, stdout, stderr) => {
-                if (error) {
-                    console.error(`exec error: ${error}`);
-                    return;
-                }
-                console.log('Git diff result:', stdout);  // 查看檔案差異
-            });
-
-            // 執行推送到 GitHub
-            pushToRepo();
-        });
-    });
-}
-
-
-
-// 將 db.json 推送到 GitHub
 const util = require('util');
+const { exec } = require('child_process');
 
 // Promise 化的 exec
 const execPromise = util.promisify(exec);
 
+// 用來抓取 db.json 並推送到 GitHub 的主要函數
+async function syncDbToRepo() {
+    try {
+        // 使用 curl 抓取 db.json
+        const { stdout: curlStdout, stderr: curlStderr } = await execPromise('curl -v -o db.json https://new-json.onrender.com/db');
+        if (curlStderr) {
+            console.error(`Error fetching db.json: ${curlStderr}`);
+            return;
+        }
+        console.log("Successfully fetched db.json from Render");
+        console.log("stdout:", curlStdout);
+
+        // 顯示 db.json 內容來檢查是否正確
+        const { stdout: dbContent } = await execPromise('cat db.json');
+        console.log('db.json content:', dbContent);  // 顯示 db.json 內容
+
+        // 檢查 git status，確認是否有變更
+        const { stdout: statusBeforeCommit } = await execPromise('git status');
+        console.log('Git status before commit:', statusBeforeCommit);
+
+        // 檢查是否有檔案變更，如果有則提交
+        if (statusBeforeCommit.includes("modified:   db.json")) {
+            await pushToRepo();
+        } else {
+            console.log('No changes detected, skipping push.');
+        }
+
+    } catch (error) {
+        console.error(`Error in syncDbToRepo: ${error}`);
+    }
+}
+
+// 用來將 db.json 推送到 GitHub 的函數
 async function pushToRepo() {
-    const GITHUB_USERNAME = "Toung0507"; // 你的 GitHub 使用者名稱
-    const REPO_NAME = "new_json"; // 你的 Repo 名稱
-    const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // 讀取 GitHub Token (確保在 Render 環境變數裡有設置)
+    const GITHUB_USERNAME = "Toung0507";  // 你的 GitHub 使用者名稱
+    const REPO_NAME = "new_json";  // 你的 Repo 名稱
+    const GITHUB_TOKEN = process.env.GITHUB_TOKEN;  // 讀取 GitHub Token (確保在 Render 環境變數裡有設置)
 
     if (!GITHUB_TOKEN) {
         console.error("GITHUB_TOKEN is not set!");
@@ -147,10 +135,9 @@ async function pushToRepo() {
         }
 
     } catch (error) {
-        console.error(`Error: ${error}`);
+        console.error(`Error in pushToRepo: ${error}`);
     }
 }
-
 
 // 引入不同的處理邏輯 相關的函數設定
 const getHandler = require("./routes/getHandler")(router, router.db);          // 處理GET
