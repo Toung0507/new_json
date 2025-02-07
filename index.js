@@ -85,9 +85,16 @@ async function pushToRepo() {
         await execPromise('git commit -m "Update dbdb.json from Render"');
         console.log('commit ok');
 
-        // 檢查 git status
+        // 檢查 git status，確保沒有未提交的更動
         const { stdout: statusBeforePush } = await execPromise('git status --porcelain');
         console.log('Git status before push:', statusBeforePush);
+
+        // 確保在 pull 之前提交或暫存未提交的更動
+        if (statusBeforePush.trim()) {
+            console.log('There are unstaged changes, committing them...');
+            await execPromise('git commit -am "Committing unstaged changes before pull"');
+            console.log('Committing unstaged changes...');
+        }
 
         // 拉取並解決衝突後再推送
         await execPromise('git pull origin main --rebase');
@@ -112,6 +119,7 @@ async function pushToRepo() {
         console.error(`Error: ${error}`);
     }
 }
+
 
 // 引入不同的處理邏輯 相關的函數設定
 const getHandler = require("./routes/getHandler")(router, router.db);          // 處理GET
