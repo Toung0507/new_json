@@ -65,13 +65,21 @@ function pushToRepo() {
                         return;
                     }
                     console.log('commit ok');
-                    exec('git push', (error, stdout, stderr) => {
+                    exec('git remote add origin https://github.com/Toung0507/new_json.git', (error, stdout, stderr) => {
                         if (error) {
                             console.error(`exec error: ${error}`);
                             return;
                         }
-                        console.log('push ok');
+                        console.log('remote ok');
+                        exec('git push origin main', (error, stdout, stderr) => {
+                            if (error) {
+                                console.error(`exec error: ${error}`);
+                                return;
+                            }
+                            console.log('push ok');
+                        });
                     });
+
                 });
             });
         });
