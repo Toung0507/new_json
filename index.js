@@ -135,12 +135,13 @@ function commitAndPushChanges() {
 
             // 推送變更到 GitHub
             console.log('Pushing changes...');
-            exec('git push origin main', (error, stdout, stderr) => {
+            exec('git push', (error, stdout, stderr) => {
                 if (error) {
                     console.error('Error pushing to GitHub:', error);
                     return;
                 }
                 console.log('Changes pushed successfully:', stdout);
+                console.log('Changes pushed err successfully:', stderr);
             });
         });
     });
