@@ -43,12 +43,14 @@ function syncDbToRepo() {
 function pushToRepo() {
     const GITHUB_USERNAME = "Toung0507"; // 你的 GitHub 使用者名稱
     const REPO_NAME = "new_json"; // 你的 Repo 名稱
-    const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // 從 Render 環境變數讀取 Token
+    const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // 讀取 GitHub Token (確保在 Render 環境變數裡有設置)
 
     if (!GITHUB_TOKEN) {
         console.error("GITHUB_TOKEN is not set!");
         return;
     }
+
+    const remoteUrl = `https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/${GITHUB_USERNAME}/${REPO_NAME}.git`;
 
     exec('git config --global user.email "spexial110@gmail.com"', (error) => {
         if (error) return console.error(`exec error: ${error}`);
@@ -58,30 +60,44 @@ function pushToRepo() {
             if (error) return console.error(`exec error: ${error}`);
             console.log('name ok');
 
-            exec('git add db-last.json', (error) => {
-                if (error) return console.error(`exec error: ${error}`);
-                console.log('add ok');
-
-                exec('git commit -m "Update db-last.json from Render"', (error) => {
-                    if (error) return console.error(`exec error: ${error}`);
-                    console.log('commit ok');
-
-                    // 使用 GitHub Token 設定 remote
-                    const remoteUrl = `https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/${GITHUB_USERNAME}/${REPO_NAME}.git`;
+            exec('git remote -v', (error, stdout) => {
+                if (error || !stdout.includes("origin")) {
+                    console.log('No remote origin found, adding one...');
+                    exec(`git remote add origin ${remoteUrl}`, (error) => {
+                        if (error) return console.error(`exec error: ${error}`);
+                        console.log('remote add ok');
+                        pushChanges();
+                    });
+                } else {
+                    console.log('Remote origin exists, updating URL...');
                     exec(`git remote set-url origin ${remoteUrl}`, (error) => {
                         if (error) return console.error(`exec error: ${error}`);
                         console.log('remote set-url ok');
-
-                        exec('git remote -v', (error) => {
-                            if (error) return console.error(`exec error: ${error}`);
-                            console.log('確認remote ok');
-                        });
+                        pushChanges();
                     });
-                });
+                }
             });
         });
     });
+
+    function pushChanges() {
+        exec('git add db-last.json', (error) => {
+            if (error) return console.error(`exec error: ${error}`);
+            console.log('add ok');
+
+            exec('git commit -m "Update db-last.json from Render"', (error) => {
+                if (error) return console.error(`exec error: ${error}`);
+                console.log('commit ok');
+
+                exec('git push origin main', (error) => {
+                    if (error) return console.error(`exec error: ${error}`);
+                    console.log('push ok');
+                });
+            });
+        });
+    }
 }
+
 
 // 引入不同的處理邏輯 相關的函數設定
 const getHandler = require("./routes/getHandler")(router, router.db);          // 處理GET
