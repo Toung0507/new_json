@@ -29,7 +29,7 @@ function NoResources() {
 function ResourcesBlock({ db }) {
     return `
       <div>
-        <h1>Resources</h1>
+        <h1>各API</h1>
         ${Object.keys(db).length ? ResourceList({ db }) : NoResources()}
       </div>
     `
