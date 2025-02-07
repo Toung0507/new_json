@@ -8,6 +8,7 @@ const middlewares = jsonServer.defaults({ static: 'public' }); // 指定 public 
 const port = process.env.PORT || 4000; // 使用環境變數或預設為 4000
 
 // 引入 Swagger 配置
+const schemas = require('./swagger/schemas'); // 引入 schemas.js
 const swaggerOptions = {
     definition: {
         openapi: '3.0.0',
@@ -16,6 +17,7 @@ const swaggerOptions = {
             version: '1.0.0',
             description: '專題使用的API文件'
         },
+        components: { schemas }
     },
     apis: ['./swagger/*.js'] //相關文件設定都在此資料夾下，一個檔案是一種tag分類
 };
