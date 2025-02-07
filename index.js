@@ -40,7 +40,12 @@ function syncDbToRepo() {
 }
 
 // 將 db.json 推送到 GitHub
-function pushToRepo() {
+const util = require('util');
+
+// Promise 化的 exec
+const execPromise = util.promisify(exec);
+
+async function pushToRepo() {
     const GITHUB_USERNAME = "Toung0507"; // 你的 GitHub 使用者名稱
     const REPO_NAME = "new_json"; // 你的 Repo 名稱
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // 讀取 GitHub Token (確保在 Render 環境變數裡有設置)
@@ -52,52 +57,57 @@ function pushToRepo() {
 
     const remoteUrl = `https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/${GITHUB_USERNAME}/${REPO_NAME}.git`;
 
-    exec('git config --global user.email "spexial110@gmail.com"', (error) => {
-        if (error) return console.error(`exec error: ${error}`);
+    try {
+        // 設定使用者名稱和電子郵件
+        await execPromise('git config --global user.email "spexial110@gmail.com"');
         console.log('email ok');
 
-        exec('git config --global user.name "Toung"', (error) => {
-            if (error) return console.error(`exec error: ${error}`);
-            console.log('name ok');
+        await execPromise('git config --global user.name "Toung"');
+        console.log('name ok');
 
-            exec('git remote -v', (error, stdout) => {
-                if (error || !stdout.includes("origin")) {
-                    console.log('No remote origin found, adding one...');
-                    exec(`git remote add origin ${remoteUrl}`, (error) => {
-                        if (error) return console.error(`exec error: ${error}`);
-                        console.log('remote add ok');
-                        pushChanges();
-                    });
-                } else {
-                    console.log('Remote origin exists, updating URL...');
-                    exec(`git remote set-url origin ${remoteUrl}`, (error) => {
-                        if (error) return console.error(`exec error: ${error}`);
-                        console.log('remote set-url ok');
-                        pushChanges();
-                    });
-                }
-            });
-        });
-    });
+        // 檢查 remote 是否存在
+        const { stdout: remoteStatus } = await execPromise('git remote -v');
+        if (!remoteStatus.includes("origin")) {
+            console.log('No remote origin found, adding one...');
+            await execPromise(`git remote add origin ${remoteUrl}`);
+            console.log('remote add ok');
+        } else {
+            console.log('Remote origin exists, updating URL...');
+            await execPromise(`git remote set-url origin ${remoteUrl}`);
+            console.log('remote set-url ok');
+        }
 
-    function pushChanges() {
-        exec('git add dbdb.json', (error) => {
-            if (error) return console.error(`exec error: ${error}`);
-            console.log('add ok');
+        // 添加更動
+        await execPromise('git add dbdb.json');
+        console.log('add ok');
 
-            exec('git commit -m "Update dbdb.json from Render"', (error) => {
-                if (error) return console.error(`exec error: ${error}`);
-                console.log('commit ok');
+        // 提交更動
+        await execPromise('git commit -m "Update dbdb.json from Render"');
+        console.log('commit ok');
 
-                exec('git push origin main', (error) => {
-                    if (error) return console.error(`exec error: ${error}`);
-                    console.log('push ok');
-                });
-            });
-        });
+        // 執行 push 並確認狀態
+        const { stdout: statusBeforePush } = await execPromise('git status --porcelain');
+        console.log('Git status before push:', statusBeforePush);
+
+        // push 到 GitHub
+        await execPromise('git push origin main');
+        console.log('push ok');
+
+        // 再次檢查 git status，確認是否有更動
+        const { stdout: statusAfterPush } = await execPromise('git status --porcelain');
+        console.log('Git status after push:', statusAfterPush);
+
+        // 如果 git status 結果為空，代表已經 push 成功
+        if (!statusAfterPush.trim()) {
+            console.log('Successfully pushed changes to GitHub!');
+        } else {
+            console.log('Push failed or not successful.');
+        }
+
+    } catch (error) {
+        console.error(`Error: ${error}`);
     }
 }
-
 
 // 引入不同的處理邏輯 相關的函數設定
 const getHandler = require("./routes/getHandler")(router, router.db);          // 處理GET
