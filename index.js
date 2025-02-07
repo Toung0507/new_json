@@ -26,7 +26,6 @@ const swaggerOptions = {
 const swaggerDocs = swaggerJsdoc(swaggerOptions);
 
 const util = require('util');
-const { exec } = require('child_process');
 
 // Promise 化的 exec
 const execPromise = util.promisify(exec);
