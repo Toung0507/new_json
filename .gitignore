@@ -2,3 +2,5 @@ node_modules
 .env
 commad_record.js
 db2.json
+db1.json
+.github\workflows\deploy.yml

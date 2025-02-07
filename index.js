@@ -6,6 +6,7 @@ const router = jsonServer.router("db.json");
 // const middlewares = jsonServer.defaults();
 const middlewares = jsonServer.defaults({ static: 'public' }); // 指定 public 資料夾內為首頁資料夾
 const port = process.env.PORT || 4000; // 使用環境變數或預設為 4000
+const axios = require('axios');                  // 引入 axios 用於發送 HTTP 請求
 
 // 引入 Swagger 配置
 const schemas = require('./swagger/schemas'); // 引入 schemas.js
@@ -22,6 +23,31 @@ const swaggerOptions = {
     apis: ['./swagger/*.js'] //相關文件設定都在此資料夾下，一個檔案是一種tag分類
 };
 const swaggerDocs = swaggerJsdoc(swaggerOptions);
+
+// 使用 curl 命令來抓取 Render 上的 db.json
+function syncDbToRepo() {
+    exec('curl -o db-last.json https://new-json.onrender.com/db', (error, stdout, stderr) => {
+        if (error) {
+            console.error(`exec error: ${error}`);
+            return;
+        }
+
+        // 成功抓取 db.json 後，推送到 GitHub repository
+        console.log('Successfully fetched db.json from Render');
+        pushToRepo();
+    });
+}
+
+// 將 db.json 推送到 GitHub
+function pushToRepo() {
+    exec('git add db-last.json && git commit -m "Update db-last.json from Render" && git push origin main', (error, stdout, stderr) => {
+        if (error) {
+            console.error(`exec error: ${error}`);
+            return;
+        }
+        console.log('Successfully pushed db.json to GitHub');
+    });
+}
 
 // 引入不同的處理邏輯 相關的函數設定
 const getHandler = require("./routes/getHandler")(router, router.db);          // 處理GET
@@ -44,13 +70,25 @@ server.get("/:tableName/:primaryKey/:subTable?", tableExistsMiddleware, getHandl
 server.get("/:tableName", tableExistsMiddleware, completeTables);
 
 // POST 請求
-server.post("/:tableName", tableExistsMiddleware, postHandler);
+// server.post("/:tableName", tableExistsMiddleware, postHandler);
+server.post("/:tableName", tableExistsMiddleware, (req, res) => {
+    postHandler(req, res);
+    syncDbToRepo();
+});
 
 // DELETE 請求
-server.delete("/:tableName/:primaryKey", tableExistsMiddleware, deleteHandler);
+// server.delete("/:tableName/:primaryKey", tableExistsMiddleware, deleteHandler);
+server.delete("/:tableName/:primaryKey", tableExistsMiddleware, (req, res) => {
+    deleteHandler(req, res);
+    syncDbToRepo();
+});
 
 // PATCH 請求
-server.patch("/:tableName/:primaryKey", tableExistsMiddleware, patchHandler);
+// server.patch("/:tableName/:primaryKey", tableExistsMiddleware, patchHandler);
+server.patch("/:tableName/:primaryKey", tableExistsMiddleware, (req, res) => {
+    patchHandler(req, res);
+    syncDbToRepo();
+});
 
 server.use(router);
 
