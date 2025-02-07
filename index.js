@@ -134,7 +134,7 @@ function commitAndPushChanges() {
             }
 
             console.log('Pushing changes...');
-            exec('git push', (error, stdout, stderr) => {
+            exec('git push origin main', (error, stdout, stderr) => {
                 if (error) {
                     console.error('Error pushing to GitHub:', error);
                     return;
