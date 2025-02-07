@@ -133,9 +133,8 @@ function commitAndPushChanges() {
                 return;
             }
 
-            // 推送變更到 GitHub
             console.log('Pushing changes...');
-            exec('git push', (error, stdout, stderr) => {
+            exec('git checkout', (error, stdout, stderr) => {
                 if (error) {
                     console.error('Error pushing to GitHub:', error);
                     return;
@@ -143,6 +142,16 @@ function commitAndPushChanges() {
                 console.log('Changes pushed successfully:', stdout);
                 console.log('Changes pushed err successfully:', stderr);
             });
+            //// 推送變更到 GitHub
+            //console.log('Pushing changes...');
+            //exec('git push', (error, stdout, stderr) => {
+            //    if (error) {
+            //        console.error('Error pushing to GitHub:', error);
+            //        return;
+            //    }
+            //    console.log('Changes pushed successfully:', stdout);
+            //    console.log('Changes pushed err successfully:', stderr);
+            //});
         });
     });
 }
