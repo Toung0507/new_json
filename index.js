@@ -25,8 +25,8 @@ const swaggerOptions = {
 };
 const swaggerDocs = swaggerJsdoc(swaggerOptions);
 
+// 抓取 db.json 資料
 function syncDbToRepo() {
-    // 抓取 db.json 資料
     console.log('Fetching db.json from Render...');
     exec('curl -v -o db.json https://new-json.onrender.com/db', (error, stdout, stderr) => {
         if (error) {
@@ -42,11 +42,30 @@ function syncDbToRepo() {
                 console.error('Error reading db.json:', error);
                 return;
             }
-            // console.log('db.json content:', stdout);  // 顯示 db.json 內容
+            console.log('db.json content:', stdout);  // 顯示 db.json 內容
 
             // 進行 Git 操作
-            pushToRepo();
+            checkGitStatus();
         });
+    });
+}
+
+// 檢查 Git 狀態，確認是否有變更
+function checkGitStatus() {
+    console.log('Checking git status before commit...');
+    exec('git status --porcelain', (error, stdout, stderr) => {
+        if (error) {
+            console.error('Error checking git status:', error);
+            return;
+        }
+
+        if (stdout) {
+            console.log('Git status before commit:', stdout);
+            // 如果有變更，就進行提交
+            pushToRepo();
+        } else {
+            console.log('No changes detected in db.json');
+        }
     });
 }
 
@@ -60,16 +79,7 @@ function pushToRepo() {
         console.error("GITHUB_TOKEN is not set!");
         return;
     }
-    // 檢查 db.json 內容
-    exec('cat db.json', (error, stdout, stderr) => {
-        if (error) {
-            console.error('Error reading db.json:', error);
-            return;
-        }
-        console.log('db.json content:', stdout);  // 顯示 db.json 內容
 
-        // 進行 Git 操作
-    });
     const remoteUrl = `https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/${GITHUB_USERNAME}/${REPO_NAME}.git`;
 
     // 設定使用者名稱和電子郵件
@@ -97,40 +107,40 @@ function pushToRepo() {
                             return;
                         }
                         console.log('Remote added successfully.');
-                        pushChanges();
+                        commitAndPushChanges();
                     });
                 } else {
                     console.log('Remote exists.');
-                    pushChanges();
+                    commitAndPushChanges();
                 }
             });
         });
     });
 }
 
-function pushChanges() {
-    // 添加更動
+// 提交並推送變更
+function commitAndPushChanges() {
+    console.log('Committing changes...');
     exec('git add db.json', (error) => {
         if (error) {
-            console.error('Error adding changes:', error);
+            console.error('Error adding db.json to git:', error);
             return;
         }
 
-        // 提交更動
-        exec('git commit -m "Update db.json from Render"', (error) => {
+        exec('git commit -m "Update db.json"', (error) => {
             if (error) {
-                console.error('Error committing changes:', error);
+                console.error('Error committing db.json:', error);
                 return;
             }
 
-            // 推送更動到 GitHub
+            // 推送變更到 GitHub
+            console.log('Pushing changes...');
             exec('git push origin main', (error, stdout, stderr) => {
                 if (error) {
-                    console.error('Error pushing changes:', error);
+                    console.error('Error pushing to GitHub:', error);
                     return;
                 }
-                console.log('Push stdout:', stdout);
-                console.error('Push stderr:', stderr);
+                console.log('Changes pushed successfully:', stdout);
             });
         });
     });
