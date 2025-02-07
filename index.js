@@ -41,57 +41,46 @@ function syncDbToRepo() {
 
 // 將 db.json 推送到 GitHub
 function pushToRepo() {
-    exec('git config --global user.email "spexial110@gmail.com"', (error, stdout, stderr) => {
-        if (error) {
-            console.error(`exec error: ${error}`);
-            return;
-        }
+    const GITHUB_USERNAME = "Toung0507"; // 你的 GitHub 使用者名稱
+    const REPO_NAME = "new_json"; // 你的 Repo 名稱
+    const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // 從 Render 環境變數讀取 Token
+
+    if (!GITHUB_TOKEN) {
+        console.error("GITHUB_TOKEN is not set!");
+        return;
+    }
+
+    exec('git config --global user.email "spexial110@gmail.com"', (error) => {
+        if (error) return console.error(`exec error: ${error}`);
         console.log('email ok');
-        exec('git config --global user.name "Toung"', (error, stdout, stderr) => {
-            if (error) {
-                console.error(`exec error: ${error}`);
-                return;
-            }
+
+        exec('git config --global user.name "Toung"', (error) => {
+            if (error) return console.error(`exec error: ${error}`);
             console.log('name ok');
-            exec('git add db-last.json', (error, stdout, stderr) => {
-                if (error) {
-                    console.error(`exec error: ${error}`);
-                    return;
-                }
+
+            exec('git add db-last.json', (error) => {
+                if (error) return console.error(`exec error: ${error}`);
                 console.log('add ok');
-                exec('git commit -m "Update db-last.json from Render"', (error, stdout, stderr) => {
-                    if (error) {
-                        console.error(`exec error: ${error}`);
-                        return;
-                    }
+
+                exec('git commit -m "Update db-last.json from Render"', (error) => {
+                    if (error) return console.error(`exec error: ${error}`);
                     console.log('commit ok');
-                    exec('git remote add origin https://github.com/Toung0507/new_json.git', (error, stdout, stderr) => {
-                        if (error) {
-                            console.error(`exec error: ${error}`);
-                            return;
-                        }
-                        console.log('remote ok');
-                        exec('git push origin main', (error, stdout, stderr) => {
-                            if (error) {
-                                console.error(`exec error: ${error}`);
-                                return;
-                            }
+
+                    // 使用 GitHub Token 設定 remote
+                    const remoteUrl = `https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/${GITHUB_USERNAME}/${REPO_NAME}.git`;
+                    exec(`git remote set-url origin ${remoteUrl}`, (error) => {
+                        if (error) return console.error(`exec error: ${error}`);
+                        console.log('remote set-url ok');
+
+                        exec('git push origin main', (error) => {
+                            if (error) return console.error(`exec error: ${error}`);
                             console.log('push ok');
                         });
                     });
-
                 });
             });
         });
-
     });
-    //exec('git config --global user.email "spexial110@gmail.com" && git config --global user.name "Toung" && git add db-last.json && git commit -m "Update db-last.json from Render" && git push origin main', (error, stdout, stderr) => {
-    //    if (error) {
-    //        console.error(`exec error: ${error}`);
-    //        return;
-    //    }
-    //    console.log('Successfully pushed db.json to GitHub');
-    //});
 }
 
 // 引入不同的處理邏輯 相關的函數設定
