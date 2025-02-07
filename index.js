@@ -42,7 +42,7 @@ function syncDbToRepo() {
                 console.error('Error reading db.json:', error);
                 return;
             }
-            console.log('db.json content:', stdout);  // 顯示 db.json 內容
+            // console.log('db.json content:', stdout);  // 顯示 db.json 內容
 
             // 進行 Git 操作
             pushToRepo();
@@ -60,7 +60,16 @@ function pushToRepo() {
         console.error("GITHUB_TOKEN is not set!");
         return;
     }
+    // 檢查 db.json 內容
+    exec('cat db.json', (error, stdout, stderr) => {
+        if (error) {
+            console.error('Error reading db.json:', error);
+            return;
+        }
+        console.log('db.json content:', stdout);  // 顯示 db.json 內容
 
+        // 進行 Git 操作
+    });
     const remoteUrl = `https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/${GITHUB_USERNAME}/${REPO_NAME}.git`;
 
     // 設定使用者名稱和電子郵件
