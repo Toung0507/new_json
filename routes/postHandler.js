@@ -27,7 +27,8 @@ module.exports = (router, db) => {
         else {
             // **2. 檢查必要欄位是否存在**
             // const requiredFields = ["game_id", "name", "price"]; > 這個部分交由前端判斷，後端先不卡
-            const missingFields = requiredFields.filter(field => !(field in newItem));
+            // const missingFields = requiredFields.filter(field => !(field in newItem));
+            const missingFields = [];
             if (missingFields.length > 0) {
                 return res.status(400).json({ error: `缺少必要欄位: ${missingFields.join(", ")}` });
             }
