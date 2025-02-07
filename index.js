@@ -46,13 +46,34 @@ function pushToRepo() {
             console.error(`exec error: ${error}`);
             return;
         }
-        console.log('first');
-        exec('git config --global user.name "Toung""', (error, stdout, stderr) => {
+        console.log('email ok');
+        exec('git config --global user.name "Toung"', (error, stdout, stderr) => {
             if (error) {
                 console.error(`exec error: ${error}`);
                 return;
             }
-            console.log('two');
+            console.log('name ok');
+            exec('git add db-last.json', (error, stdout, stderr) => {
+                if (error) {
+                    console.error(`exec error: ${error}`);
+                    return;
+                }
+                console.log('add ok');
+                exec('git commit -m "Update db-last.json from Render"', (error, stdout, stderr) => {
+                    if (error) {
+                        console.error(`exec error: ${error}`);
+                        return;
+                    }
+                    console.log('commit ok');
+                    exec('git push"', (error, stdout, stderr) => {
+                        if (error) {
+                            console.error(`exec error: ${error}`);
+                            return;
+                        }
+                        console.log('push ok');
+                    });
+                });
+            });
         });
 
     });
