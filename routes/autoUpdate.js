@@ -38,23 +38,36 @@ async function pushToRepo() {
         const { stdout: fetchOutput } = await exec('git fetch origin');
         console.log('Fetch ok:', fetchOutput);
 
-        // 切換到 main 分支，確保處於正確的分支狀態
-        console.log('Checking out main branch...');
-        await exec('git checkout main');
-        console.log('Switched to main');
+        // 確認目前的分支，並確認出是否有*main 或 *db的回傳結果
+        console.log('Check now branch');
+        const { stdout: brancOutput } = await exec('git branch');
+        console.log('now branch', brancOutput);
+        // 檢查是否在當前分支中包含 *main 或 *db
+        if (brancOutput.includes('*main')) {
+            console.log('You are on the main branch!');
+            // 切換到 main 分支，確保處於正確的分支狀態
+            console.log('Checking out main branch...');
+            await exec('git checkout main');
+            console.log('Switched to main');
 
-        // 確認 main 分支是否有未提交的變更
-        const { stdout: statusMain } = await exec('git status --porcelain');
-        if (statusMain) {
-            console.log('Stashing local changes in main branch...');
-            await exec('git stash'); // 暫存變更，確保乾淨切換分支
-            console.log('Stash ok');
+            // 確認 main 分支是否有未提交的變更
+            const { stdout: statusMain } = await exec('git status --porcelain');
+            if (statusMain) {
+                console.log('Stashing local changes in main branch...');
+                await exec('git stash'); // 暫存變更，確保乾淨切換分支
+                console.log('Stash ok');
+            }
+
+            // 切換到 db 分支，若無則從遠端建立
+            console.log('Checking out db branch...');
+            await exec('git checkout db || git checkout -b db origin/db');
+            console.log('Switched to db branch');
+
+        } else if (brancOutput.includes('*db')) {
+            console.log('You are on the db branch!');
+        } else {
+            console.log('You are on another branch!');
         }
-
-        // 切換到 db 分支，若無則從遠端建立
-        console.log('Checking out db branch...');
-        await exec('git checkout db || git checkout -b db origin/db');
-        console.log('Switched to db branch');
 
         // 透過 curl 抓取最新的 db.json
         console.log('Fetching latest db.json from Render...');
