@@ -114,11 +114,10 @@ function commitAndPushChanges() {
         });
     });
 
-    /*
     // console.log('Switching to main branch...');
     console.log('Switching to db branch...');
     // exec('git checkout main', (error, stdout, stderr) => {
-    exec('git switch db', (error, stdout, stderr) => {
+    exec('git checkout db || git checkout -b db origin/db', (error, stdout, stderr) => {
         if (error) {
             // console.error('Error switching to main branch:', error);
             console.error('Error switching to db branch:', error);
@@ -152,7 +151,6 @@ function commitAndPushChanges() {
             });
         });
     });
-    */
 }
 
 // 匯出函式
