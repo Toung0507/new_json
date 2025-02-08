@@ -1,3 +1,4 @@
+const { exec } = require('child_process'); // 引入 exec 用來執行 shell 命令
 // 抓取 db.json 資料
 function syncDbToRepo() {
     console.log('Fetching db.json from Render...');

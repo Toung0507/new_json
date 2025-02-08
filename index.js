@@ -6,8 +6,6 @@ const router = jsonServer.router("db.json");
 // const middlewares = jsonServer.defaults();
 const middlewares = jsonServer.defaults({ static: 'public' }); // 指定 public 資料夾內為首頁資料夾
 const port = process.env.PORT || 4000; // 使用環境變數或預設為 4000
-const axios = require('axios');                  // 引入 axios 用於發送 HTTP 請求
-const { exec } = require('child_process'); // 引入 exec 用來執行 shell 命令
 
 // 引入 Swagger 配置
 const schemas = require('./swagger/schemas'); // 引入 schemas.js
