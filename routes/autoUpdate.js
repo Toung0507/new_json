@@ -111,46 +111,47 @@ function commitAndPushChanges() {
             }
             // console.log('Changes pushed successfully:', stdout);
             console.log('all branch', stdout);
-        });
-    });
-
-    // console.log('Switching to main branch...');
-    console.log('Switching to db branch...');
-    // exec('git checkout main', (error, stdout, stderr) => {
-    exec('git checkout db || git checkout -b db origin/db', (error, stdout, stderr) => {
-        if (error) {
-            // console.error('Error switching to main branch:', error);
-            console.error('Error switching to db branch:', error);
-            return;
-        }
-        // console.log('Switched to main:', stdout);
-        console.log('Switched to db:', stdout);
-
-        console.log('Committing changes...');
-        exec('git add db.json', (error) => {
-            if (error) {
-                console.error('Error adding db.json to git:', error);
-                return;
-            }
-
-            exec('git commit -m "Update db.json"', (error) => {
+            // console.log('Switching to main branch...');
+            console.log('Switching to db branch...');
+            // exec('git checkout main', (error, stdout, stderr) => {
+            exec('git checkout db || git checkout -b db origin/db', (error, stdout, stderr) => {
                 if (error) {
-                    console.error('Error committing db.json:', error);
+                    // console.error('Error switching to main branch:', error);
+                    console.error('Error switching to db branch:', error);
                     return;
                 }
+                // console.log('Switched to main:', stdout);
+                console.log('Switched to db:', stdout);
 
-                // exec('git push origin main', (error, stdout, stderr) => {
-                exec('git push origin db', (error, stdout) => {
+                console.log('Committing changes...');
+                exec('git add db.json', (error) => {
                     if (error) {
-                        console.error('Error pushing to GitHub:', error);
+                        console.error('Error adding db.json to git:', error);
                         return;
                     }
-                    // console.log('Changes pushed successfully:', stdout);
-                    console.log('Changes pushed to db branch successfully:', stdout);
+
+                    exec('git commit -m "Update db.json"', (error) => {
+                        if (error) {
+                            console.error('Error committing db.json:', error);
+                            return;
+                        }
+
+                        // exec('git push origin main', (error, stdout, stderr) => {
+                        exec('git push origin db', (error, stdout) => {
+                            if (error) {
+                                console.error('Error pushing to GitHub:', error);
+                                return;
+                            }
+                            // console.log('Changes pushed successfully:', stdout);
+                            console.log('Changes pushed to db branch successfully:', stdout);
+                        });
+                    });
                 });
             });
         });
     });
+
+
 }
 
 // 匯出函式
