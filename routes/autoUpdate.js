@@ -43,10 +43,10 @@ async function pushToRepo() {
         const { stdout: brancOutput } = await exec('git branch');
         console.log('now branch', brancOutput);
         // 檢查是否在當前分支中包含 *main 或 *db
-        if (brancOutput.includes('*main')) {
+        if (brancOutput.includes('* main')) {
             console.log('You are on the main branch!');
 
-        } else if (brancOutput.includes('*db')) {
+        } else if (brancOutput.includes('* db')) {
             console.log('You are on the db branch!');
             // 切換到 main 分支，確保處於正確的分支狀態
             console.log('Checking out main branch...');
