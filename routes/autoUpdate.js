@@ -45,29 +45,33 @@ async function pushToRepo() {
         // 檢查是否在當前分支中包含 *main 或 *db
         if (brancOutput.includes('*main')) {
             console.log('You are on the main branch!');
+
+        } else if (brancOutput.includes('*db')) {
+            console.log('You are on the db branch!');
             // 切換到 main 分支，確保處於正確的分支狀態
             console.log('Checking out main branch...');
             await exec('git checkout main');
             console.log('Switched to main');
-
-            // 確認 main 分支是否有未提交的變更
-            const { stdout: statusMain } = await exec('git status --porcelain');
-            if (statusMain) {
-                console.log('Stashing local changes in main branch...');
-                await exec('git stash'); // 暫存變更，確保乾淨切換分支
-                console.log('Stash ok');
-            }
-
-            // 切換到 db 分支，若無則從遠端建立
-            console.log('Checking out db branch...');
-            await exec('git checkout db || git checkout -b db origin/db');
-            console.log('Switched to db branch');
-
-        } else if (brancOutput.includes('*db')) {
-            console.log('You are on the db branch!');
         } else {
             console.log('You are on another branch!');
+            // 切換到 main 分支，確保處於正確的分支狀態
+            console.log('Checking out main branch...');
+            await exec('git checkout main');
+            console.log('Switched to main');
         }
+
+        // 確認 main 分支是否有未提交的變更
+        const { stdout: statusMain } = await exec('git status --porcelain');
+        if (statusMain) {
+            console.log('Stashing local changes in main branch...');
+            await exec('git stash'); // 暫存變更，確保乾淨切換分支
+            console.log('Stash ok');
+        }
+
+        // 切換到 db 分支，若無則從遠端建立
+        console.log('Checking out db branch...');
+        await exec('git checkout db || git checkout -b db origin/db');
+        console.log('Switched to db branch');
 
         // 透過 curl 抓取最新的 db.json
         console.log('Fetching latest db.json from Render...');
@@ -75,8 +79,8 @@ async function pushToRepo() {
         console.log('db.json fetched');
 
         // 顯示 db.json 內容
-        const { stdout: dbJsonContent } = await exec('cat db.json');
-        console.log('db.json content:', dbJsonContent);
+        // const { stdout: dbJsonContent } = await exec('cat db.json');
+        // console.log('db.json content:', dbJsonContent);
 
         // 確認 db.json 是否有變更
         const { stdout: statusDb } = await exec('git status --porcelain');
