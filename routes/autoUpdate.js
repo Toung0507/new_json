@@ -5,6 +5,7 @@ async function pushToRepo() {
     const GITHUB_USERNAME = process.env.GITHUB_USERNAME; // GitHub 使用者名稱
     const REPO_NAME = process.env.REPO_NAME; // Repository 名稱
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // 讀取 GitHub Token，確保環境變數中已設定
+    const GITHUB_EMAIL = process.env.GITHUB_EMAIL; // 讀取 email
 
     if (!GITHUB_TOKEN) {
         console.error("GITHUB_TOKEN is not set!");
@@ -15,6 +16,11 @@ async function pushToRepo() {
     const remoteUrl = `https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/${GITHUB_USERNAME}/${REPO_NAME}.git`;
 
     try {
+        // 設定全局設定
+        await exec(`git config --global user.name "${GITHUB_USERNAME}"`);
+        await exec(`git config --global user.email "${GITHUB_EMAIL}"`);
+        console.log('Git global user info set successfully');
+
         // 檢查是否已經有設定遠端 origin
         const { stdout } = await exec('git remote -v');
         if (!stdout.includes("origin")) {
