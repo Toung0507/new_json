@@ -98,10 +98,10 @@ function commitAndPushChanges() {
     // console.log('Switching to main branch...');
     console.log('Switching to db branch...');
     // exec('git checkout main', (error, stdout, stderr) => {
-    exec('git checkout -b db', (error, stdout, stderr) => {
+    exec('git switch db', (error, stdout, stderr) => {
         if (error) {
             // console.error('Error switching to main branch:', error);
-            console.error('Error creating/switching to db branch:', error);
+            console.error('Error switching to db branch:', error);
             return;
         }
         // console.log('Switched to main:', stdout);
@@ -121,7 +121,7 @@ function commitAndPushChanges() {
                 }
 
                 // exec('git push origin main', (error, stdout, stderr) => {
-                exec('git push -u origin db', (error, stdout) => {
+                exec('git push origin db', (error, stdout) => {
                     if (error) {
                         console.error('Error pushing to GitHub:', error);
                         return;
