@@ -13,8 +13,12 @@
       "difficulty_name": "重度解謎"
     },
     {
-      "difficulty_name": "哀莫大於心死23",
+      "difficulty_name": "哀莫大於心死3",
       "difficulty_id": 7
+    },
+    {
+      "difficulty_name": "哀莫大於心死24",
+      "difficulty_id": 8
     }
   ],
   "propertys_fixed_Data": [
