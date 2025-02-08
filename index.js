@@ -9,7 +9,6 @@ const port = process.env.PORT || 4000; // 使用環境變數或預設為 4000
 
 // 引入 Swagger 配置
 const schemas = require('./swagger/schemas'); // 引入 schemas.js
-const { stdout, stderr } = require("process");
 const swaggerOptions = {
     definition: {
         openapi: '3.0.0',
@@ -31,7 +30,7 @@ const deleteHandler = require("./routes/deleteHandler")(router, router.db);    /
 const patchHandler = require("./routes/patchHandler")(router, router.db);      // 處理PATCH
 const tableExistsMiddleware = require("./routes/isTableExists")(router);       // 檢查路徑的TABLE是否存在
 const completeTables = require("./routes/completeTables")(router);             // 完善資料表的內容 > 將有外來鍵的資料所需資料放入原資料表
-const { syncDbToRepo } = require('./routes/autoUpdate');                       // 自動上傳最新版db
+const { switchToDbBranchAndFetch } = require('./routes/autoUpdate');           // 自動上傳最新版db
 
 // 使用 middleware
 server.use(middlewares);
@@ -48,21 +47,21 @@ server.get("/:tableName", tableExistsMiddleware, completeTables);
 // server.post("/:tableName", tableExistsMiddleware, postHandler);
 server.post("/:tableName", tableExistsMiddleware, (req, res) => {
     postHandler(req, res);
-    syncDbToRepo();
+    switchToDbBranchAndFetch();
 });
 
 // DELETE 請求
 // server.delete("/:tableName/:primaryKey", tableExistsMiddleware, deleteHandler);
 server.delete("/:tableName/:primaryKey", tableExistsMiddleware, (req, res) => {
     deleteHandler(req, res);
-    syncDbToRepo();
+    switchToDbBranchAndFetch();
 });
 
 // PATCH 請求
 // server.patch("/:tableName/:primaryKey", tableExistsMiddleware, patchHandler);
 server.patch("/:tableName/:primaryKey", tableExistsMiddleware, (req, res) => {
     patchHandler(req, res);
-    syncDbToRepo();
+    switchToDbBranchAndFetch();
 });
 
 server.use(router);

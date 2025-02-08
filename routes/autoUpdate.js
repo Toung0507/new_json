@@ -1,14 +1,50 @@
 const { exec } = require('child_process'); // 引入 exec 用來執行 shell 命令
+// 切換到 db 分支並抓取最新 db.json
+function switchToDbBranchAndFetch() {
+    console.log('Fetching latest branches from origin...');
+
+    // 先抓取遠端的資料
+    exec('git fetch origin', (error, stdout, stderr) => {
+        if (error) {
+            console.error('Error fetching from origin:', error);
+            return;
+        }
+
+        console.log('Fetched from origin successfully:', stdout);
+
+        // 確認遠端分支是否有 db 分支
+        exec('git branch -r', (error, stdout, stderr) => {
+            if (error) {
+                console.error('Error listing remote branches:', error);
+                return;
+            }
+
+            console.log('Remote branches:', stdout);
+
+            // 切換到 db 分支（若不存在則創建）
+            exec('git checkout db || git checkout -b db origin/db', (error, stdout, stderr) => {
+                if (error) {
+                    console.error('Error switching to db branch:', error);
+                    return;
+                }
+                console.log('Switched to db branch:', stdout);
+
+                // 抓取最新的 db.json
+                fetchDbJson();
+            });
+        });
+    });
+}
+
 // 抓取 db.json 資料
-function syncDbToRepo() {
+function fetchDbJson() {
     console.log('Fetching db.json from Render...');
+
     exec('curl -v -o db.json https://new-json.onrender.com/db', (error, stdout, stderr) => {
         if (error) {
             console.error('Error fetching db.json:', error);
             return;
         }
-        // console.log('Fetch stdout:', stdout);
-        // console.error('Fetch stderr:', stderr);
 
         // 檢查 db.json 內容
         exec('cat db.json', (error, stdout, stderr) => {
@@ -27,6 +63,7 @@ function syncDbToRepo() {
 // 檢查 Git 狀態，確認是否有變更
 function checkGitStatus() {
     console.log('Checking git status before commit...');
+
     exec('git status --porcelain', (error, stdout, stderr) => {
         if (error) {
             console.error('Error checking git status:', error);
@@ -36,15 +73,15 @@ function checkGitStatus() {
         if (stdout) {
             console.log('Git status before commit:', stdout);
             // 如果有變更，就進行提交
-            pushToRepo();
+            commitAndPushChanges();
         } else {
             console.log('No changes detected in db.json');
         }
     });
 }
 
-// 將 db.json 推送到 GitHub
-function pushToRepo() {
+// 提交並推送變更
+function commitAndPushChanges() {
     const GITHUB_USERNAME = process.env.GITHUB_USERNAME; // 你的 GitHub 使用者名稱
     const REPO_NAME = process.env.REPO_NAME; // 你的 Repo 名稱
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // 讀取 GitHub Token (確保在 Render 環境變數裡有設置)
@@ -82,77 +119,43 @@ function pushToRepo() {
                             return;
                         }
                         console.log('Remote added successfully.');
-                        commitAndPushChanges();
+                        pushChanges();
                     });
                 } else {
                     console.log('Remote exists.');
-                    commitAndPushChanges();
+                    pushChanges();
                 }
             });
         });
     });
 }
 
-// 提交並推送變更
-function commitAndPushChanges() {
-    console.log('checkout branch');
+// 將變更推送到 GitHub
+function pushChanges() {
+    console.log('Pushing changes to db branch...');
 
-    exec('git fetch origin', (error, stdout) => {
+    exec('git add db.json', (error) => {
         if (error) {
-            console.error('fetch error ', error);
+            console.error('Error adding db.json to git:', error);
             return;
         }
-        // console.log('Changes pushed successfully:', stdout);
-        // console.log('branch', stdout);
-        exec('git branch -r', (error, stdout) => {
+
+        exec('git commit -m "Update db.json"', (error) => {
             if (error) {
-                console.error('fetch branch error ', error);
+                console.error('Error committing db.json:', error);
                 return;
             }
-            // console.log('Changes pushed successfully:', stdout);
-            console.log('all branch', stdout);
-            // console.log('Switching to main branch...');
-            console.log('Switching to db branch...');
-            // exec('git checkout main', (error, stdout, stderr) => {
-            exec('git checkout db || git checkout -b db origin/db', (error, stdout, stderr) => {
+
+            exec('git push origin db', (error, stdout) => {
                 if (error) {
-                    // console.error('Error switching to main branch:', error);
-                    console.error('Error switching to db branch:', error);
+                    console.error('Error pushing to GitHub:', error);
                     return;
                 }
-                // console.log('Switched to main:', stdout);
-                console.log('Switched to db:', stdout);
-
-                console.log('Committing changes...');
-                exec('git add db.json', (error) => {
-                    if (error) {
-                        console.error('Error adding db.json to git:', error);
-                        return;
-                    }
-
-                    exec('git commit -m "Update db.json"', (error) => {
-                        if (error) {
-                            console.error('Error committing db.json:', error);
-                            return;
-                        }
-
-                        // exec('git push origin main', (error, stdout, stderr) => {
-                        exec('git push origin db', (error, stdout) => {
-                            if (error) {
-                                console.error('Error pushing to GitHub:', error);
-                                return;
-                            }
-                            // console.log('Changes pushed successfully:', stdout);
-                            console.log('Changes pushed to db branch successfully:', stdout);
-                        });
-                    });
-                });
+                console.log('Changes pushed to db branch successfully:', stdout);
             });
         });
     });
-
-
 }
 
 // 匯出函式
-module.exports = { syncDbToRepo, checkGitStatus, pushToRepo, commitAndPushChanges };
+module.exports = { switchToDbBranchAndFetch, fetchDbJson, checkGitStatus, commitAndPushChanges, pushChanges };
