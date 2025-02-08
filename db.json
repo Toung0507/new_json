@@ -1,0 +1,590 @@
+{
+  "difficultys_fixed_Data": [
+    {
+      "difficulty_id": 1,
+      "difficulty_name": "新手入門"
+    },
+    {
+      "difficulty_id": 2,
+      "difficulty_name": "中度玩家"
+    },
+    {
+      "difficulty_id": 3,
+      "difficulty_name": "重度解謎"
+    },
+    {
+      "difficulty_name": "哀莫大於心死18",
+      "difficulty_id": 7
+    }
+  ],
+  "propertys_fixed_Data": [
+    {
+      "property_id": 1,
+      "property_name": "偵探推理"
+    },
+    {
+      "property_id": 2,
+      "property_name": "機關重重"
+    },
+    {
+      "property_id": 3,
+      "property_name": "劇情厲害"
+    },
+    {
+      "property_id": 4,
+      "property_name": "場景逼真"
+    },
+    {
+      "property_id": 5,
+      "property_name": "互動操作"
+    },
+    {
+      "property_id": 6,
+      "property_name": "謎題邏輯"
+    },
+    {
+      "property_id": 7,
+      "property_name": "輕鬆歡樂"
+    },
+    {
+      "property_id": 8,
+      "property_name": "恐怖驚悚"
+    },
+    {
+      "property_id": 9,
+      "property_name": "緊張刺激"
+    },
+    {
+      "property_id": 10,
+      "property_name": "勾心鬥角"
+    },
+    {
+      "property_id": 11,
+      "property_name": "團隊合作"
+    },
+    {
+      "property_id": 12,
+      "property_name": "親子同遊"
+    },
+    {
+      "property_id": 13,
+      "property_name": "玩法特殊"
+    },
+    {
+      "property_id": 14,
+      "property_name": "角色扮演"
+    }
+  ],
+  "usersData": [
+    {
+      "user_id": 1,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "笨蛋工作室",
+      "user_email": "stupidparticle@gmail.com",
+      "user_bhd": "",
+      "user_tel": "(02)8787-4387",
+      "user_password": "Abcd1234",
+      "user_create_at": "",
+      "user_update_at": "",
+      "user_sex": ""
+    },
+    {
+      "user_id": 2,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "FunLock工作室",
+      "user_email": "funlockstudio@gmail.com",
+      "user_bhd": "",
+      "user_tel": "0928007799",
+      "user_password": "123456789",
+      "user_create_at": "",
+      "user_update_at": "",
+      "user_sex": ""
+    },
+    {
+      "user_id": 3,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "米邏創意有限公司",
+      "user_email": "ricelo0517@gmail.com",
+      "user_bhd": "",
+      "user_tel": "0973113841",
+      "user_password": "Abcd5678",
+      "user_create_at": "",
+      "user_update_at": "",
+      "user_sex": ""
+    },
+    {
+      "user_id": 4,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "頂級豬排遊戲工作室",
+      "user_email": "thekingpork@gmail.com",
+      "user_bhd": "",
+      "user_tel": "0905-259-817",
+      "user_password": "123456789",
+      "user_create_at": "",
+      "user_update_at": "",
+      "user_sex": ""
+    },
+    {
+      "user_id": 5,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "神不在場有限公司",
+      "user_email": "waldner9527@taog-game.com",
+      "user_bhd": "",
+      "user_tel": "(04)2223-0406",
+      "user_password": "123456789",
+      "user_create_at": "",
+      "user_update_at": "",
+      "user_sex": ""
+    },
+    {
+      "user_id": 6,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "密思創意行銷股份有限公司",
+      "user_email": "missgameservices@gmail.com",
+      "user_bhd": "",
+      "user_tel": "0986617820",
+      "user_password": "Abcd9012",
+      "user_create_at": "",
+      "user_update_at": "",
+      "user_sex": ""
+    },
+    {
+      "user_id": 8,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "濤濤來工作室",
+      "user_email": "ttlescapestudio@gmail.com",
+      "user_bhd": "",
+      "user_tel": "0912850770",
+      "user_password": "123456789",
+      "user_create_at": "",
+      "user_update_at": "",
+      "user_sex": ""
+    },
+    {
+      "user_id": 10,
+      "user_role": "會員",
+      "user_reg_method": "信箱",
+      "user_name": "Toung",
+      "user_email": "spexial110@gmail.com",
+      "user_bhd": "2001/05/07",
+      "user_tel": "0912345788",
+      "user_password": "202502051",
+      "user_create_at": "",
+      "user_update_at": "",
+      "user_sex": "女"
+    },
+    {
+      "user_id": 11,
+      "user_role": "會員",
+      "user_reg_method": "信箱",
+      "user_name": "hua",
+      "user_email": "a1113791@gmail.com",
+      "user_bhd": "1996/01/08",
+      "user_tel": "0912345678",
+      "user_password": "Efgh1234",
+      "user_create_at": "",
+      "user_update_at": "",
+      "user_sex": "女"
+    }
+  ],
+  "storesData": [
+    {
+      "store_id": 1,
+      "user_id": 1,
+      "store_contact": "吳先生",
+      "store_method": "統一編號",
+      "store_tax_id": "54292497",
+      "store_documentation": "",
+      "store_self_tel": "(02)8787-4387",
+      "store_self_address": "台北市松山區南京東路五段399號9樓",
+      "store_website": "https://stupidparticle.com/",
+      "store_name": "笨蛋工作室密室逃脫",
+      "store_address": "台北市松山區南京東路五段399號9樓",
+      "store_email": "stupidparticle@gmail.com",
+      "store_tel": "(02)8787-4387",
+      "store_open_time": "10:30-21:30",
+      "user_name": "笨蛋工作室",
+      "user_email": "stupidparticle@gmail.com",
+      "user_password": "Abcd1234"
+    },
+    {
+      "store_id": 2,
+      "user_id": 2,
+      "store_contact": "姚先生",
+      "store_method": "統一編號",
+      "store_tax_id": "31878362",
+      "store_documentation": "",
+      "store_self_tel": "0928007799",
+      "store_self_address": "臺北市中山區集英里中山北路2段112號7樓之4",
+      "store_website": "https://funlockstudio.com/",
+      "store_name": "FunLock工作室",
+      "store_address": "台北市中山區中山北路2段112號7樓之4",
+      "store_email": "funlockstudio@gmail.com",
+      "store_tel": "0928007799",
+      "store_open_time": "10:00-21:00",
+      "user_name": "全勝創意工作室",
+      "user_email": "funlockstudio@gmail.com",
+      "user_password": "123456789"
+    },
+    {
+      "store_id": 3,
+      "user_id": 3,
+      "store_contact": "沈緯世",
+      "store_method": "統一編號",
+      "store_tax_id": "90898646",
+      "store_documentation": "",
+      "store_self_tel": "0973113841",
+      "store_self_address": "台北市中正區延平南路21號4樓",
+      "store_website": "https://boowork.boostime.me/",
+      "store_name": "不想工作室",
+      "store_address": "台北市中正區延平南路21號4樓",
+      "store_email": "ricelo0517@gmail.com",
+      "store_tel": "0973113841",
+      "store_open_time": "10:00-21:00",
+      "user_name": "米邏創意有限公司",
+      "user_email": "ricelo0517@gmail.com",
+      "user_password": "Abcd5678"
+    },
+    {
+      "store_id": 4,
+      "user_id": 4,
+      "store_contact": "茆小姐",
+      "store_method": "統一編號",
+      "store_tax_id": "43692242",
+      "store_documentation": "",
+      "store_self_tel": "0905259817",
+      "store_self_address": "臺北市萬華區菜園里康定路64號2樓",
+      "store_website": "https://thekingpork.com/",
+      "store_name": "頂級豬排遊戲工作室",
+      "store_address": "台北市萬華區康定路64號二樓",
+      "store_email": "thekingpork@gmail.com",
+      "store_tel": "0905-259-817",
+      "store_open_time": "10:00-22:00",
+      "user_name": "頂級創意行銷股份有限公司",
+      "user_email": "thekingpork@gmail.com",
+      "user_password": "123456789"
+    },
+    {
+      "store_id": 5,
+      "user_id": 5,
+      "store_contact": "鄭先生",
+      "store_method": "統一編號",
+      "store_tax_id": "90549850",
+      "store_documentation": "",
+      "store_self_tel": "(04)2223-0406",
+      "store_self_address": "臺中市中區光復里平等街32號",
+      "store_website": "https://www.taog-game.com/",
+      "store_name": "神不在場實境遊戲",
+      "store_address": "台南市永康區中華路1-2號3樓",
+      "store_email": "waldner9527@taog-game.com",
+      "store_tel": "(06)3120-792",
+      "store_open_time": "10:00-22:00"
+    },
+    {
+      "store_id": 6,
+      "user_id": 6,
+      "store_contact": "蕭小姐",
+      "store_method": "統一編號",
+      "store_tax_id": "54346276",
+      "store_documentation": "",
+      "store_self_tel": "0986617820",
+      "store_self_address": "臺北市萬華區萬壽里漢中街24號1樓",
+      "store_website": "https://www.missgame.com.tw/",
+      "store_name": "MissGAME",
+      "store_address": "臺北市萬華區萬壽里漢中街24號1樓",
+      "store_email": "missgameservices@gmail.com",
+      "store_tel": "0986617820",
+      "store_open_time": "11:00-23:00",
+      "user_name": "密思創意行銷股份有限公司",
+      "user_email": "missgameservices@gmail.com",
+      "user_password": "Abcd9012"
+    },
+    {
+      "store_id": 8,
+      "user_id": 8,
+      "store_contact": "楊先生",
+      "store_method": "統一編號",
+      "store_tax_id": "50525142",
+      "store_documentation": "",
+      "store_self_tel": "0912850770",
+      "store_self_address": "新竹市東區頂竹里東南街96巷5弄7號1樓",
+      "store_website": "https://www.ttlescapestudio.com/",
+      "store_name": "濤濤來工作室",
+      "store_address": "新竹市東南街96巷5弄7號",
+      "store_email": "ttlescapestudio@gmail.com",
+      "store_tel": "0912850770",
+      "store_open_time": "13:00–22:00",
+      "user_name": "濤濤來工作室",
+      "user_email": "ttlescapestudio@gmail.com",
+      "user_password": "123456789"
+    }
+  ],
+  "gamesData": [
+    {
+      "game_id": 1,
+      "store_id": 5,
+      "game_name": "童話的繼承者",
+      "game_address": "台南市永康區中華路1-2號3樓",
+      "game_tel": "(06)3120-792",
+      "game_time": 120,
+      "game_minNum_Players": 2,
+      "game_maxNum_Players": 4,
+      "game_dif_tag": 1,
+      "game_main_tag1": 7,
+      "game_main_tag2": 4,
+      "game_score": 4.6,
+      "game_img": [
+        "https://www.taog-game.com/wp-content/uploads/MB3_poster1.4m-scaled-700x990.jpg",
+        "https://www.taog-game.com/wp-content/uploads/MB3_poster1.4m-1448x2048.jpg"
+      ],
+      "game_isLimited": 0,
+      "game_start_date": "2020-03-16",
+      "game_end_date": "",
+      "game_info": "近日越來越多魔書發生異常，紛紛出現在人類世界，負責維持童話秩序的 『童話維護局 』，立即派遣你們前往調查，卻發現魔書無法開啟，只能從一旁的破洞進入調查。探員們，為了維護童話的秩序，再次進入魔書吧！",
+      "game_remark": "",
+      "game_score_num": 486,
+      "game_isStock": 1,
+      "game_website": "https://www.taog-game.com/%e7%ab%a5%e8%a9%b1%e7%9a%84%e7%b9%bc%e6%89%bf%e8%80%85/"
+    },
+    {
+      "game_id": 13,
+      "store_id": 4,
+      "game_name": "鱗屋之中",
+      "game_address": "台北市萬華區康定路62號9樓",
+      "game_tel": "0905-259817",
+      "game_time": 100,
+      "game_minNum_Players": 2,
+      "game_maxNum_Players": 6,
+      "game_dif_tag": 2,
+      "game_main_tag1": 2,
+      "game_main_tag2": 6,
+      "game_score": 4.9,
+      "game_img": [
+        "https://www.thekingpork.com/data/pic/%E5%88%97%E8%A1%A8%E5%9C%96%E7%89%87.jpg"
+      ],
+      "game_isLimited": 0,
+      "game_start_date": "2022-06-30",
+      "game_end_date": "",
+      "game_info": "崖邊那棟樓房，磚瓦整齊鱗列，偶爾閃耀波光水紋，當地人稱這奇異樓房為──鱗屋。朝鱗屋望去，彷彿有股力量牽動著你們隱密的心緒，深入探索，如何在重重迷霧間選擇出可行之路呢？",
+      "game_remark": "",
+      "game_score_num": 2444,
+      "game_isStock": 1,
+      "game_website": "https://www.thekingpork.com/?action=game_detail&id=9",
+      "store_name": "頂級豬排遊戲工作室",
+      "store_email": "thekingpork@gmail.com",
+      "game_dif_tagname": "中度玩家",
+      "game_main_tag1name": "機關重重",
+      "game_main_tag2name": "謎題邏輯"
+    },
+    {
+      "game_id": 14,
+      "store_id": 4,
+      "game_name": "逃出補習班2.0",
+      "game_address": "台北市萬華區峨嵋街123號-3 3樓",
+      "game_tel": "0905-259817",
+      "game_time": 100,
+      "game_minNum_Players": 4,
+      "game_maxNum_Players": 10,
+      "game_dif_tag": 2,
+      "game_main_tag1": 7,
+      "game_main_tag2": 11,
+      "game_score": 4.5,
+      "game_img": [
+        "https://www.thekingpork.com/data/pic/%E8%A3%9C-%E6%96%B9.jpg"
+      ],
+      "game_isLimited": 0,
+      "game_start_date": "2020-07-15",
+      "game_end_date": "",
+      "game_info": "在以嚴格著稱的ARMED SCHOOL，為快速提升學員的考試能力，提供24小時的自習環境，唯有模擬考試中高分者才能離開。已經被關在補習班第N天，被嚴格環境折磨到不成人形的學員們，能夠不顧一切的逃出補習班嗎?",
+      "game_remark": "",
+      "game_score_num": 742,
+      "game_isStock": 1,
+      "game_website": "https://escape.bar/game/9970",
+      "store_name": "頂級豬排遊戲工作室",
+      "store_email": "thekingpork@gmail.com",
+      "game_dif_tagname": "中度玩家",
+      "game_main_tag1name": "輕鬆歡樂",
+      "game_main_tag2name": "團隊合作"
+    },
+    {
+      "game_id": 15,
+      "store_id": 4,
+      "game_name": "鬼靈精怪店",
+      "game_address": "台北市萬華區康定路62號4樓",
+      "game_tel": "0905-259817",
+      "game_time": 40,
+      "game_minNum_Players": 2,
+      "game_maxNum_Players": 4,
+      "game_dif_tag": 1,
+      "game_main_tag1": 7,
+      "game_main_tag2": 5,
+      "game_score": 4.7,
+      "game_img": [
+        "https://www.thekingpork.com/data/pic/%E9%AC%BC%E9%9D%88%E7%B2%BE%E6%80%AA%E5%BA%97%E5%88%97%E8%A1%A8.jpg"
+      ],
+      "game_isLimited": 0,
+      "game_start_date": "2020-06-01",
+      "game_end_date": "",
+      "game_info": "死神見習生的年度結算迫在眉睫，平時不努力的小小鬼差們臨時抱鬼腳，想找到傳說中的鬼靈精怪店。店內商品包羅萬象，只要能找到門路肯定有救。鬼界中的小小奇幻生物會幫你一把嗎",
+      "game_remark": "",
+      "game_score_num": 865,
+      "game_isStock": 1,
+      "game_website": "https://www.thekingpork.com/?action=game_detail&id=8",
+      "store_name": "頂級豬排遊戲工作室",
+      "store_email": "thekingpork@gmail.com",
+      "game_dif_tagname": "新手入門",
+      "game_main_tag1name": "輕鬆歡樂",
+      "game_main_tag2name": "互動操作"
+    },
+    {
+      "game_id": 16,
+      "store_id": 4,
+      "game_name": "月夜獨嚎",
+      "game_address": "台北市萬華區康定路62號4樓",
+      "game_tel": "0905-259817",
+      "game_time": 100,
+      "game_minNum_Players": 4,
+      "game_maxNum_Players": 10,
+      "game_dif_tag": 2,
+      "game_main_tag1": 6,
+      "game_main_tag2": 4,
+      "game_score": 4.6,
+      "game_img": [
+        "https://www.thekingpork.com/data/pic/%E6%AD%A3%E6%96%B9%E5%9C%96.png"
+      ],
+      "game_isLimited": 0,
+      "game_start_date": "2019-08-01",
+      "game_end_date": "",
+      "game_info": "寧靜僻世的犬神村究竟發生什麼事情？每逢月圓之夜，便會遭到不明異獸襲擊。村民高額懸賞獵人，希望能永除後患， 但語帶保留的委託者似乎身懷秘密⋯每逢月圓便出現的巨獸，欲言又止的村民，遍布四周的鋸齒葉植物月光下散發惡意，一個偏遠的村落—犬神村。 對你們發出了委託，只要去除野獸就可以大量的獎賞，但奇怪的是事情似乎不只這些⋯",
+      "game_remark": "",
+      "game_score_num": 886,
+      "game_isStock": 1,
+      "game_website": "https://www.thekingpork.com/?action=game_detail&id=7",
+      "store_name": "頂級豬排遊戲工作室",
+      "store_email": "thekingpork@gmail.com",
+      "game_dif_tagname": "中度玩家",
+      "game_main_tag1name": "謎題邏輯",
+      "game_main_tag2name": "場景逼真"
+    },
+    {
+      "game_id": 17,
+      "store_id": 4,
+      "game_name": "SHINOBI忍",
+      "game_address": "台北市萬華區康定路62號9樓",
+      "game_tel": "0905-259817",
+      "game_time": 100,
+      "game_minNum_Players": 4,
+      "game_maxNum_Players": 10,
+      "game_dif_tag": 2,
+      "game_main_tag1": 2,
+      "game_main_tag2": 4,
+      "game_score": 4.6,
+      "game_img": [
+        "https://www.thekingpork.com/data/pic/4pv.png"
+      ],
+      "game_isLimited": 0,
+      "game_start_date": "2018-04-21",
+      "game_end_date": "",
+      "game_info": "奉命偽裝成觀光客潛入忍者聖地盜取滅世卷軸的夥伴們，你們已被鎮守在此處的忍者長老們團團包圍了，拿起手邊的忍具武器、學會施展忍術，想辦法殺出重圍吧!",
+      "game_remark": "",
+      "game_score_num": 797,
+      "game_isStock": 1,
+      "game_website": "https://www.thekingpork.com/?action=game_detail&id=5",
+      "store_name": "頂級豬排遊戲工作室",
+      "store_email": "thekingpork@gmail.com",
+      "game_dif_tagname": "中度玩家",
+      "game_main_tag1name": "機關重重",
+      "game_main_tag2name": "場景逼真"
+    },
+    {
+      "game_id": 18,
+      "store_id": 8,
+      "game_name": "晴天娃娃",
+      "game_address": "新竹市東南街96巷5弄7號",
+      "game_tel": "0912-850770",
+      "game_time": 150,
+      "game_minNum_Players": 4,
+      "game_maxNum_Players": 6,
+      "game_dif_tag": 2,
+      "game_main_tag1": 4,
+      "game_main_tag2": 3,
+      "game_score": 4.9,
+      "game_img": [
+        "https://static.wixstatic.com/media/8b05f0_4de2bce304444616a3a1b9766a75eceb~mv2.png/v1/fill/w_440,h_284,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%E6%99%B4%E5%A4%A9%E5%A8%83%E5%A8%831440_960.png"
+      ],
+      "game_isLimited": 0,
+      "game_start_date": "2023-04-01",
+      "game_end_date": "",
+      "game_info": "陰暗詭譎的待售老舊公寓，三組互不相識、各有目的的幾位訪客同時赴約前來，但…房仲呢? 等了這麼久還沒出現!看房人士、房仲同事、靈異社社長…今天，注定會是個不平靜的夜晚…「你們…也要一起成為晴天娃娃嗎？」",
+      "game_remark": "",
+      "game_score_num": 1518,
+      "game_isStock": 1,
+      "game_website": "https://booking.ttlescapestudio.com/activities/dollhouse",
+      "store_name": "濤濤來工作室",
+      "store_email": "ttlescapestudio@gmail.com",
+      "game_dif_tagname": "中度玩家",
+      "game_main_tag1name": "場景逼真",
+      "game_main_tag2name": "劇情厲害"
+    }
+  ],
+  "pricesData": [
+    {
+      "price_id": 1,
+      "game_id": 1,
+      "price_is_difference": 1,
+      "price_count": 1,
+      "price_day_type": "weekend",
+      "price_mix": 2400,
+      "price_people": "2-4人"
+    },
+    {
+      "price_id": 2,
+      "game_id": 1,
+      "price_is_difference": 1,
+      "price_count": 2,
+      "price_day_type": "weekday",
+      "price_mix": 2000,
+      "price_people": "2-4人"
+    }
+  ],
+  "commentsData": [
+    {
+      "comment_id": 1,
+      "user_id": 10,
+      "game_id": 1,
+      "comment_isSpoilered": true,
+      "coment_content": "真好玩真好玩",
+      "coment_star": 4.8,
+      "commet_played_time": "2025-02-01",
+      "comment_isPass": true
+    }
+  ],
+  "groupsData": [
+    {
+      "group_id": 1,
+      "user_id": 12,
+      "game_id": 1,
+      "game_name": "童話的繼承者",
+      "game_address": "台南市永康區中華路1-2號3樓",
+      "group_end_at": "2025-02-05",
+      "group_active_date": "2025-02-16",
+      "group_channel": "abc.discord.com",
+      "group_philosophy": "專業打醬油團，好玩就好逃脫隨意",
+      "group_noob": true,
+      "group_cancel": false,
+      "group_member": "4",
+      "group_participants": [],
+      "group_isSuccessful": true,
+      "game_dif_tagname": 2,
+      "game_main_tag1name": 11,
+      "game_main_tag2name": 6
+    }
+  ]
+}
