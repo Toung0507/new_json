@@ -1,9 +1,46 @@
 const { exec } = require('child_process'); // 引入 exec 用來執行 shell 命令
-// 切換到 db 分支並抓取最新 db.json
-function switchToDbBranchAndFetch() {
+// 設定遠端 repository 並開始流程
+function setupRemoteAndFetch() {
+    const GITHUB_USERNAME = process.env.GITHUB_USERNAME; // 你的 GitHub 使用者名稱
+    const REPO_NAME = process.env.REPO_NAME; // 你的 Repo 名稱
+    const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // 讀取 GitHub Token (確保在 Render 環境變數裡有設置)
+    const remoteUrl = `https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/${GITHUB_USERNAME}/${REPO_NAME}.git`;
+
+    if (!GITHUB_TOKEN) {
+        console.error("GITHUB_TOKEN is not set!");
+        return;
+    }
+
+    // 檢查是否已有遠端 origin，若無則新增
+    exec('git remote -v', (error, stdout, stderr) => {
+        if (error) {
+            console.error('Error checking remote:', error);
+            return;
+        }
+
+        if (!stdout.includes("origin")) {
+            console.log('Adding remote origin...');
+            exec(`git remote add origin ${remoteUrl}`, (error, stdout, stderr) => {
+                if (error) {
+                    console.error('Error adding remote:', error);
+                    return;
+                }
+                console.log('Remote origin added successfully.');
+                // 設置完成後執行 fetch 操作
+                fetchAndProceed();
+            });
+        } else {
+            console.log('Remote origin already exists.');
+            fetchAndProceed();
+        }
+    });
+}
+
+// 抓取遠端資料並繼續後續操作
+function fetchAndProceed() {
     console.log('Fetching latest branches from origin...');
 
-    // 先抓取遠端的資料
+    // 先抓取遠端資料
     exec('git fetch origin', (error, stdout, stderr) => {
         if (error) {
             console.error('Error fetching from origin:', error);
@@ -52,9 +89,7 @@ function fetchDbJson() {
                 console.error('Error reading db.json:', error);
                 return;
             }
-            // console.log('db.json content:', stdout);  // 顯示 db.json 內容
 
-            // 進行 Git 操作
             checkGitStatus();
         });
     });
@@ -82,57 +117,7 @@ function checkGitStatus() {
 
 // 提交並推送變更
 function commitAndPushChanges() {
-    const GITHUB_USERNAME = process.env.GITHUB_USERNAME; // 你的 GitHub 使用者名稱
-    const REPO_NAME = process.env.REPO_NAME; // 你的 Repo 名稱
-    const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // 讀取 GitHub Token (確保在 Render 環境變數裡有設置)
-    const user_email = process.env.GITHUB_EMAIL; // user.email
-    const user_name = process.env.GITHUB_NAME; // user.name
-
-    if (!GITHUB_TOKEN) {
-        console.error("GITHUB_TOKEN is not set!");
-        return;
-    }
-    const remoteUrl = `https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/${GITHUB_USERNAME}/${REPO_NAME}.git`;
-
-    // 設定使用者名稱和電子郵件
-    exec(`git config --global user.email "${user_email}"`, (error) => {
-        if (error) {
-            console.error('Error setting email:', error);
-            return;
-        }
-        exec(`git config --global user.name "${user_name}"`, (error) => {
-            if (error) {
-                console.error('Error setting username:', error);
-                return;
-            }
-
-            // 檢查 remote 是否存在
-            exec('git remote -v', (error, stdout) => {
-                if (error) {
-                    console.error('Error checking remote:', error);
-                    return;
-                }
-                if (!stdout.includes("origin")) {
-                    exec(`git remote add origin ${remoteUrl}`, (error) => {
-                        if (error) {
-                            console.error('Error adding remote:', error);
-                            return;
-                        }
-                        console.log('Remote added successfully.');
-                        pushChanges();
-                    });
-                } else {
-                    console.log('Remote exists.');
-                    pushChanges();
-                }
-            });
-        });
-    });
-}
-
-// 將變更推送到 GitHub
-function pushChanges() {
-    console.log('Pushing changes to db branch...');
+    console.log('Committing and pushing changes to db branch...');
 
     exec('git add db.json', (error) => {
         if (error) {
@@ -157,5 +142,6 @@ function pushChanges() {
     });
 }
 
+
 // 匯出函式
-module.exports = { switchToDbBranchAndFetch, fetchDbJson, checkGitStatus, commitAndPushChanges, pushChanges };
+module.exports = { setupRemoteAndFetch, fetchAndProceed, fetchDbJson, checkGitStatus, commitAndPushChanges };
