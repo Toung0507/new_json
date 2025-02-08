@@ -50,17 +50,14 @@ function pushToRepo() {
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // 讀取 GitHub Token (確保在 Render 環境變數裡有設置)
     const user_email = process.env.GITHUB_EMAIL; // user.email
     const user_name = process.env.GITHUB_NAME; // user.name
-    console.log(user_email, user_name);
 
     if (!GITHUB_TOKEN) {
         console.error("GITHUB_TOKEN is not set!");
         return;
     }
-
     const remoteUrl = `https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/${GITHUB_USERNAME}/${REPO_NAME}.git`;
 
     // 設定使用者名稱和電子郵件
-    /*
     exec(`git config --global user.email "${user_email}"`, (error) => {
         if (error) {
             console.error('Error setting email:', error);
@@ -94,7 +91,6 @@ function pushToRepo() {
             });
         });
     });
-    */
 }
 
 // 提交並推送變更
