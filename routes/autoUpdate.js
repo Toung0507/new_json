@@ -96,14 +96,24 @@ function pushToRepo() {
 // 提交並推送變更
 function commitAndPushChanges() {
     console.log('checkout branch');
-    exec('git branch', (error, stdout) => {
+
+    exec('git fetch origin', (error, stdout) => {
         if (error) {
-            console.error('Error branch', error);
+            console.error('fetch error ', error);
             return;
         }
         // console.log('Changes pushed successfully:', stdout);
-        console.log('branch', stdout);
+        // console.log('branch', stdout);
+        exec('git branch -r', (error, stdout) => {
+            if (error) {
+                console.error('fetch branch error ', error);
+                return;
+            }
+            // console.log('Changes pushed successfully:', stdout);
+            console.log('all branch', stdout);
+        });
     });
+
     /*
     // console.log('Switching to main branch...');
     console.log('Switching to db branch...');
