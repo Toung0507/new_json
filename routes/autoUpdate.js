@@ -100,6 +100,10 @@ async function pushToRepo() {
 
             await exec('git push origin db'); // 推送至遠端 db 分支
             console.log('Push ok');
+
+            await exec('git checkout main'); //轉回去看首頁會不會出現
+            console.log('swtich back main');
+
         } else {
             console.log('No changes detected, skipping commit');
         }
