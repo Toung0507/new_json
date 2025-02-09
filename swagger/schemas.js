@@ -411,3 +411,55 @@
  *           description: "密室難度名稱"
  */
 
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     groupsData:
+ *       type: object
+ *       properties:
+ *         group_id:
+ *           type: integer
+ *           description: "揪團 ID"
+ *         user_id:
+ *           type: integer
+ *           description: "主揪 ID"
+ *         game_id:
+ *           type: integer
+ *           description: "遊戲 ID"
+ *         game_name:
+ *           type: string
+ *           description: "密室名稱"
+ *         game_address:
+ *           type: string
+ *           description: "活動地點"
+ *         group_end_at:
+ *           type: string
+ *           description: "揪團截止日"
+ *         group_active_date:
+ *           type: string
+ *           description: "遊玩日期"
+ *         group_channel:
+ *           type: string
+ *           description: "揪團聯絡方式"
+ *         group_philosophy:
+ *           type: string
+ *           description: "揪團理念"
+ *         group_noob:
+ *           type: boolean
+ *           description: "適合新手"
+ *         group_cancel:
+ *           type: boolean
+ *           description: "揪團取消 (T/F)"
+ *         group_member:
+ *           type: string
+ *           description: "人數"
+ *         group_participants:
+ *           type: array
+ *           items:
+ *             type: string
+ *           description: "揪團參與者名單"
+ *         group_isSuccessful:
+ *           type: boolean
+ *           description: "是否遊玩完成"
+ */

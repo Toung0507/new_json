@@ -17,8 +17,19 @@ const swaggerOptions = {
             version: '1.0.0',
             description: '專題使用的API文件'
         },
-        components: { schemas }
+        components: { schemas },
+        tags: [
+            { name: "會員相關", description: "可傳入 / 刪除 / 修改 會員資料" },
+            { name: "店家相關", description: "可傳入 / 刪除 / 修改 店家資料" },
+            { name: "密室相關", description: "可傳入 / 刪除 / 修改 密室資料" },
+            { name: "價格相關", description: "可傳入 / 刪除 / 修改 價格資料" },
+            { name: "評論相關", description: "可傳入 / 刪除 / 修改 評論資料" },
+            { name: "揪團相關", description: "可傳入 / 刪除 / 修改 揪團資料" },
+            { name: "揪團相關", description: "可傳入 / 刪除 / 修改 揪團資料" },
+            { name: "固定資料", description: "密室難度標籤跟分類標籤" },
+        ]
     },
+
     apis: ['./swagger/*.js'] //相關文件設定都在此資料夾下，一個檔案是一種tag分類
 };
 const swaggerDocs = swaggerJsdoc(swaggerOptions);
@@ -30,7 +41,7 @@ const deleteHandler = require("./routes/deleteHandler")(router, router.db);    /
 const patchHandler = require("./routes/patchHandler")(router, router.db);      // 處理PATCH
 const tableExistsMiddleware = require("./routes/isTableExists")(router);       // 檢查路徑的TABLE是否存在
 const completeTables = require("./routes/completeTables")(router);             // 完善資料表的內容 > 將有外來鍵的資料所需資料放入原資料表
-const { pushToRepo } = require('./routes/autoUpdate');                // 自動上傳最新版db
+const { pushToRepo } = require('./routes/autoUpdate');                         // 自動上傳最新版db
 
 // 使用 middleware
 server.use(middlewares);

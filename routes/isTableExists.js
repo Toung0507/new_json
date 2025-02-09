@@ -1,9 +1,9 @@
 module.exports = (router) => {
     return (req, res, next) => {
         const { tableName, subTable } = req.params;
+        // console.log(`檢查table是否存在的參數 ${tableName} ${subTable} `);
         const db = router.db;
         // console.log('----------開頭開頭----------');
-        console.log(`檢查table是否存在的參數 ${tableName} ${subTable} `);
 
         let errors = [];
 

@@ -1,7 +1,7 @@
 module.exports = (router, db) => {
     return (req, res, next) => {
         const { tableName, primaryKey, subTable } = req.params;
-        console.log(`GET參數 ${tableName} ${primaryKey} ${subTable} `);
+        // console.log(`GET參數 ${tableName} ${primaryKey} ${subTable} `);
 
         // 設定自定義主鍵
         const primaryKeyFields = {

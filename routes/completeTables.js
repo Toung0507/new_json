@@ -1,7 +1,7 @@
 module.exports = (router) => {
     return (req, res, next) => {
         const { tableName, primaryKey, subTable } = req.params;
-        console.log(`補全的參數 ${tableName} ${primaryKey} ${subTable} `);
+        // console.log(`補全的參數 ${tableName} ${primaryKey} ${subTable} `);
         const db = router.db;
         const filteredData = res.locals.filteredData || null;
         // console.log('有無資料傳入：', filteredData);
