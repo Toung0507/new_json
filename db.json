@@ -582,6 +582,31 @@
       "game_score_num": 271,
       "game_isStock": 1,
       "game_website": "https://www.taog-game.com/%E5%A4%B1%E8%90%BD%E7%9A%84%E9%9A%95%E7%9F%B3%E7%A5%9E%E6%AE%BF/"
+    },
+    {
+      "game_id": 7,
+      "store_id": 5,
+      "game_name": "重返糖果屋",
+      "game_address": "台中市中區平等街32號",
+      "game_tel": "(04)2223-0406",
+      "game_time": 90,
+      "game_minNum_Players": 2,
+      "game_maxNum_Players": 4,
+      "game_dif_tag": 1,
+      "game_main_tag1": 4,
+      "game_main_tag2": 7,
+      "game_score": 4.6,
+      "game_img": [
+        "https://www.taog-game.com/wp-content/uploads/%E9%87%8D%E8%BF%94%E7%B3%96%E6%9E%9C%E5%B1%8B-A4.png"
+      ],
+      "game_isLimited": 0,
+      "game_start_date": "2024-12-28",
+      "game_end_date": "",
+      "game_info": "漢賽爾與葛麗特逃出糖果屋後，本應過上平凡的生活。 然而，葛麗特找上童話維護局，表示漢賽爾陷入了著魔般的執念，不斷堅稱糖果屋在呼喚他，最終神秘失踪。 接到任務的你們前往糖果屋調查，卻在路途中遭到襲擊。當再次醒來時，發現自己被困在熾熱的火爐中，與故事中女巫被燒死的情況如出一轍…糖果屋的故事開始失控，想辦法保命並揭開真相吧！",
+      "game_remark": "",
+      "game_score_num": 55,
+      "game_isStock": 1,
+      "game_website": "https://www.taog-game.com/%E5%8F%B0%E4%B8%AD-%E9%87%8D%E8%BF%94%E7%B3%96%E6%9E%9C%E5%B1%8B/?utm_source=web"
     }
   ],
   "pricesData": [
