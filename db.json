@@ -627,6 +627,60 @@
       "price_day_type": "weekday",
       "price_mix": 2000,
       "price_people": "2-4人"
+    },
+    {
+      "price_id": 6,
+      "game_id": 5,
+      "price_is_difference": 1,
+      "price_count": 1,
+      "price_day_type": "weekend",
+      "price_mix": 4000,
+      "price_people": "/場"
+    },
+    {
+      "price_id": 7,
+      "game_id": 5,
+      "price_is_difference": 1,
+      "price_count": 2,
+      "price_day_type": "weekday",
+      "price_mix": 3200,
+      "price_people": "/場"
+    },
+    {
+      "price_id": 8,
+      "game_id": 6,
+      "price_is_difference": 1,
+      "price_count": 1,
+      "price_day_type": "weekend",
+      "price_mix": 4800,
+      "price_people": "/場"
+    },
+    {
+      "price_id": 9,
+      "game_id": 6,
+      "price_is_difference": 1,
+      "price_count": 2,
+      "price_day_type": "weekday",
+      "price_mix": 4000,
+      "price_people": "/場"
+    },
+    {
+      "price_id": 10,
+      "game_id": 7,
+      "price_is_difference": 1,
+      "price_count": 1,
+      "price_day_type": "weekend",
+      "price_mix": 1800,
+      "price_people": "/場"
+    },
+    {
+      "price_id": 11,
+      "game_id": 7,
+      "price_is_difference": 1,
+      "price_count": 2,
+      "price_day_type": "weekday",
+      "price_mix": 1500,
+      "price_people": "/場"
     }
   ],
   "commentsData": [
