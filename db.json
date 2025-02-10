@@ -13,8 +13,8 @@
       "difficulty_name": "重度解謎"
     },
     {
-      "difficulty_name": "哀莫大於心死25",
-      "difficulty_id": 8
+      "difficulty_name": "哀莫大於心死3",
+      "difficulty_id": 7
     }
   ],
   "propertys_fixed_Data": [
@@ -532,6 +532,31 @@
       "game_dif_tagname": "中度玩家",
       "game_main_tag1name": "場景逼真",
       "game_main_tag2name": "劇情厲害"
+    },
+    {
+      "game_id": 5,
+      "store_id": 5,
+      "game_name": "失落的隕石神殿",
+      "game_address": "台南市永康區中華路1-2號3樓",
+      "game_tel": "(06)3120-792",
+      "game_time": 120,
+      "game_minNum_Players": 7,
+      "game_maxNum_Players": 10,
+      "game_dif_tag": 2,
+      "game_main_tag1": 11,
+      "game_main_tag2": 2,
+      "game_score": 4.3,
+      "game_img": [
+        "https://www.taog-game.com/wp-content/uploads/%E5%A4%B1%E8%90%BD%E7%9A%84%E9%9A%95%E7%9F%B3%E7%A5%9E%E6%AE%BFnewlogo650px.jpg"
+      ],
+      "game_isLimited": 0,
+      "game_start_date": "2014-10-01",
+      "game_end_date": "",
+      "game_info": "最近在撒哈拉沙漠發生一起隕石撞擊事件！隕石坑洞中竟出現一個古埃及神殿入口… 神不在場的探險隊，尋找未知踏上旅程吧！ ",
+      "game_remark": "",
+      "game_score_num": 380,
+      "game_isStock": 1,
+      "game_website": "https://www.taog-game.com/%E5%A4%B1%E8%90%BD%E7%9A%84%E9%9A%95%E7%9F%B3%E7%A5%9E%E6%AE%BF/"
     }
   ],
   "pricesData": [
