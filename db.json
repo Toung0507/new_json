@@ -557,6 +557,31 @@
       "game_score_num": 380,
       "game_isStock": 1,
       "game_website": "https://www.taog-game.com/%E5%A4%B1%E8%90%BD%E7%9A%84%E9%9A%95%E7%9F%B3%E7%A5%9E%E6%AE%BF/"
+    },
+    {
+      "game_id": 6,
+      "store_id": 5,
+      "game_name": "失落的隕石神殿",
+      "game_address": "台中市中區平等街32號",
+      "game_tel": "(04)2223-0406",
+      "game_time": 120,
+      "game_minNum_Players": 7,
+      "game_maxNum_Players": 10,
+      "game_dif_tag": 2,
+      "game_main_tag1": 2,
+      "game_main_tag2": 4,
+      "game_score": 4.6,
+      "game_img": [
+        "https://www.taog-game.com/wp-content/uploads/%E5%A4%B1%E8%90%BD%E7%9A%84%E9%9A%95%E7%9F%B3%E7%A5%9E%E6%AE%BFnewlogo650px.jpg"
+      ],
+      "game_isLimited": 0,
+      "game_start_date": "2014-10-01",
+      "game_end_date": "",
+      "game_info": "最近在撒哈拉沙漠發生一起隕石撞擊事件！隕石坑洞中竟出現一個古埃及神殿入口… 神不在場的探險隊，尋找未知踏上旅程吧！",
+      "game_remark": "",
+      "game_score_num": 271,
+      "game_isStock": 1,
+      "game_website": "https://www.taog-game.com/%E5%A4%B1%E8%90%BD%E7%9A%84%E9%9A%95%E7%9F%B3%E7%A5%9E%E6%AE%BF/"
     }
   ],
   "pricesData": [
