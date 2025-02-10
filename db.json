@@ -695,25 +695,5 @@
       "comment_isPass": true
     }
   ],
-  "groupsData": [
-    {
-      "group_id": 1,
-      "user_id": 12,
-      "game_id": 1,
-      "game_name": "童話的繼承者",
-      "game_address": "台南市永康區中華路1-2號3樓",
-      "group_end_at": "2025-02-05",
-      "group_active_date": "2025-02-16",
-      "group_channel": "abc.discord.com",
-      "group_philosophy": "專業打醬油團，好玩就好逃脫隨意",
-      "group_noob": true,
-      "group_cancel": false,
-      "group_member": "4",
-      "group_participants": [],
-      "group_isSuccessful": true,
-      "game_dif_tagname": 2,
-      "game_main_tag1name": 11,
-      "game_main_tag2name": 6
-    }
-  ]
+  "groupsData": []
 }
