@@ -628,6 +628,29 @@
       "game_score_num": 2906,
       "game_isStock": true,
       "game_website": "https://dream94zz.com/game/anya/"
+    },
+    {
+      "game_id": 25,
+      "store_id": 7,
+      "game_name": "偶像出道",
+      "game_address": "台北市大同區延平北路二段202號3樓",
+      "game_tel": "02-2552-9422",
+      "game_time": 100,
+      "game_minNum_Players": 4,
+      "game_maxNum_Players": 10,
+      "game_dif_tag": 1,
+      "game_main_tag1": 7,
+      "game_main_tag2": 11,
+      "game_score": 4.6,
+      "game_img": "https://i0.wp.com/content.escape.bar/wp-content/uploads/2019/01/banner_%E5%81%B6%E5%83%8F%E5%87%BA%E9%81%93-scaled-e1660672670754.jpg?fit=1200%2C630&ssl=1",
+      "game_isLimited": false,
+      "game_start_date": "2018-06-16",
+      "game_end_date": "",
+      "game_info": "身為一群懷抱星夢的練習生，你們的夢想之路可說是倒楣透頂！\n\n在前往益智節目現場的途中，腳下公車卻傳來爆胎的聲音……這是手上最後一個通告機會，距離直播還有 60 分鐘，如果趕不上，別說出道，就連練習生的資格都沒有了……下了公車，望著遙遠的電視台大樓和路邊破爛的腳踏車…..\n\n什麼挑戰都來吧！今天，一定要成為偶像出道！",
+      "game_remark": "",
+      "game_score_num": 1154,
+      "game_isStock": true,
+      "game_website": "https://dream94zz.com/game/idol-debut/"
     }
   ],
   "pricesData": [
