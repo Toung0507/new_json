@@ -324,6 +324,25 @@
       "user_name": "濤濤來工作室",
       "user_email": "ttlescapestudio@gmail.com",
       "user_password": "123456789"
+    },
+    {
+      "store_id": 7,
+      "user_id": 7,
+      "store_contact": "張先生",
+      "store_method": "統一編號",
+      "store_tax_id": "54649089",
+      "store_documentation": "",
+      "store_self_tel": "(02)2552-9422",
+      "store_self_address": "臺北市大同區大有里延平北路二段202號3樓",
+      "store_website": "https://dream94zz.com/",
+      "store_name": "夢遊王國",
+      "store_address": "台北市大同區延平北路二段202號3樓",
+      "store_email": "zzz@dream94zz.com",
+      "store_tel": "(02)2552-9422",
+      "store_open_time": "09:00-23:00",
+      "user_name": "謎題實境遊戲股份有限公司",
+      "user_email": "zzz@dream94zz.com",
+      "user_password": "123456789"
     }
   ],
   "gamesData": [
