@@ -729,6 +729,32 @@
       "game_score_num": 857,
       "game_isStock": true,
       "game_website": "https://bglock602.simplybook.asia/v2/#book/location/2/service/3/count/1/"
+    },
+    {
+      "game_id": 29,
+      "store_id": 9,
+      "game_name": "暴雨謀殺案",
+      "game_address": "台中市東區東光園路602號",
+      "game_tel": "04-2213-3896",
+      "game_time": 150,
+      "game_minNum_Players": 3,
+      "game_maxNum_Players": 6,
+      "game_dif_tag": 2,
+      "game_main_tag1": 2,
+      "game_main_tag2": 3,
+      "game_score": 4.7,
+      "game_img": [
+        "https://i1.wp.com/content.escape.bar/wp-content/uploads/2022/11/BGLOCK-%E6%9A%B4%E9%9B%A8-03.png?fit=1200%2C630&ssl=1",
+        "https://i1.wp.com/content.escape.bar/wp-content/uploads/2022/11/BGLOCK-%E6%9A%B4%E9%9B%A8-4.png?resize=1024%2C1536&ssl=1"
+      ],
+      "game_isLimited": false,
+      "game_start_date": "2022-11-20",
+      "game_end_date": "",
+      "game_info": "幾個月前，你的妻子在家中遇害身亡。\n警方經過幾個月的調查，卻遲遲沒有進展⋯",
+      "game_remark": "",
+      "game_score_num": 780,
+      "game_isStock": true,
+      "game_website": "https://bglock602.simplybook.asia/v2/#book/location/2/service/2/count/1/"
     }
   ],
   "pricesData": [
