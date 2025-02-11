@@ -579,6 +579,29 @@
       "game_score_num": 3335,
       "game_isStock": true,
       "game_website": "https://dream94zz.com/game/rain/"
+    },
+    {
+      "game_id": 23,
+      "store_id": 7,
+      "game_name": "籠中鳥",
+      "game_address": "台北市大同區延平北路二段202號3樓",
+      "game_tel": "02-2552-9422",
+      "game_time": 100,
+      "game_minNum_Players": 4,
+      "game_maxNum_Players": 10,
+      "game_dif_tag": 2,
+      "game_main_tag1": 9,
+      "game_main_tag2": 8,
+      "game_score": 4.8,
+      "game_img": "https://i0.wp.com/content.escape.bar/wp-content/uploads/2019/01/banner_%E7%B1%A0%E4%B8%AD%E9%B3%A5-scaled-e1660672660207.jpg?fit=1200%2C630&ssl=1",
+      "game_isLimited": false,
+      "game_start_date": "2018-08-03",
+      "game_end_date": "",
+      "game_info": "《籠中鳥》為日本兒童玩遊戲時，會唱的一首童謠。\n\n遊戲時，由一個孩子當「鬼」，閉著眼睛蹲在孩子群中，其他孩子圍成圓圈，邊轉圈邊唱著這首童謠。童謠唱完時，如果「鬼」猜出正背後的人是誰，孩子們會立刻跑開，「鬼」則邊唱《籠中鳥》，邊追向他要抓的人。\n\n一旦被抓到，就要接替「鬼」的位置…\n\n如今，這首童謠不時在你們耳邊響起－『在你身後的人是誰』？",
+      "game_remark": "",
+      "game_score_num": 2942,
+      "game_isStock": true,
+      "game_website": "https://dream94zz.com/game/caged-bird/"
     }
   ],
   "pricesData": [
