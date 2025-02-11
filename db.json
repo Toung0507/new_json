@@ -807,6 +807,32 @@
       "game_score_num": 366,
       "game_isStock": true,
       "game_website": "https://bglock602.simplybook.asia/v2/#book/location/1/service/5/count/1/"
+    },
+    {
+      "game_id": 32,
+      "store_id": 9,
+      "game_name": "守靈人",
+      "game_address": "台中市中區綠川西街59巷2號B1",
+      "game_tel": "",
+      "game_time": 65,
+      "game_minNum_Players": 2,
+      "game_maxNum_Players": 5,
+      "game_dif_tag": 1,
+      "game_main_tag1": 8,
+      "game_main_tag2": 2,
+      "game_score": 3.7,
+      "game_img": [
+        "https://i0.wp.com/content.escape.bar/wp-content/uploads/2024/12/BGLOCK-%E5%AE%88%E9%9D%88%E4%BA%BA-02.png?fit=1200%2C630&ssl=1",
+        "https://i2.wp.com/content.escape.bar/wp-content/uploads/2024/12/BGLOCK-%E5%AE%88%E9%9D%88%E4%BA%BA-01.jpg?resize=819%2C1024&ssl=1"
+      ],
+      "game_isLimited": false,
+      "game_start_date": "2024-12-09",
+      "game_end_date": "",
+      "game_info": "相傳，惡魔會吸食剛死亡、充滿怨恨的靈魂，然後重生。你們是在國外留學的大學生，今日臨時頂替室友，到郊外一座教堂兼職，擔任守靈人的工作，這份工作是要看守死者的亡魂，防止被惡魔奪取…",
+      "game_remark": "",
+      "game_score_num": 96,
+      "game_isStock": true,
+      "game_website": "https://bglock602.simplybook.asia/v2/#book/location/1/service/7/count/1/"
     }
   ],
   "pricesData": [
