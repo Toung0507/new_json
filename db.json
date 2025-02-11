@@ -201,6 +201,19 @@
       "user_create_at": "",
       "user_update_at": "",
       "user_sex": ""
+    },
+    {
+      "user_id": 9,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "BGLOCK",
+      "user_email": "bglock602@gmail.com",
+      "user_bhd": "",
+      "user_tel": "(04)2213-3896",
+      "user_password": "123456789",
+      "user_create_at": "",
+      "user_update_at": "",
+      "user_sex": ""
     }
   ],
   "storesData": [
