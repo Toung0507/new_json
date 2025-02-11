@@ -677,6 +677,32 @@
       "game_score_num": 1573,
       "game_isStock": true,
       "game_website": "https://bglock602.simplybook.asia/v2/#book/location/2/service/1/count/1/"
+    },
+    {
+      "game_id": 27,
+      "store_id": 9,
+      "game_name": "錦衣御行",
+      "game_address": "台中市東區東光園路602號",
+      "game_tel": "04-2213-3896",
+      "game_time": 180,
+      "game_minNum_Players": 4,
+      "game_maxNum_Players": 8,
+      "game_dif_tag": 2,
+      "game_main_tag1": 2,
+      "game_main_tag2": 4,
+      "game_score": 4.9,
+      "game_img": [
+        "https://i0.wp.com/content.escape.bar/wp-content/uploads/2023/10/%E9%80%83%E8%84%AB%E5%90%A7_%E9%8C%A6%E8%A1%A3%E5%BE%A1%E8%A1%8CBANNER.png?fit=1200%2C630&ssl=1",
+        "https://i1.wp.com/content.escape.bar/wp-content/uploads/2023/10/BGLOCK-%E9%8C%A6%E8%A1%A3%E5%BE%A1%E8%A1%8C-01.jpeg?resize=1025%2C1536&ssl=1"
+      ],
+      "game_isLimited": false,
+      "game_start_date": "2023-10-06",
+      "game_end_date": "",
+      "game_info": "你們受遠房親戚之託\n以新任錦衣衛的身分\n前往王宅調查有關傀儡的秘密…\n一場奇幻冒險，就此展開！",
+      "game_remark": "",
+      "game_score_num": 1274,
+      "game_isStock": true,
+      "game_website": "https://bglock602.simplybook.asia/v2/#book/location/2/service/4/count/1/"
     }
   ],
   "pricesData": [
