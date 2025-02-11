@@ -1222,6 +1222,15 @@
       "price_day_type": "weekday",
       "price_mix": 1500,
       "price_people": "/場"
+    },
+    {
+      "price_id": 3,
+      "game_id": 2,
+      "price_is_difference": 0,
+      "price_count": 1,
+      "price_day_type": "",
+      "price_mix": 995,
+      "price_people": "/人"
     }
   ],
   "commentsData": [
