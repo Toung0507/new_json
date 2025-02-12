@@ -2001,6 +2001,15 @@
       "price_day_type": "",
       "price_mix": 499,
       "price_people": "4-5人"
+    },
+    {
+      "price_id": 49,
+      "game_id": 22,
+      "price_is_difference": 1,
+      "price_count": 4,
+      "price_day_type": "weekday",
+      "price_mix": 799,
+      "price_people": "6人"
     }
   ],
   "commentsData": [
