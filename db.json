@@ -1960,4 +1960,77 @@
     {
       "price_id": 78,
       "game_id": 31,
-      "price_is_difference":
+      "price_is_difference": 0,
+      "price_count": 1,
+      "price_day_type": "",
+      "price_mix": 599,
+      "price_people": "2-3人"
+    },
+    {
+      "price_id": 79,
+      "game_id": 31,
+      "price_is_difference": 0,
+      "price_count": 2,
+      "price_day_type": "",
+      "price_mix": 549,
+      "price_people": "4-5人"
+    },
+    {
+      "price_id": 80,
+      "game_id": 31,
+      "price_is_difference": 0,
+      "price_count": 3,
+      "price_day_type": "",
+      "price_mix": 499,
+      "price_people": "6人"
+    },
+    {
+      "price_id": 81,
+      "game_id": 32,
+      "price_is_difference": 0,
+      "price_count": 1,
+      "price_day_type": "",
+      "price_mix": 549,
+      "price_people": "2-3人"
+    },
+    {
+      "price_id": 82,
+      "game_id": 32,
+      "price_is_difference": 0,
+      "price_count": 2,
+      "price_day_type": "",
+      "price_mix": 499,
+      "price_people": "4-5人"
+    }
+  ],
+  "commentsData": [
+    {
+      "comment_id": 1,
+      "user_id": 10,
+      "game_id": 1,
+      "comment_isSpoilered": true,
+      "coment_content": "真好玩真好玩",
+      "coment_star": 4.8,
+      "commet_played_time": "2025-02-01",
+      "comment_isPass": true
+    }
+  ],
+  "groupsData": [
+    {
+      "group_id": 1,
+      "user_id": 12,
+      "game_id": 1,
+      "game_name": "童話的繼承者",
+      "game_address": "台南市永康區中華路1-2號3樓",
+      "group_end_at": "2025-02-05",
+      "group_active_date": "2025-02-16",
+      "group_channel": "abc.discord.com",
+      "group_philosophy": "專業打醬油團，好玩就好逃脫隨意",
+      "group_noob": true,
+      "group_cancel": false,
+      "group_member": "4",
+      "group_participants": [],
+      "group_isSuccessful": true
+    }
+  ]
+}
