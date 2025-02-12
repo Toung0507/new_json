@@ -1776,6 +1776,33 @@
       "price_day_type": "weekend",
       "price_mix": 650,
       "price_people": "6-9人"
+    },
+    {
+      "price_id": 58,
+      "game_id": 23,
+      "price_is_difference": 1,
+      "price_count": 6,
+      "price_day_type": "weekend",
+      "price_mix": 600,
+      "price_people": "10人"
+    },
+    {
+      "price_id": 59,
+      "game_id": 24,
+      "price_is_difference": 0,
+      "price_count": 1,
+      "price_day_type": "",
+      "price_mix": 995,
+      "price_people": "1人"
+    },
+    {
+      "price_id": 60,
+      "game_id": 25,
+      "price_is_difference": 1,
+      "price_count": 1,
+      "price_day_type": "weekday",
+      "price_mix": 750,
+      "price_people": "4-5人"
     }
   ],
   "commentsData": [
