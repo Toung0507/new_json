@@ -151,6 +151,19 @@
             "user_sex": ""
         },
         {
+            "user_id": 7,
+            "user_role": "店家",
+            "user_reg_method": "信箱",
+            "user_name": "夢遊王國",
+            "user_email": "zzz@dream94zz.com",
+            "user_bhd": "",
+            "user_tel": "(02)2550-2922",
+            "user_password": "123456789",
+            "user_create_at": "",
+            "user_update_at": "",
+            "user_sex": ""
+        },
+        {
             "user_id": 8,
             "user_role": "店家",
             "user_reg_method": "信箱",
@@ -158,6 +171,19 @@
             "user_email": "ttlescapestudio@gmail.com",
             "user_bhd": "",
             "user_tel": "0912850770",
+            "user_password": "123456789",
+            "user_create_at": "",
+            "user_update_at": "",
+            "user_sex": ""
+        },
+        {
+            "user_id": 9,
+            "user_role": "店家",
+            "user_reg_method": "信箱",
+            "user_name": "BGLOCK",
+            "user_email": "bglock602@gmail.com",
+            "user_bhd": "",
+            "user_tel": "(04)2213-3896",
             "user_password": "123456789",
             "user_create_at": "",
             "user_update_at": "",
@@ -188,6 +214,32 @@
             "user_create_at": "",
             "user_update_at": "",
             "user_sex": "女"
+        },
+        {
+            "user_id": 12,
+            "user_role": "會員",
+            "user_reg_method": "信箱",
+            "user_name": "Leo",
+            "user_email": "leo2012.c@gmail.com",
+            "user_bhd": "2004/05/31",
+            "user_tel": "0988615140",
+            "user_password": "123456789",
+            "user_create_at": "",
+            "user_update_at": "",
+            "user_sex": "男"
+        },
+        {
+            "user_id": 13,
+            "user_role": "會員",
+            "user_reg_method": "信箱",
+            "user_name": "han",
+            "user_email": "hanchen923@hotmail.com",
+            "user_bhd": "1988/09/23",
+            "user_tel": "0987-654-321",
+            "user_password": "asdfg12345",
+            "user_create_at": "",
+            "user_update_at": "2025/02/07",
+            "user_sex": "男"
         }
     ],
     "storesData": [
@@ -339,6 +391,22 @@
             "user_name": "濤濤來工作室",
             "user_email": "ttlescapestudio@gmail.com",
             "user_password": "123456789"
+        },
+        {
+            "store_id": 9,
+            "user_id": 9,
+            "store_contact": "魏小姐",
+            "store_method": "統一編號",
+            "store_tax_id": "60232567",
+            "store_documentation": "",
+            "store_self_tel": "(04)2213-3896",
+            "store_self_address": "臺中市中區柳川里光復路197號",
+            "store_website": "https://bglock602.simplybook.asia/v2/",
+            "store_name": "BGLOCK推理解謎館",
+            "store_address": "台中市東區東光園路602號",
+            "store_email": "bglock602@gmail.com",
+            "store_tel": "(04)2213-3896",
+            "store_open_time": "14:00–20:00"
         }
     ],
     "gamesData": [
@@ -826,6 +894,102 @@
             "game_main_tag2name": "劇情厲害"
         },
         {
+            "game_id": 19,
+            "store_id": 2,
+            "game_name": "失落魔境-序章",
+            "game_address": "台北市中山區中山北路二段112號7樓之4",
+            "game_tel": "0907-101822",
+            "game_time": 90,
+            "game_minNum_Players": 4,
+            "game_maxNum_Players": 6,
+            "game_dif_tag": 1,
+            "game_main_tag1": 5,
+            "game_main_tag2": 2,
+            "game_score": 4.9,
+            "game_img": [
+                "https://funlockstudio.com/wp-content/uploads/2024/12/IMG_7485-396x360.jpg",
+                "https://funlockstudio.com/wp-content/uploads/%E9%81%8A%E6%88%B2%E5%A0%B4%E6%99%AF%E7%85%A7/%E5%AE%A3%E5%82%B3_%E5%9C%96_01-396x360.jpg",
+                "https://funlockstudio.com/wp-content/uploads/2024/12/%E6%B5%B7%E5%A0%B1%E8%8D%89%E7%A8%BF_%E5%A4%B1%E8%90%BD%E9%AD%94%E5%A2%83-396x360.jpg"
+            ],
+            "game_isLimited": 0,
+            "game_start_date": "2025-01-17",
+            "game_end_date": "",
+            "game_info": "一封信，一張車票，暗藏何種命運？古老街區長滿了發光的樹木；冒泡的魔法鍋釜旁古老符文靜靜閃爍；街角的店舖瀰漫著神祕香氣──隨著火車的長鳴聲遠去，你意識到你正逐漸挖掘奇異街道的秘密。冒險即將展開，你是否準備好面對命運與真相？",
+            "game_remark": "",
+            "game_score_num": 24,
+            "game_isStock": 1,
+            "game_website": "https://funlockstudio.com/lostland/",
+            "store_name": "FunLock放樂工作室",
+            "store_email": "funlock.tc@gmail.com",
+            "game_dif_tagname": "新手入門",
+            "game_main_tag1name": "互動操作機關重重",
+            "game_main_tag2name": "機關重重"
+        },
+        {
+            "game_id": 20,
+            "store_id": 2,
+            "game_name": "病變",
+            "game_address": "台中市西區公益路130號3樓",
+            "game_tel": "0928-002297",
+            "game_time": 70,
+            "game_minNum_Players": 4,
+            "game_maxNum_Players": 6,
+            "game_dif_tag": 2,
+            "game_main_tag1": 11,
+            "game_main_tag2": 4,
+            "game_score": 4.4,
+            "game_img": [
+                "https://funlockstudio.com/wp-content/uploads/%E9%81%8A%E6%88%B2%E5%A0%B4%E6%99%AF%E7%85%A7/%E5%AE%A3%E5%82%B3%E7%85%A7_%E7%97%85%E8%AE%8A_03-768x512.png",
+                "https://funlockstudio.com/wp-content/uploads/%E9%81%8A%E6%88%B2%E5%A0%B4%E6%99%AF%E7%85%A7/%E5%AE%A3%E5%82%B3%E7%85%A7_%E7%97%85%E8%AE%8A_02-768x512.png",
+                "https://funlockstudio.com/wp-content/uploads/%E9%81%8A%E6%88%B2%E5%A0%B4%E6%99%AF%E7%85%A7/%E5%AE%A3%E5%82%B3%E7%85%A7_%E7%97%85%E8%AE%8A_05-768x512.png"
+            ],
+            "game_isLimited": 0,
+            "game_start_date": "2020-07-04",
+            "game_end_date": "",
+            "game_info": "昏沈的在病房中醒來，四周充斥莫名的詭異。實驗依舊進行，秘密仍被埋葬，感染正在延續……",
+            "game_remark": "",
+            "game_score_num": 338,
+            "game_isStock": 1,
+            "game_website": "https://funlockstudio.com/infection2-tc/",
+            "store_name": "FunLock放樂工作室",
+            "store_email": "funlock.tc@gmail.com",
+            "game_dif_tagname": "中度玩家",
+            "game_main_tag1name": "團隊合作",
+            "game_main_tag2name": "場景逼真"
+        },
+        {
+            "game_id": 21,
+            "store_id": 2,
+            "game_name": "噬夢",
+            "game_address": "台中市西區公益路130號3樓",
+            "game_tel": "0928-002297",
+            "game_time": 70,
+            "game_minNum_Players": 4,
+            "game_maxNum_Players": 6,
+            "game_dif_tag": 2,
+            "game_main_tag1": 6,
+            "game_main_tag2": 11,
+            "game_score": 4.4,
+            "game_img": [
+                "https://funlockstudio.com/wp-content/uploads/%E9%81%8A%E6%88%B2%E5%A0%B4%E6%99%AF%E7%85%A7/%E5%AE%A3%E5%82%B3%E7%85%A7_%E5%99%AC%E5%A4%A2_02-768x512.png",
+                "https://funlockstudio.com/wp-content/uploads/%E9%81%8A%E6%88%B2%E5%A0%B4%E6%99%AF%E7%85%A7/%E5%AE%A3%E5%82%B3%E7%85%A7_%E5%99%AC%E5%A4%A2_03-768x512.png",
+                "https://funlockstudio.com/wp-content/uploads/%E9%81%8A%E6%88%B2%E5%A0%B4%E6%99%AF%E7%85%A7/%E5%AE%A3%E5%82%B3%E7%85%A7_%E5%99%AC%E5%A4%A2_01-768x512.png"
+            ],
+            "game_isLimited": 0,
+            "game_start_date": "2020-08-15",
+            "game_end_date": "",
+            "game_info": "傳說中夜魔會吞噬美夢，讓人們沉睡不醒。如今你已經陷入惡夢的輪迴。不理解黑暗的人才會害怕夜晚。面對恐懼才能打破迴圈，沉浸夢中的你能否逃離？",
+            "game_remark": "",
+            "game_score_num": 312,
+            "game_isStock": 1,
+            "game_website": "https://funlockstudio.com/dream-tc/",
+            "store_name": "FunLock放樂工作室",
+            "store_email": "funlock.tc@gmail.com",
+            "game_dif_tagname": "中度玩家",
+            "game_main_tag1name": "謎題邏輯",
+            "game_main_tag2name": "團隊合作"
+        },
+        {
             "game_id": 22,
             "store_id": 7,
             "game_name": "咒雨",
@@ -1128,6 +1292,33 @@
             "price_people": "/場"
         },
         {
+            "price_id": 3,
+            "game_id": 2,
+            "price_is_difference": 0,
+            "price_count": 1,
+            "price_day_type": "",
+            "price_mix": 995,
+            "price_people": "/人"
+        },
+        {
+            "price_id": 4,
+            "game_id": 3,
+            "price_is_difference": 0,
+            "price_count": 1,
+            "price_day_type": "",
+            "price_mix": 650,
+            "price_people": "/人"
+        },
+        {
+            "price_id": 5,
+            "game_id": 4,
+            "price_is_difference": 0,
+            "price_count": 1,
+            "price_day_type": "",
+            "price_mix": 700,
+            "price_people": "/人"
+        },
+        {
             "price_id": 6,
             "game_id": 5,
             "price_is_difference": 1,
@@ -1180,6 +1371,114 @@
             "price_day_type": "weekday",
             "price_mix": 1500,
             "price_people": "/場"
+        },
+        {
+            "price_id": 12,
+            "game_id": 8,
+            "price_is_difference": 0,
+            "price_count": 1,
+            "price_day_type": "",
+            "price_mix": 750,
+            "price_people": "6-7人"
+        },
+        {
+            "price_id": 13,
+            "game_id": 8,
+            "price_is_difference": 0,
+            "price_count": 2,
+            "price_day_type": "",
+            "price_mix": 700,
+            "price_people": "8-9人"
+        },
+        {
+            "price_id": 14,
+            "game_id": 8,
+            "price_is_difference": 0,
+            "price_count": 3,
+            "price_day_type": "",
+            "price_mix": 650,
+            "price_people": "10人"
+        },
+        {
+            "price_id": 15,
+            "game_id": 9,
+            "price_is_difference": 0,
+            "price_count": 1,
+            "price_day_type": "",
+            "price_mix": 1100,
+            "price_people": "2人"
+        },
+        {
+            "price_id": 16,
+            "game_id": 9,
+            "price_is_difference": 0,
+            "price_count": 2,
+            "price_day_type": "",
+            "price_mix": 733,
+            "price_people": "3人"
+        },
+        {
+            "price_id": 17,
+            "game_id": 9,
+            "price_is_difference": 0,
+            "price_count": 3,
+            "price_day_type": "",
+            "price_mix": 650,
+            "price_people": "4-6人"
+        },
+        {
+            "price_id": 18,
+            "game_id": 10,
+            "price_is_difference": 0,
+            "price_count": 1,
+            "price_day_type": "",
+            "price_mix": 1100,
+            "price_people": "2人"
+        },
+        {
+            "price_id": 19,
+            "game_id": 10,
+            "price_is_difference": 0,
+            "price_count": 2,
+            "price_day_type": "",
+            "price_mix": 733,
+            "price_people": "3人"
+        },
+        {
+            "price_id": 20,
+            "game_id": 10,
+            "price_is_difference": 0,
+            "price_count": 3,
+            "price_day_type": "",
+            "price_mix": 650,
+            "price_people": "4-6人"
+        },
+        {
+            "price_id": 21,
+            "game_id": 11,
+            "price_is_difference": 0,
+            "price_count": 1,
+            "price_day_type": "",
+            "price_mix": 300,
+            "price_people": "2-3人"
+        },
+        {
+            "price_id": 22,
+            "game_id": 11,
+            "price_is_difference": 0,
+            "price_count": 2,
+            "price_day_type": "",
+            "price_mix": 250,
+            "price_people": "4-6人"
+        },
+        {
+            "price_id": 23,
+            "game_id": 12,
+            "price_is_difference": 0,
+            "price_count": 1,
+            "price_day_type": "",
+            "price_mix": 250,
+            "price_people": "/人"
         }
     ],
     "commentsData": [
