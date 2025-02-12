@@ -227,6 +227,19 @@
       "user_create_at": "",
       "user_update_at": "",
       "user_sex": "男"
+    },
+    {
+      "user_id": 13,
+      "user_role": "會員",
+      "user_reg_method": "信箱",
+      "user_name": "han",
+      "user_email": "hanchen923@hotmail.com",
+      "user_bhd": "1988/09/23",
+      "user_tel": "0987-654-321",
+      "user_password": "asdfg12345",
+      "user_create_at": "",
+      "user_update_at": "2025/02/07",
+      "user_sex": "男"
     }
   ],
   "storesData": [
