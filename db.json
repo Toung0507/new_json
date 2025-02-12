@@ -214,6 +214,19 @@
       "user_create_at": "",
       "user_update_at": "",
       "user_sex": ""
+    },
+    {
+      "user_id": 12,
+      "user_role": "會員",
+      "user_reg_method": "信箱",
+      "user_name": "Leo",
+      "user_email": "leo2012.c@gmail.com",
+      "user_bhd": "2004/05/31",
+      "user_tel": "0988615140",
+      "user_password": "123456789",
+      "user_create_at": "",
+      "user_update_at": "",
+      "user_sex": "男"
     }
   ],
   "storesData": [
