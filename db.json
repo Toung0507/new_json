@@ -1488,6 +1488,60 @@
       "price_day_type": "",
       "price_mix": 900,
       "price_people": "2-3人"
+    },
+    {
+      "price_id": 25,
+      "game_id": 13,
+      "price_is_difference": 0,
+      "price_count": 2,
+      "price_day_type": "",
+      "price_mix": 800,
+      "price_people": "4人"
+    },
+    {
+      "price_id": 26,
+      "game_id": 13,
+      "price_is_difference": 0,
+      "price_count": 3,
+      "price_day_type": "",
+      "price_mix": 700,
+      "price_people": "5-6人"
+    },
+    {
+      "price_id": 27,
+      "game_id": 14,
+      "price_is_difference": 0,
+      "price_count": 1,
+      "price_day_type": "",
+      "price_mix": 600,
+      "price_people": "4-7人"
+    },
+    {
+      "price_id": 28,
+      "game_id": 14,
+      "price_is_difference": 0,
+      "price_count": 2,
+      "price_day_type": "",
+      "price_mix": 550,
+      "price_people": "8-10人"
+    },
+    {
+      "price_id": 29,
+      "game_id": 15,
+      "price_is_difference": 0,
+      "price_count": 1,
+      "price_day_type": "",
+      "price_mix": 500,
+      "price_people": "2人"
+    },
+    {
+      "price_id": 30,
+      "game_id": 15,
+      "price_is_difference": 0,
+      "price_count": 2,
+      "price_day_type": "",
+      "price_mix": 450,
+      "price_people": "3人"
     }
   ],
   "commentsData": [
