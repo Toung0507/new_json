@@ -1479,6 +1479,15 @@
       "price_day_type": "",
       "price_mix": 250,
       "price_people": "/人"
+    },
+    {
+      "price_id": 24,
+      "game_id": 13,
+      "price_is_difference": 0,
+      "price_count": 1,
+      "price_day_type": "",
+      "price_mix": 900,
+      "price_people": "2-3人"
     }
   ],
   "commentsData": [
