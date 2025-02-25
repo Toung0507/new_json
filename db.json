@@ -1047,7 +1047,9 @@
             "game_main_tag1": 9,
             "game_main_tag2": 8,
             "game_score": 4.8,
-            "game_img": "https://i0.wp.com/content.escape.bar/wp-content/uploads/2019/01/banner_%E7%B1%A0%E4%B8%AD%E9%B3%A5-scaled-e1660672660207.jpg?fit=1200%2C630&ssl=1",
+            "game_img": [
+                "https://i0.wp.com/content.escape.bar/wp-content/uploads/2019/01/banner_%E7%B1%A0%E4%B8%AD%E9%B3%A5-scaled-e1660672660207.jpg?fit=1200%2C630&ssl=1"
+            ],
             "game_isLimited": false,
             "game_start_date": "2018-08-03",
             "game_end_date": "",
@@ -1096,7 +1098,9 @@
             "game_main_tag1": 7,
             "game_main_tag2": 11,
             "game_score": 4.6,
-            "game_img": "https://i0.wp.com/content.escape.bar/wp-content/uploads/2019/01/banner_%E5%81%B6%E5%83%8F%E5%87%BA%E9%81%93-scaled-e1660672670754.jpg?fit=1200%2C630&ssl=1",
+            "game_img": [
+                "https://i0.wp.com/content.escape.bar/wp-content/uploads/2019/01/banner_%E5%81%B6%E5%83%8F%E5%87%BA%E9%81%93-scaled-e1660672670754.jpg?fit=1200%2C630&ssl=1"
+            ],
             "game_isLimited": false,
             "game_start_date": "2018-06-16",
             "game_end_date": "",
