@@ -14,13 +14,47 @@ module.exports = (router) => {
             const games = db.get("gamesData").value();
             const difficultys_fixed_Data = db.get("difficultys_fixed_Data").value();
             const propertys_fixed_Data = db.get("propertys_fixed_Data").value();
-            console.log('gamexu3ua042k7', filteredData);
+            const pricesData = db.get("pricesData").value(); // 取得價格表
+
+            // 計算最低價格
+            const getMinPrice = (game) => {
+                const prices = pricesData.filter(price => price.game_id === game.game_id); // 找到該遊戲的價格
+
+                if (!Array.isArray(prices) || prices.length === 0) {
+                    return "價格資訊缺少";
+                }
+
+                let minPerPerson = Infinity;     //Infinity是極大值
+
+                prices.forEach(({ price_people, price_mix }) => {
+                    if (typeof price_people !== "string") return; // 避免 undefined 錯誤
+
+                    if (price_people === "/人") {
+                        minPerPerson = Math.min(minPerPerson, price_mix);
+                    }
+                    else if (price_people === "/場") {
+                        const avgPrice = Math.round(price_mix / game.game_maxNum_Players);
+                        minPerPerson = Math.min(minPerPerson, avgPrice);
+                    }
+                    else {
+                        const match = price_people.match(/^(\d+)(-\d+)?人$/);
+                        if (match) {
+                            const minPeople = parseInt(match[1], 10);
+                            if (minPeople > 0) {
+                                minPerPerson = Math.min(minPerPerson, price_mix);
+                            }
+                        }
+                    }
+                });
+
+                return minPerPerson !== Infinity ? minPerPerson : "價格資訊缺少";
+            };
+
 
             if ((Array.isArray(filteredData) && filteredData.some(item => typeof item === "string" && (item.includes("無相關資料") || item.includes("重新確認API文件")))) ||
                 //(typeof filteredData === "string" && filteredData.includes("無相關資料")) || > 不應該是字串，因此不需判斷 typeof filteredData === "string"
                 (typeof filteredData === "object" && filteredData !== null && (JSON.stringify(filteredData).includes("無相關資料") || JSON.stringify(filteredData).includes("重新確認API文件")))) {
                 // 檢查是否ID是否錯誤，若錯誤回傳原本的錯誤訊息
-                console.log('hiu/ e9 ao6y uxl4');
 
                 return filteredData;
             }
@@ -39,6 +73,7 @@ module.exports = (router) => {
                             game_dif_tagname: difficulty_tag ? difficulty_tag.difficulty_name : "未選擇主題難度",
                             game_main_tag1name: propertys_tag1 ? propertys_tag1.property_name : "未選擇主題標籤1",
                             game_main_tag2name: propertys_tag2 ? propertys_tag2.property_name : "未選擇主題標籤2",
+                            game_min_price: getMinPrice(game) // 加入最低價格
                         };
                     });
                     return gamesAllData;
@@ -58,7 +93,8 @@ module.exports = (router) => {
                             store_email: store_info ? store_info.store_email : "密室店家聯絡信箱缺少",
                             game_dif_tagname: difficulty_tag ? difficulty_tag.difficulty_name : "未選擇主題難度",
                             game_main_tag1name: propertys_tag1 ? propertys_tag1.property_name : "未選擇主題標籤1",
-                            game_main_tag2name: propertys_tag2 ? propertys_tag2.property_name : "未選擇主題標籤2"
+                            game_main_tag2name: propertys_tag2 ? propertys_tag2.property_name : "未選擇主題標籤2",
+                            game_min_price: getMinPrice(game) // 加入最低價格
                         };
                     });
                     return gamesAllData;
@@ -78,6 +114,7 @@ module.exports = (router) => {
                         game_dif_tagname: difficulty_tag ? difficulty_tag.difficulty_name : "未選擇主題難度",
                         game_main_tag1name: propertys_tag1 ? propertys_tag1.property_name : "未選擇主題標籤1",
                         game_main_tag2name: propertys_tag2 ? propertys_tag2.property_name : "未選擇主題標籤2",
+                        game_min_price: getMinPrice(game) // 加入最低價格
                     };
                 });
                 return gamesAllData;
@@ -115,7 +152,6 @@ module.exports = (router) => {
                 else {
                     // console.log('進此是物件 > 單一筆資料時');
                     let storesAllData = filteredData;
-                    console.log('開頭', storesAllData);
                     // console.log('物件', filteredData);
                     stores.forEach((store) => {
                         const user_info = users.find((e) => e.user_id === store.user_id);
@@ -128,7 +164,6 @@ module.exports = (router) => {
                             user_password: user_info ? user_info.user_password : "無此店家密碼",
                         };
                     });
-                    console.log('結束', storesAllData);
                     return storesAllData;
                 }
             }

@@ -1611,7 +1611,7 @@
             "price_is_difference": 0,
             "price_count": 1,
             "price_day_type": "",
-            "price_mix": 6000,
+            "price_mix": 1500,
             "price_people": "4人"
         },
         {
@@ -1620,7 +1620,7 @@
             "price_is_difference": 0,
             "price_count": 2,
             "price_day_type": "",
-            "price_mix": 6000,
+            "price_mix": 1200,
             "price_people": "5人"
         },
         {
@@ -1629,7 +1629,7 @@
             "price_is_difference": 0,
             "price_count": 3,
             "price_day_type": "",
-            "price_mix": 6600,
+            "price_mix": 1100,
             "price_people": "6人"
         },
         {
@@ -1657,7 +1657,7 @@
             "price_count": 1,
             "price_day_type": "",
             "price_mix": 450,
-            "price_people": "4人"
+            "price_people": "4-5人"
         },
         {
             "price_id": 42,
@@ -1665,8 +1665,8 @@
             "price_is_difference": 0,
             "price_count": 2,
             "price_day_type": "",
-            "price_mix": 2250,
-            "price_people": "/場"
+            "price_mix": 375,
+            "price_people": "6人"
         },
         {
             "price_id": 43,
@@ -1784,15 +1784,6 @@
             "price_day_type": "weekday",
             "price_mix": 600,
             "price_people": "10人"
-        },
-        {
-            "price_id": 56,
-            "game_id": 23,
-            "price_is_difference": 1,
-            "price_count": 4,
-            "price_day_type": "weekend",
-            "price_mix": 750,
-            "price_people": "4-5人"
         },
         {
             "price_id": 57,
@@ -2027,6 +2018,24 @@
             "price_day_type": "",
             "price_mix": 499,
             "price_people": "4-5人"
+        },
+        {
+            "price_id": 83,
+            "game_id": 20,
+            "price_is_difference": 0,
+            "price_count": 3,
+            "price_day_type": "",
+            "price_mix": 322,
+            "price_people": "7人"
+        },
+        {
+            "price_id": 84,
+            "game_id": 20,
+            "price_is_difference": 0,
+            "price_count": 4,
+            "price_day_type": "",
+            "price_mix": 282,
+            "price_people": "8人"
         }
     ],
     "commentsData": [
