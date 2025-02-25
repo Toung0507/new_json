@@ -14,7 +14,8 @@ module.exports = (router, db) => {
             gamesData: "game_id",
             pricesData: "price_id",
             commentsData: "comment_id",
-            groupsData: "group_id"
+            groupsData: "group_id",
+            authorizedStore: "austore_id"
         };
 
         const collection = db.get(tableName);

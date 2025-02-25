@@ -394,7 +394,10 @@
  *         property_name:
  *           type: string
  *           description: "密室性質名稱"
- */
+ *         is_use:
+ *           type: boolean
+ *           description: "是否啟用"
+*/
 
 /**
  * @swagger
@@ -409,6 +412,9 @@
  *         difficulty_name:
  *           type: string
  *           description: "密室難度名稱"
+ *         is_use:
+ *           type: boolean
+ *           description: "是否啟用"
  */
 
 /**
@@ -462,4 +468,19 @@
  *         group_isSuccessful:
  *           type: boolean
  *           description: "是否遊玩完成"
+ */
+
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     authorizedStore:
+ *       type: object
+ *       properties:
+ *         austore_id:
+ *           type: integer
+ *           description: "授權店家序號"
+ *         austore_name:
+ *           type: string
+ *           description: "授權店家名稱"
  */
