@@ -2,73 +2,90 @@
   "difficultys_fixed_Data": [
     {
       "difficulty_id": 1,
-      "difficulty_name": "新手入門"
+      "difficulty_name": "新手入門",
+      "is_use": true
     },
     {
       "difficulty_id": 2,
-      "difficulty_name": "中度玩家"
+      "difficulty_name": "中度玩家",
+      "is_use": true
     },
     {
       "difficulty_id": 3,
-      "difficulty_name": "重度解謎"
+      "difficulty_name": "重度解謎",
+      "is_use": true
     }
   ],
   "propertys_fixed_Data": [
     {
       "property_id": 1,
-      "property_name": "偵探推理"
+      "property_name": "偵探推理",
+      "is_use": true
     },
     {
       "property_id": 2,
-      "property_name": "機關重重"
+      "property_name": "機關重重",
+      "is_use": true
     },
     {
       "property_id": 3,
-      "property_name": "劇情厲害"
+      "property_name": "劇情厲害",
+      "is_use": true
     },
     {
       "property_id": 4,
-      "property_name": "場景逼真"
+      "property_name": "場景逼真",
+      "is_use": true
     },
     {
       "property_id": 5,
-      "property_name": "互動操作"
+      "property_name": "互動操作",
+      "is_use": true
     },
     {
       "property_id": 6,
-      "property_name": "謎題邏輯"
+      "property_name": "謎題邏輯",
+      "is_use": true
     },
     {
       "property_id": 7,
-      "property_name": "輕鬆歡樂"
+      "property_name": "輕鬆歡樂",
+      "is_use": true
     },
     {
       "property_id": 8,
-      "property_name": "恐怖驚悚"
+      "property_name": "恐怖驚悚",
+      "is_use": true
     },
     {
       "property_id": 9,
-      "property_name": "緊張刺激"
+      "property_name": "緊張刺激",
+      "is_use": true
     },
     {
       "property_id": 10,
-      "property_name": "勾心鬥角"
+      "property_name": "勾心鬥角",
+      "is_use": true
     },
     {
       "property_id": 11,
-      "property_name": "團隊合作"
+      "property_name": "團隊合作",
+      "is_use": true
     },
     {
       "property_id": 12,
-      "property_name": "親子同遊"
+      "property_name": "親子同遊",
+      "is_use": true
     },
     {
       "property_id": 13,
-      "property_name": "玩法特殊"
+      "property_name": "玩法特殊",
+      "is_use": true
     },
     {
       "property_id": 14,
-      "property_name": "角色扮演"
+      "property_name": "角色扮演",
+      "is_use": true
     }
   ],
   "usersData": [
@@ -1030,7 +1047,9 @@
       "game_main_tag1": 9,
       "game_main_tag2": 8,
       "game_score": 4.8,
-      "game_img": "https://i0.wp.com/content.escape.bar/wp-content/uploads/2019/01/banner_%E7%B1%A0%E4%B8%AD%E9%B3%A5-scaled-e1660672660207.jpg?fit=1200%2C630&ssl=1",
+      "game_img": [
+        "https://i0.wp.com/content.escape.bar/wp-content/uploads/2019/01/banner_%E7%B1%A0%E4%B8%AD%E9%B3%A5-scaled-e1660672660207.jpg?fit=1200%2C630&ssl=1"
+      ],
       "game_isLimited": false,
       "game_start_date": "2018-08-03",
       "game_end_date": "",
@@ -1079,7 +1098,9 @@
       "game_main_tag1": 7,
       "game_main_tag2": 11,
       "game_score": 4.6,
-      "game_img": "https://i0.wp.com/content.escape.bar/wp-content/uploads/2019/01/banner_%E5%81%B6%E5%83%8F%E5%87%BA%E9%81%93-scaled-e1660672670754.jpg?fit=1200%2C630&ssl=1",
+      "game_img": [
+        "https://i0.wp.com/content.escape.bar/wp-content/uploads/2019/01/banner_%E5%81%B6%E5%83%8F%E5%87%BA%E9%81%93-scaled-e1660672670754.jpg?fit=1200%2C630&ssl=1"
+      ],
       "game_isLimited": false,
       "game_start_date": "2018-06-16",
       "game_end_date": "",
@@ -1594,7 +1615,7 @@
       "price_is_difference": 0,
       "price_count": 1,
       "price_day_type": "",
-      "price_mix": 6000,
+      "price_mix": 1500,
       "price_people": "4人"
     },
     {
@@ -1603,7 +1624,7 @@
       "price_is_difference": 0,
       "price_count": 2,
       "price_day_type": "",
-      "price_mix": 6000,
+      "price_mix": 1200,
       "price_people": "5人"
     },
     {
@@ -1612,7 +1633,7 @@
       "price_is_difference": 0,
       "price_count": 3,
       "price_day_type": "",
-      "price_mix": 6600,
+      "price_mix": 1100,
       "price_people": "6人"
     },
     {
@@ -1640,7 +1661,7 @@
       "price_count": 1,
       "price_day_type": "",
       "price_mix": 450,
-      "price_people": "4人"
+      "price_people": "4-5人"
     },
     {
       "price_id": 42,
@@ -1648,8 +1669,8 @@
       "price_is_difference": 0,
       "price_count": 2,
       "price_day_type": "",
-      "price_mix": 2250,
-      "price_people": "/場"
+      "price_mix": 375,
+      "price_people": "6人"
     },
     {
       "price_id": 43,
@@ -1706,6 +1727,15 @@
       "price_people": "5人"
     },
     {
+      "price_id": 49,
+      "game_id": 22,
+      "price_is_difference": 1,
+      "price_count": 4,
+      "price_day_type": "weekday",
+      "price_mix": 799,
+      "price_people": "6人"
+    },
+    {
       "price_id": 50,
       "game_id": 22,
       "price_is_difference": 1,
@@ -1758,15 +1788,6 @@
       "price_day_type": "weekday",
       "price_mix": 600,
       "price_people": "10人"
-    },
-    {
-      "price_id": 56,
-      "game_id": 23,
-      "price_is_difference": 1,
-      "price_count": 4,
-      "price_day_type": "weekend",
-      "price_mix": 750,
-      "price_people": "4-5人"
     },
     {
       "price_id": 57,
@@ -2003,13 +2024,22 @@
       "price_people": "4-5人"
     },
     {
-      "price_id": 49,
-      "game_id": 22,
-      "price_is_difference": 1,
+      "price_id": 83,
+      "game_id": 20,
+      "price_is_difference": 0,
+      "price_count": 3,
+      "price_day_type": "",
+      "price_mix": 322,
+      "price_people": "7人"
+    },
+    {
+      "price_id": 84,
+      "game_id": 20,
+      "price_is_difference": 0,
       "price_count": 4,
-      "price_day_type": "weekday",
-      "price_mix": 799,
-      "price_people": "6人"
+      "price_day_type": "",
+      "price_mix": 282,
+      "price_people": "8人"
     }
   ],
   "commentsData": [
@@ -2018,7 +2048,7 @@
       "user_id": 10,
       "game_id": 1,
       "comment_isSpoilered": true,
-      "coment_content": "真好玩真好玩",
+      "coment_content": "真好玩真好玩呀",
       "coment_star": 4.8,
       "commet_played_time": "2025-02-01",
       "comment_isPass": true
@@ -2040,6 +2070,44 @@
       "group_member": "4",
       "group_participants": [],
       "group_isSuccessful": true
+    }
+  ],
+  "authorizedStore": [
+    {
+      "austore_id": 1,
+      "austore_name": "笨蛋工作室密室逃脫"
+    },
+    {
+      "austore_id": 2,
+      "austore_name": "FunLock工作室"
+    },
+    {
+      "austore_id": 3,
+      "austore_name": "不想工作室"
+    },
+    {
+      "austore_id": 4,
+      "austore_name": "頂級豬排遊戲工作室"
+    },
+    {
+      "austore_id": 5,
+      "austore_name": "神不在場實境遊戲"
+    },
+    {
+      "austore_id": 6,
+      "austore_name": "MissGAME"
+    },
+    {
+      "austore_id": 7,
+      "austore_name": "夢遊王國"
+    },
+    {
+      "austore_id": 8,
+      "austore_name": "濤濤來工作室"
+    },
+    {
+      "austore_id": 9,
+      "austore_name": "BGLOCK推理解謎館"
     }
   ]
 }
