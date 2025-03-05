@@ -1,11 +1,16 @@
 const jsonServer = require("json-server");       // importing json-server library
 const swaggerJsdoc = require("swagger-jsdoc");   // importing swagger規格文件 library
 const swaggerUi = require("swagger-ui-express"); // importing swagger頁面呈現 library
+const jsonServerAuth = require("json-server-auth"); // importing json-server-auth library
+const app = jsonServer.create();                //json-server-auth 使用
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 // const middlewares = jsonServer.defaults();
 const middlewares = jsonServer.defaults({ static: 'public' }); // 指定 public 資料夾內為首頁資料夾
 const port = process.env.PORT || 4000; // 使用環境變數或預設為 4000
+
+server.db = router.db; //將兩個DB合併
+
 
 // 引入 Swagger 配置
 const schemas = require('./swagger/schemas'); // 引入 schemas.js
@@ -43,9 +48,15 @@ const tableExistsMiddleware = require("./routes/isTableExists")(router);       /
 const completeTables = require("./routes/completeTables")(router);             // 完善資料表的內容 > 將有外來鍵的資料所需資料放入原資料表
 const { pushToRepo } = require('./routes/autoUpdate');                         // 自動上傳最新版db
 
+
+
+
 // 使用 middleware
 server.use(middlewares);
 server.use(jsonServer.bodyParser);
+
+// json-server-auth
+server.use(jsonServerAuth);
 
 // 使用 Swagger 路由
 server.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
@@ -60,6 +71,8 @@ server.post("/:tableName", tableExistsMiddleware, (req, res) => {
     postHandler(req, res);
     pushToRepo();
 });
+
+
 
 // DELETE 請求
 // server.delete("/:tableName/:primaryKey", tableExistsMiddleware, deleteHandler);
