@@ -283,12 +283,6 @@
       "user_create_at": "",
       "user_update_at": "2025/02/07",
       "user_sex": "男"
-    },
-    {
-      "user_email": "123456@gmail.com",
-      "user_password": "$2a$10$yxcWQzqD.fL5fBj4sjO9KeYVj/Bz4FWxH5cIM961UlOgpv.hWrWyS",
-      "user_id": 14,
-      "id": 14
     }
   ],
   "storesData": [
