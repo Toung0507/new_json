@@ -90,11 +90,13 @@
   ],
   "usersData": [
     {
+      "id": 1,
       "user_id": 1,
       "user_role": "店家",
       "user_reg_method": "信箱",
       "user_name": "笨蛋工作室",
       "user_email": "stupidparticle@gmail.com",
+      "user_img": "",
       "user_bhd": "",
       "user_tel": "(02)8787-4387",
       "user_password": "Abcd1234",
@@ -103,11 +105,13 @@
       "user_sex": ""
     },
     {
+      "id": 2,
       "user_id": 2,
       "user_role": "店家",
       "user_reg_method": "信箱",
       "user_name": "FunLock工作室",
       "user_email": "funlockstudio@gmail.com",
+      "user_img": "",
       "user_bhd": "",
       "user_tel": "0928007799",
       "user_password": "123456789",
@@ -116,11 +120,13 @@
       "user_sex": ""
     },
     {
+      "id": 3,
       "user_id": 3,
       "user_role": "店家",
       "user_reg_method": "信箱",
       "user_name": "米邏創意有限公司",
       "user_email": "ricelo0517@gmail.com",
+      "user_img": "",
       "user_bhd": "",
       "user_tel": "0973113841",
       "user_password": "Abcd5678",
@@ -129,11 +135,13 @@
       "user_sex": ""
     },
     {
+      "id": 4,
       "user_id": 4,
       "user_role": "店家",
       "user_reg_method": "信箱",
       "user_name": "頂級豬排遊戲工作室",
       "user_email": "thekingpork@gmail.com",
+      "user_img": "",
       "user_bhd": "",
       "user_tel": "0905-259-817",
       "user_password": "123456789",
@@ -142,11 +150,13 @@
       "user_sex": ""
     },
     {
+      "id": 5,
       "user_id": 5,
       "user_role": "店家",
       "user_reg_method": "信箱",
       "user_name": "神不在場有限公司",
       "user_email": "waldner9527@taog-game.com",
+      "user_img": "",
       "user_bhd": "",
       "user_tel": "(04)2223-0406",
       "user_password": "123456789",
@@ -155,11 +165,13 @@
       "user_sex": ""
     },
     {
+      "id": 6,
       "user_id": 6,
       "user_role": "店家",
       "user_reg_method": "信箱",
       "user_name": "密思創意行銷股份有限公司",
       "user_email": "missgameservices@gmail.com",
+      "user_img": "",
       "user_bhd": "",
       "user_tel": "0986617820",
       "user_password": "Abcd9012",
@@ -168,11 +180,13 @@
       "user_sex": ""
     },
     {
+      "id": 7,
       "user_id": 7,
       "user_role": "店家",
       "user_reg_method": "信箱",
       "user_name": "夢遊王國",
       "user_email": "zzz@dream94zz.com",
+      "user_img": "",
       "user_bhd": "",
       "user_tel": "(02)2550-2922",
       "user_password": "123456789",
@@ -181,11 +195,13 @@
       "user_sex": ""
     },
     {
+      "id": 8,
       "user_id": 8,
       "user_role": "店家",
       "user_reg_method": "信箱",
       "user_name": "濤濤來工作室",
       "user_email": "ttlescapestudio@gmail.com",
+      "user_img": "",
       "user_bhd": "",
       "user_tel": "0912850770",
       "user_password": "123456789",
@@ -194,11 +210,13 @@
       "user_sex": ""
     },
     {
+      "id": 9,
       "user_id": 9,
       "user_role": "店家",
       "user_reg_method": "信箱",
       "user_name": "BGLOCK",
       "user_email": "bglock602@gmail.com",
+      "user_img": "",
       "user_bhd": "",
       "user_tel": "(04)2213-3896",
       "user_password": "123456789",
@@ -207,11 +225,13 @@
       "user_sex": ""
     },
     {
+      "id": 10,
       "user_id": 10,
       "user_role": "會員",
       "user_reg_method": "信箱",
       "user_name": "Toung",
       "user_email": "spexial110@gmail.com",
+      "user_img": "",
       "user_bhd": "2001/05/07",
       "user_tel": "0912345788",
       "user_password": "202502051",
@@ -220,11 +240,13 @@
       "user_sex": "女"
     },
     {
+      "id": 11,
       "user_id": 11,
       "user_role": "會員",
       "user_reg_method": "信箱",
       "user_name": "hua",
       "user_email": "a1113791@gmail.com",
+      "user_img": "",
       "user_bhd": "1996/01/08",
       "user_tel": "0912345678",
       "user_password": "Efgh1234",
@@ -233,11 +255,13 @@
       "user_sex": "女"
     },
     {
+      "id": 12,
       "user_id": 12,
       "user_role": "會員",
       "user_reg_method": "信箱",
       "user_name": "Leo",
       "user_email": "leo2012.c@gmail.com",
+      "user_img": "",
       "user_bhd": "2004/05/31",
       "user_tel": "0988615140",
       "user_password": "123456789",
@@ -246,17 +270,25 @@
       "user_sex": "男"
     },
     {
+      "id": 13,
       "user_id": 13,
       "user_role": "會員",
       "user_reg_method": "信箱",
       "user_name": "han",
       "user_email": "hanchen923@hotmail.com",
+      "user_img": "",
       "user_bhd": "1988/09/23",
       "user_tel": "0987-654-321",
       "user_password": "asdfg12345",
       "user_create_at": "",
       "user_update_at": "2025/02/07",
       "user_sex": "男"
+    },
+    {
+      "user_email": "123456@gmail.com",
+      "user_password": "$2a$10$yxcWQzqD.fL5fBj4sjO9KeYVj/Bz4FWxH5cIM961UlOgpv.hWrWyS",
+      "user_id": 14,
+      "id": 14
     }
   ],
   "storesData": [
@@ -2048,7 +2080,7 @@
       "user_id": 10,
       "game_id": 1,
       "comment_isSpoilered": true,
-      "coment_content": "真好玩真好玩呀",
+      "coment_content": "真好玩真好玩",
       "coment_star": 4.8,
       "commet_played_time": "2025-02-01",
       "comment_isPass": true
