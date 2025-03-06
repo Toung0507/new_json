@@ -267,7 +267,9 @@
       "user_password": "123456789",
       "user_create_at": "",
       "user_update_at": "",
-      "user_sex": "男"
+      "user_sex": "男",
+      "user_active_date": "string",
+      "user_noob": true
     },
     {
       "id": 13,
