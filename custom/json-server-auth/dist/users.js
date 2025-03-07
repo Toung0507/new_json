@@ -22,15 +22,15 @@ const constants_1 = require("./constants");
 const validate = ({ required }) => (req, res, next) => {
     const { user_email, user_password } = req.body;
     if (required && (!user_email || !user_email.trim() || !user_password || !user_password.trim())) {
-        res.status(400).jsonp('Email and user_password are required');
+        res.status(400).jsonp('信箱及密碼需要輸入');
         return;
     }
     if (user_email && !user_email.match(constants_1.EMAIL_REGEX)) {
-        res.status(400).jsonp('Email format is invalid');
+        res.status(400).jsonp('信箱格式驗證失敗');
         return;
     }
     if (user_password && user_password.length < constants_1.MIN_PASSWORD_LENGTH) {
-        res.status(400).jsonp('Password is too short');
+        res.status(400).jsonp('密碼請超過4碼');
         return;
     }
     next();
@@ -53,7 +53,7 @@ const create = (req, res, next) => {
     const existingUser = db.get('usersData').find({ user_email }).value();
 
     if (existingUser) {
-        res.status(400).jsonp('user_email already exists');
+        res.status(400).jsonp('此信箱已被註冊');
         return;
     }
     bcrypt
@@ -101,7 +101,7 @@ const login = (req, res, next) => {
     console.log(user);
 
     if (!user) {
-        res.status(400).jsonp('Cannot find user');
+        res.status(400).jsonp('查無此帳號，請先註冊');
         return;
     }
     bcrypt
@@ -127,7 +127,7 @@ const login = (req, res, next) => {
         })
         .catch((err) => {
             if (err === 400)
-                res.status(400).jsonp('Incorrect password');
+                res.status(400).jsonp('密碼錯誤，請重新確認');
             else
                 next(err);
         });
