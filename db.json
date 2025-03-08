@@ -2233,6 +2233,26 @@
         12
       ],
       "group_isSuccessful": null
+    },
+    {
+      "group_id": 10,
+      "user_id": 12,
+      "game_id": 24,
+      "game_name": "安雅",
+      "game_address": "台北市大同區民生西路300號4樓",
+      "group_end_at": "2025-03-20",
+      "group_active_date": "2025-03-25",
+      "group_channel": "abc.discord.com",
+      "group_philosophy": "好期待畢業旅行，大家都好關心我，快來加入",
+      "group_noob": true,
+      "group_cancel": false,
+      "group_member": "8",
+      "group_participants": [
+        12,
+        11,
+        10
+      ],
+      "group_isSuccessful": null
     }
   ],
   "authorizedStore": [
