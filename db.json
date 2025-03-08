@@ -283,6 +283,11 @@
       "user_create_at": "",
       "user_update_at": "2025/02/07",
       "user_sex": "男"
+    },
+    {
+      "user_email": "test@gmail.com",
+      "user_password": "$2a$10$v/OxekVSHiE73VHJzNLjzeLiAG98XQ8xBkHke33.l92VNfzNxRzjS",
+      "id": 14
     }
   ],
   "storesData": [
@@ -2096,6 +2101,22 @@
       "group_member": "4",
       "group_participants": [],
       "group_isSuccessful": true
+    },
+    {
+      "group_id": 2,
+      "user_id": 11,
+      "game_id": 2,
+      "game_name": "武仁新村",
+      "game_address": "台中市西區美村路一段36號B1",
+      "group_end_at": "2025-03-12",
+      "group_active_date": "2025-03-16",
+      "group_channel": "abc.discord.com",
+      "group_philosophy": "倉鼠團，徵求坦克",
+      "group_noob": false,
+      "group_cancel": false,
+      "group_member": "8",
+      "group_participants": [],
+      "group_isSuccessful": null
     }
   ],
   "authorizedStore": [
