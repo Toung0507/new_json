@@ -40,8 +40,6 @@ const validate = ({ required }) => (req, res, next) => {
  */
 const create = (req, res, next) => {
     const _a = req.body, { user_email, user_password } = _a, rest = __rest(_a, ["user_email", "user_password"]);
-    console.log('create');
-    console.log(req.body);
 
     const { db } = req.app;
     if (db == null) {
@@ -91,15 +89,11 @@ const create = (req, res, next) => {
  */
 const login = (req, res, next) => {
     const { user_email, user_password } = req.body;
-    console.log(user_email, user_password);
-
     const { db } = req.app;
     if (db == null) {
         throw Error('You must bind the router db to the app');
     }
     const user = db.get('usersData').find({ user_email }).value();
-    console.log(user);
-
     if (!user) {
         res.status(400).jsonp('查無此帳號，請先註冊');
         return;
@@ -107,8 +101,6 @@ const login = (req, res, next) => {
     bcrypt
         .compare(user_password, user.user_password)
         .then((same) => {
-            console.log(user_password, user.user_password);
-
             if (!same) {
                 throw 401;
             }
@@ -126,7 +118,7 @@ const login = (req, res, next) => {
             res.status(200).jsonp({ accessToken, user: userWithoutPassword });
         })
         .catch((err) => {
-            if (err === 400)
+            if (err === 401)
                 res.status(400).jsonp('密碼錯誤，請重新確認');
             else
                 next(err);
