@@ -2117,6 +2117,22 @@
       "group_member": "8",
       "group_participants": [],
       "group_isSuccessful": null
+    },
+    {
+      "group_id": 3,
+      "user_id": 10,
+      "game_id": 3,
+      "game_name": "咖波與飢餓迷宮",
+      "game_address": "台中市西區台灣大道二段186號12樓-3",
+      "group_end_at": "2025-03-10",
+      "group_active_date": "2025-03-17",
+      "group_channel": "abc.discord.com",
+      "group_philosophy": "咖波超可愛，必玩",
+      "group_noob": true,
+      "group_cancel": false,
+      "group_member": "6",
+      "group_participants": [],
+      "group_isSuccessful": null
     }
   ],
   "authorizedStore": [
