@@ -2181,6 +2181,22 @@
       "group_member": "5",
       "group_participants": [],
       "group_isSuccessful": true
+    },
+    {
+      "group_id": 7,
+      "user_id": 13,
+      "game_id": 12,
+      "game_name": "即刻越獄",
+      "game_address": "宜蘭縣五結鄉五濱路二段201號文昌街32號2樓（國立傳統藝術中心 - 文昌街西遊體驗館）",
+      "group_end_at": "2025-03-25",
+      "group_active_date": "2025-04-01",
+      "group_channel": "abc.discord.com",
+      "group_philosophy": "一起越獄",
+      "group_noob": true,
+      "group_cancel": false,
+      "group_member": "3",
+      "group_participants": [],
+      "group_isSuccessful": null
     }
   ],
   "authorizedStore": [
