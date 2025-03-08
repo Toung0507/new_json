@@ -2213,6 +2213,26 @@
       "group_member": "5",
       "group_participants": [],
       "group_isSuccessful": null
+    },
+    {
+      "group_id": 9,
+      "user_id": 11,
+      "game_id": 18,
+      "game_name": "晴天娃娃",
+      "game_address": "新竹市東南街96巷5弄7號",
+      "group_end_at": "2025-03-10",
+      "group_active_date": "2025-03-16",
+      "group_channel": "abc.discord.com",
+      "group_philosophy": "一卡皮箱即可入住，歡迎預約帶看",
+      "group_noob": false,
+      "group_cancel": false,
+      "group_member": "5",
+      "group_participants": [
+        11,
+        10,
+        12
+      ],
+      "group_isSuccessful": null
     }
   ],
   "authorizedStore": [
