@@ -2165,6 +2165,22 @@
       "group_member": "4",
       "group_participants": [],
       "group_isSuccessful": null
+    },
+    {
+      "group_id": 6,
+      "user_id": 10,
+      "game_id": 10,
+      "game_name": "幻隱光靈：屍禁",
+      "game_address": "台北市信義區南向製菸工場A7-S104",
+      "group_end_at": "2025-02-20",
+      "group_active_date": "2025-02-28",
+      "group_channel": "abc.discord.com",
+      "group_philosophy": "歡迎光臨，趕快加入",
+      "group_noob": true,
+      "group_cancel": true,
+      "group_member": "5",
+      "group_participants": [],
+      "group_isSuccessful": true
     }
   ],
   "authorizedStore": [
