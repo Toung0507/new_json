@@ -2133,6 +2133,22 @@
       "group_member": "6",
       "group_participants": [],
       "group_isSuccessful": null
+    },
+    {
+      "group_id": 4,
+      "user_id": 13,
+      "game_id": 5,
+      "game_name": "失落的隕石神殿",
+      "game_address": "台南市永康區中華路1-2號3樓",
+      "group_end_at": "2025-03-20",
+      "group_active_date": "2025-03-25",
+      "group_channel": "abc.discord.com",
+      "group_philosophy": "衝衝衝",
+      "group_noob": false,
+      "group_cancel": false,
+      "group_member": "6",
+      "group_participants": [],
+      "group_isSuccessful": null
     }
   ],
   "authorizedStore": [
