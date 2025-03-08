@@ -2197,6 +2197,22 @@
       "group_member": "3",
       "group_participants": [],
       "group_isSuccessful": null
+    },
+    {
+      "group_id": 8,
+      "user_id": 10,
+      "game_id": 14,
+      "game_name": "逃出補習班2.0",
+      "game_address": "台北市萬華區峨嵋街123號-3 3樓",
+      "group_end_at": "2025-03-15",
+      "group_active_date": "2025-03-21",
+      "group_channel": "abc.discord.com",
+      "group_philosophy": "一起逃離補習班，不要拋棄同伴喔",
+      "group_noob": false,
+      "group_cancel": false,
+      "group_member": "5",
+      "group_participants": [],
+      "group_isSuccessful": null
     }
   ],
   "authorizedStore": [
