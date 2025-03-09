@@ -3,16 +3,19 @@
     {
       "difficulty_id": 1,
       "difficulty_name": "新手入門",
+      "difficulty_icon_text": "child_care",
       "is_use": true
     },
     {
       "difficulty_id": 2,
       "difficulty_name": "中度玩家",
+      "difficulty_icon_text": "editor_choice",
       "is_use": true
     },
     {
       "difficulty_id": 3,
       "difficulty_name": "重度解謎",
+      "difficulty_icon_text": "award_star",
       "is_use": true
     }
   ],
@@ -20,71 +23,85 @@
     {
       "property_id": 1,
       "property_name": "偵探推理",
+      "property_icon_text": "psychology_alt",
       "is_use": true
     },
     {
       "property_id": 2,
       "property_name": "機關重重",
+      "property_icon_text": "settings",
       "is_use": true
     },
     {
       "property_id": 3,
       "property_name": "劇情厲害",
+      "property_icon_text": "two_pager",
       "is_use": true
     },
     {
       "property_id": 4,
       "property_name": "場景逼真",
+      "property_icon_text": "factory",
       "is_use": true
     },
     {
       "property_id": 5,
       "property_name": "互動操作",
+      "property_icon_text": "interactive_space",
       "is_use": true
     },
     {
       "property_id": 6,
       "property_name": "謎題邏輯",
+      "property_icon_text": "neurology",
       "is_use": true
     },
     {
       "property_id": 7,
       "property_name": "輕鬆歡樂",
+      "property_icon_text": "mood",
       "is_use": true
     },
     {
       "property_id": 8,
       "property_name": "恐怖驚悚",
+      "property_icon_text": "sentiment_stressed",
       "is_use": true
     },
     {
       "property_id": 9,
       "property_name": "緊張刺激",
+      "property_icon_text": "electric Bolt",
       "is_use": true
     },
     {
       "property_id": 10,
       "property_name": "勾心鬥角",
+      "property_icon_text": "sports Kabaddi",
       "is_use": true
     },
     {
       "property_id": 11,
       "property_name": "團隊合作",
+      "property_icon_text": "diversity_2",
       "is_use": true
     },
     {
       "property_id": 12,
       "property_name": "親子同遊",
+      "property_icon_text": "family Restroom",
       "is_use": true
     },
     {
       "property_id": 13,
       "property_name": "玩法特殊",
+      "property_icon_text": "stadia Controller",
       "is_use": true
     },
     {
       "property_id": 14,
       "property_name": "角色扮演",
+      "property_icon_text": "theater Comedy",
       "is_use": true
     }
   ],
@@ -288,6 +305,21 @@
       "user_email": "test@gmail.com",
       "user_password": "$2a$10$v/OxekVSHiE73VHJzNLjzeLiAG98XQ8xBkHke33.l92VNfzNxRzjS",
       "id": 14
+    },
+    {
+      "user_email": "132@gmail.com",
+      "user_password": "$2a$10$rYz3rZWlvpcyoyZ8jOmXAO4DWNXwaEMXACUF8ElJqeYrmIxrHPedS",
+      "user_id": 99,
+      "user_role": "會員",
+      "user_reg_method": "信箱",
+      "user_name": "test",
+      "user_img": "https://images.unsplash.com/photo-1522556189639-b150ed9c4330?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "user_bhd": "1988/09/23",
+      "user_tel": "0987-654-321",
+      "user_create_at": "",
+      "user_update_at": "2025/03/08",
+      "user_sex": "女",
+      "id": 15
     }
   ],
   "storesData": [
