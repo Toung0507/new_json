@@ -23,6 +23,11 @@ module.exports = (router, db) => {
 
         // console.log("GET :" + JSON.stringify(itemToGet)); //檢查是否有抓到/id的相關資料
 
+        // **✅ 解析 gamesData 的 game_info**
+        if (tableName === "gamesData" && itemToGet.game_info) {
+            itemToGet.game_info = itemToGet.game_info.replace(/\\n/g, "\n");
+        }
+
         res.locals.filteredData = itemToGet;     //透過res.locals傳入completeTables中，讓他可以抓取id篩選過後的的資料
 
         if (!itemToGet) {

@@ -19,7 +19,7 @@ module.exports = (router, db) => {
         };
 
         const collection = db.get(tableName);
-        const newItem = req.body;
+        let newItem = req.body;
 
         // **1. 檢查是否為物件**
         if (typeof newItem !== "object" || newItem === null || Array.isArray(newItem) || isEmptyObject(newItem)) {
@@ -43,7 +43,7 @@ module.exports = (router, db) => {
 
                     // 找出最大 ID，確保陣列不為空再進行計算
                     let maxId = items.length > 0 ? Math.max(...items.map(item => item[pkField] || 0)) : 0;
-                    newItem[pkField] = maxId + 1;
+                    newItem = { [pkField]: maxId + 1, ...newItem };
                 }
 
                 // 檢查是否有重複 ID
