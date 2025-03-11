@@ -2383,6 +2383,10 @@
     {
       "austore_id": 9,
       "austore_name": "BGLOCK推理解謎館"
+    },
+    {
+      "austore_name": "測試",
+      "austore_id": 10
     }
   ]
 }
