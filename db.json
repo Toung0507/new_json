@@ -415,6 +415,34 @@
       "user_update_at": "",
       "user_sex": "",
       "id": 22
+    },
+    {
+      "user_email": "66667@gmail.com",
+      "user_password": "$2a$10$L3uyi8D.tQGWD.Kz0o2XZO3.yvUidnJWAsjtIDvklIqtDK0/m86Qq",
+      "user_id": 105,
+      "user_role": "會員",
+      "user_reg_method": "信箱",
+      "user_name": "註冊四",
+      "user_img": "",
+      "user_tel": "",
+      "user_create_at": "2025-03-11 23:57:57",
+      "user_update_at": "",
+      "user_sex": "女",
+      "id": 23
+    },
+    {
+      "user_email": "731@gmail.com",
+      "user_password": "$2a$10$exhYSWUeTrccapDMUJLKj..Fye.MVXJgUW39.vrVDZjgm3UydT8j2",
+      "user_id": 106,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "店家註冊三",
+      "user_img": "",
+      "user_tel": "0974591444",
+      "user_create_at": "2025-03-12 00:01:35",
+      "user_update_at": "",
+      "user_sex": "",
+      "id": 24
     }
   ],
   "storesData": [
@@ -590,6 +618,21 @@
       "store_method": "其他",
       "store_tax_id": "",
       "store_documentation": "https://hackmd.io/saCmnUeXTSqJk9SQq5PI9w",
+      "store_self_address": "",
+      "store_website": "https://hackmd.io/saCmnUeXTSqJk9SQq5PI9w",
+      "store_name": "",
+      "store_address": "",
+      "store_email": "",
+      "store_tel": "",
+      "store_open_time": ""
+    },
+    {
+      "store_id": 11,
+      "user_id": 106,
+      "store_contact": "44",
+      "store_method": "統一編號",
+      "store_tax_id": "12345678",
+      "store_documentation": "",
       "store_self_address": "",
       "store_website": "https://hackmd.io/saCmnUeXTSqJk9SQq5PI9w",
       "store_name": "",
