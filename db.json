@@ -2165,6 +2165,16 @@
       "commet_played_time": "2025-03-11",
       "comment_isPass": false,
       "comment_id": 3
+    },
+    {
+      "user_id": 9,
+      "game_id": 9,
+      "comment_isSpoilered": true,
+      "coment_content": "不虛此行",
+      "coment_star": 4.7,
+      "commet_played_time": "2025-02-01",
+      "comment_isPass": true,
+      "comment_id": 4
     }
   ],
   "groupsData": [
