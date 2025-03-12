@@ -147,6 +147,20 @@
       "user_create_at": "2025-03-12 13:45:29",
       "user_update_at": "",
       "id": 2
+    },
+    {
+      "user_email": "ricelo0517@gmail.com",
+      "user_password": "$2a$10$vAYFBmHH9VxV76ENB28nBuLO5iNUzAXXxV2JgpoQwXxpxYt5NDlxa",
+      "user_id": 3,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "米邏創意有限公司",
+      "user_img": "",
+      "user_tel": "0973113841",
+      "user_sex": "",
+      "user_create_at": "2025-03-12 13:47:39",
+      "user_update_at": "",
+      "id": 3
     }
   ],
   "storesData": [
@@ -176,6 +190,22 @@
       "store_documentation": "",
       "store_self_address": "臺北市 中山區 集英里中山北路2段112號7樓之4",
       "store_website": "https://funlockstudio.com/",
+      "store_name": "",
+      "store_address": "",
+      "store_email": "",
+      "store_tel": "",
+      "store_open_time": ""
+    },
+    {
+      "store_id": 3,
+      "user_id": 3,
+      "store_contact": "沈先生",
+      "store_method": "統一編號",
+      "store_tax_id": "90898646",
+      "store_isAuth": "processing",
+      "store_documentation": "",
+      "store_self_address": "臺北市 中正區 延平南路21號4樓",
+      "store_website": "https://boowork.boostime.me/",
       "store_name": "",
       "store_address": "",
       "store_email": "",
