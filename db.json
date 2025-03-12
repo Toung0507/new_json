@@ -133,6 +133,20 @@
       "user_create_at": "2025-03-12 13:31:48",
       "user_update_at": "",
       "id": 1
+    },
+    {
+      "user_email": "funlockstudio@gmail.com",
+      "user_password": "$2a$10$aj14PCIGS4jlEiKPU2v7XuI2yOcUZo8bYoJbaAFkJr.ny9HOFQ436",
+      "user_id": 2,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "全勝創意工作室",
+      "user_img": "",
+      "user_tel": "0928007799",
+      "user_sex": "",
+      "user_create_at": "2025-03-12 13:45:29",
+      "user_update_at": "",
+      "id": 2
     }
   ],
   "storesData": [
@@ -144,10 +158,26 @@
       "store_tax_id": "54292497",
       "store_isAuth": "processing",
       "store_documentation": "",
-      "store_self_address": "",
+      "store_self_address": "臺北市 松山區 南京東路五段399號9樓",
       "store_website": "https://stupidparticle.com/",
       "store_name": "",
-      "store_address": "臺北市 松山區 南京東路五段399號9樓",
+      "store_address": "",
+      "store_email": "",
+      "store_tel": "",
+      "store_open_time": ""
+    },
+    {
+      "store_id": 2,
+      "user_id": 2,
+      "store_contact": "姚先生",
+      "store_method": "統一編號",
+      "store_tax_id": "31878362",
+      "store_isAuth": "processing",
+      "store_documentation": "",
+      "store_self_address": "臺北市 中山區 集英里中山北路2段112號7樓之4",
+      "store_website": "https://funlockstudio.com/",
+      "store_name": "",
+      "store_address": "",
       "store_email": "",
       "store_tel": "",
       "store_open_time": ""
