@@ -175,6 +175,20 @@
       "user_create_at": "2025-03-12 13:49:58",
       "user_update_at": "",
       "id": 4
+    },
+    {
+      "user_email": "waldner9527@taog-game.com",
+      "user_password": "$2a$10$lDKIlx1RaQFuF/FKVRGXsOupv7ORmtbEDA2cRAJt20Dc9UVHp1WJa",
+      "user_id": 5,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "神不在場有限公司",
+      "user_img": "",
+      "user_tel": "04-22230406",
+      "user_sex": "",
+      "user_create_at": "2025-03-12 13:52:59",
+      "user_update_at": "",
+      "id": 5
     }
   ],
   "storesData": [
@@ -236,6 +250,22 @@
       "store_documentation": "",
       "store_self_address": "臺北市 萬華區 菜園里康定路64號2樓",
       "store_website": "https://thekingpork.com/",
+      "store_name": "",
+      "store_address": "",
+      "store_email": "",
+      "store_tel": "",
+      "store_open_time": ""
+    },
+    {
+      "store_id": 5,
+      "user_id": 5,
+      "store_contact": "鄭先生",
+      "store_method": "統一編號",
+      "store_tax_id": "90549850",
+      "store_isAuth": "processing",
+      "store_documentation": "",
+      "store_self_address": "臺中市 中區 光復里平等街32號",
+      "store_website": "https://www.taog-game.com/",
       "store_name": "",
       "store_address": "",
       "store_email": "",
