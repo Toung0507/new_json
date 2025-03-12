@@ -203,6 +203,20 @@
       "user_create_at": "2025-03-12 13:54:50",
       "user_update_at": "",
       "id": 6
+    },
+    {
+      "user_email": "zzz@dream94zz.com",
+      "user_password": "$2a$10$9Qtbk.RA4fLi0auLTrYUKebxULd2vLIzE1WJ2pBXcTKgdMS3b0HFa",
+      "user_id": 7,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "zzz@dream94zz.com",
+      "user_img": "",
+      "user_tel": "02-25529422",
+      "user_sex": "",
+      "user_create_at": "2025-03-12 13:57:00",
+      "user_update_at": "",
+      "id": 7
     }
   ],
   "storesData": [
@@ -296,6 +310,22 @@
       "store_documentation": "",
       "store_self_address": "臺北市 萬華區 萬壽里漢中街24號1樓",
       "store_website": "https://www.missgame.com.tw/",
+      "store_name": "",
+      "store_address": "",
+      "store_email": "",
+      "store_tel": "",
+      "store_open_time": ""
+    },
+    {
+      "store_id": 7,
+      "user_id": 7,
+      "store_contact": "張先生",
+      "store_method": "統一編號",
+      "store_tax_id": "54649089",
+      "store_isAuth": "processing",
+      "store_documentation": "",
+      "store_self_address": "臺北市 大同區 大有里延平北路二段202號3樓",
+      "store_website": "https://dream94zz.com/",
       "store_name": "",
       "store_address": "",
       "store_email": "",
