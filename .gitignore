@@ -3,4 +3,6 @@ node_modules
 commad_record.js
 db2.json
 db1.json
+db3.json
+db-last.json
 .github\workflows\deploy.yml
