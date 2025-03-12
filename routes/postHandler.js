@@ -15,7 +15,8 @@ module.exports = (router, db) => {
             pricesData: "price_id",
             commentsData: "comment_id",
             groupsData: "group_id",
-            authorizedStore: "austore_id"
+            authorizedStore: "austore_id",
+            cities: "city_id"
         };
 
         const collection = db.get(tableName);

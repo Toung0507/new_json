@@ -145,6 +145,7 @@ module.exports = (router) => {
                             user_name: user_info ? user_info.user_name : "無此店家名稱",
                             user_email: user_info ? user_info.user_email : "無此店家信箱",
                             user_password: user_info ? user_info.user_password : "無此店家密碼",
+                            store_self_tel: user_info ? user_info.user_tel : "店家本身電話未輸入"
                         };
                     });
                     return storesAllData;
@@ -162,6 +163,7 @@ module.exports = (router) => {
                             user_name: user_info ? user_info.user_name : "無此店家名稱",
                             user_email: user_info ? user_info.user_email : "無此店家信箱",
                             user_password: user_info ? user_info.user_password : "無此店家密碼",
+                            store_self_tel: user_info ? user_info.user_tel : "店家本身電話未輸入"
                         };
                     });
                     return storesAllData;
@@ -176,6 +178,7 @@ module.exports = (router) => {
                         user_name: user_info ? user_info.user_name : "無此店家名稱",
                         user_email: user_info ? user_info.user_email : "無此店家信箱",
                         user_password: user_info ? user_info.user_password : "無此店家密碼",
+                        store_self_tel: user_info ? user_info.user_tel : "店家本身電話未輸入"
                     };
                 });
                 return storesAllData;
