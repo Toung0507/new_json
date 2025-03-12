@@ -161,6 +161,20 @@
       "user_create_at": "2025-03-12 13:47:39",
       "user_update_at": "",
       "id": 3
+    },
+    {
+      "user_email": "thekingpork@gmail.com",
+      "user_password": "$2a$10$MW42YnvH/uBvx50aaZHb5Ot5GiWrhdaIh0fB4ZmHu5JBRl5wmZOpC",
+      "user_id": 4,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "thekingpork@gmail.com",
+      "user_img": "",
+      "user_tel": "0905259817",
+      "user_sex": "",
+      "user_create_at": "2025-03-12 13:49:58",
+      "user_update_at": "",
+      "id": 4
     }
   ],
   "storesData": [
@@ -206,6 +220,22 @@
       "store_documentation": "",
       "store_self_address": "臺北市 中正區 延平南路21號4樓",
       "store_website": "https://boowork.boostime.me/",
+      "store_name": "",
+      "store_address": "",
+      "store_email": "",
+      "store_tel": "",
+      "store_open_time": ""
+    },
+    {
+      "store_id": 4,
+      "user_id": 4,
+      "store_contact": "茆小姐",
+      "store_method": "統一編號",
+      "store_tax_id": "43692242",
+      "store_isAuth": "processing",
+      "store_documentation": "",
+      "store_self_address": "臺北市 萬華區 菜園里康定路64號2樓",
+      "store_website": "https://thekingpork.com/",
       "store_name": "",
       "store_address": "",
       "store_email": "",
