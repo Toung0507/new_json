@@ -217,6 +217,20 @@
       "user_create_at": "2025-03-12 13:57:00",
       "user_update_at": "",
       "id": 7
+    },
+    {
+      "user_email": "ttlescapestudio@gmail.com",
+      "user_password": "$2a$10$dBuJvl7UI2VpUkjamLvg0uVpkLdTMZK8JsPoRf0sJ0v33kxmm4voC",
+      "user_id": 8,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "濤濤來工作室",
+      "user_img": "",
+      "user_tel": "0912850770",
+      "user_sex": "",
+      "user_create_at": "2025-03-12 13:58:57",
+      "user_update_at": "",
+      "id": 8
     }
   ],
   "storesData": [
@@ -326,6 +340,22 @@
       "store_documentation": "",
       "store_self_address": "臺北市 大同區 大有里延平北路二段202號3樓",
       "store_website": "https://dream94zz.com/",
+      "store_name": "",
+      "store_address": "",
+      "store_email": "",
+      "store_tel": "",
+      "store_open_time": ""
+    },
+    {
+      "store_id": 8,
+      "user_id": 8,
+      "store_contact": "楊先生",
+      "store_method": "統一編號",
+      "store_tax_id": "50525142",
+      "store_isAuth": "processing",
+      "store_documentation": "",
+      "store_self_address": "新竹市 東區 頂竹里東南街96巷5弄7號1樓",
+      "store_website": "https://www.ttlescapestudio.com/",
       "store_name": "",
       "store_address": "",
       "store_email": "",
