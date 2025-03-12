@@ -119,9 +119,40 @@
       "user_create_at": "2025-03-12 11:19:40",
       "user_update_at": "",
       "id": 0
+    },
+    {
+      "user_email": "stupidparticle@gmail.com",
+      "user_password": "$2a$10$OG1fnO1HbTbwOPj3PoBV9.85LfxbZV0je5wqua521UZBFkAXjRq2e",
+      "user_id": 1,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "笨蛋工作室有限公司",
+      "user_img": "",
+      "user_tel": "02-87874387",
+      "user_sex": "",
+      "user_create_at": "2025-03-12 13:31:48",
+      "user_update_at": "",
+      "id": 1
     }
   ],
-  "storesData": [],
+  "storesData": [
+    {
+      "store_id": 1,
+      "user_id": 1,
+      "store_contact": "吳先生",
+      "store_method": "統一編號",
+      "store_tax_id": "54292497",
+      "store_isAuth": "processing",
+      "store_documentation": "",
+      "store_self_address": "",
+      "store_website": "https://stupidparticle.com/",
+      "store_name": "",
+      "store_address": "臺北市 松山區 南京東路五段399號9樓",
+      "store_email": "",
+      "store_tel": "",
+      "store_open_time": ""
+    }
+  ],
   "gamesData": [
     {
       "game_id": 1,
