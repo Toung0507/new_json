@@ -189,6 +189,20 @@
       "user_create_at": "2025-03-12 13:52:59",
       "user_update_at": "",
       "id": 5
+    },
+    {
+      "user_email": "missgameservices@gmail.com",
+      "user_password": "$2a$10$m4aGm8L/El55ibqdMem5Sum.tY5.4BO0aodymclrbjgssK6KTk91i",
+      "user_id": 6,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "密思創意行銷股份有限公司",
+      "user_img": "",
+      "user_tel": "0986617820",
+      "user_sex": "",
+      "user_create_at": "2025-03-12 13:54:50",
+      "user_update_at": "",
+      "id": 6
     }
   ],
   "storesData": [
@@ -266,6 +280,22 @@
       "store_documentation": "",
       "store_self_address": "臺中市 中區 光復里平等街32號",
       "store_website": "https://www.taog-game.com/",
+      "store_name": "",
+      "store_address": "",
+      "store_email": "",
+      "store_tel": "",
+      "store_open_time": ""
+    },
+    {
+      "store_id": 6,
+      "user_id": 6,
+      "store_contact": "蕭小姐",
+      "store_method": "統一編號",
+      "store_tax_id": "54346276",
+      "store_isAuth": "processing",
+      "store_documentation": "",
+      "store_self_address": "臺北市 萬華區 萬壽里漢中街24號1樓",
+      "store_website": "https://www.missgame.com.tw/",
       "store_name": "",
       "store_address": "",
       "store_email": "",
