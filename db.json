@@ -231,6 +231,20 @@
       "user_create_at": "2025-03-12 13:58:57",
       "user_update_at": "",
       "id": 8
+    },
+    {
+      "user_email": "bglock602@gmail.com",
+      "user_password": "$2a$10$1nxud1hEkRQXuwqEBDErD./0Mb.g5xiuzM01WFoR9CX7OMnWoMOUO",
+      "user_id": 9,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "BGLOCK推理解謎館",
+      "user_img": "",
+      "user_tel": "04-22133896",
+      "user_sex": "",
+      "user_create_at": "2025-03-12 14:01:30",
+      "user_update_at": "",
+      "id": 9
     }
   ],
   "storesData": [
@@ -356,6 +370,22 @@
       "store_documentation": "",
       "store_self_address": "新竹市 東區 頂竹里東南街96巷5弄7號1樓",
       "store_website": "https://www.ttlescapestudio.com/",
+      "store_name": "",
+      "store_address": "",
+      "store_email": "",
+      "store_tel": "",
+      "store_open_time": ""
+    },
+    {
+      "store_id": 9,
+      "user_id": 9,
+      "store_contact": "魏小姐",
+      "store_method": "統一編號",
+      "store_tax_id": "60232567",
+      "store_isAuth": "processing",
+      "store_documentation": "",
+      "store_self_address": "臺中市 中區 柳川里光復路197號",
+      "store_website": "https://bglock602.simplybook.asia/v2/",
       "store_name": "",
       "store_address": "",
       "store_email": "",
