@@ -346,7 +346,11 @@
       "store_address": "",
       "store_email": "",
       "store_tel": "",
-      "store_open_time": ""
+      "store_open_time": "",
+      "user_name": "笨蛋工作室有限公司",
+      "user_email": "stupidparticle@gmail.com",
+      "store_self_tel": "02-87874387",
+      "store_create_at": "2025-03-13 22:06:30"
     },
     {
       "store_id": 2,
@@ -362,7 +366,11 @@
       "store_address": "",
       "store_email": "",
       "store_tel": "",
-      "store_open_time": ""
+      "store_open_time": "",
+      "user_name": "全勝創意工作室",
+      "user_email": "funlockstudio@gmail.com",
+      "store_self_tel": "0928007799",
+      "store_create_at": "2025-03-13 22:07:16"
     },
     {
       "store_id": 3,
@@ -378,7 +386,11 @@
       "store_address": "",
       "store_email": "",
       "store_tel": "",
-      "store_open_time": ""
+      "store_open_time": "",
+      "user_name": "米邏創意有限公司",
+      "user_email": "ricelo0517@gmail.com",
+      "store_self_tel": "0973113841",
+      "store_create_at": "2025-03-13 22:08:00"
     },
     {
       "store_id": 4,
@@ -394,7 +406,11 @@
       "store_address": "",
       "store_email": "",
       "store_tel": "",
-      "store_open_time": ""
+      "store_open_time": "",
+      "user_name": "thekingpork@gmail.com",
+      "user_email": "thekingpork@gmail.com",
+      "store_self_tel": "0905259817",
+      "store_create_at": "2025-03-13 22:08:30"
     },
     {
       "store_id": 5,
@@ -410,7 +426,11 @@
       "store_address": "",
       "store_email": "",
       "store_tel": "",
-      "store_open_time": ""
+      "store_open_time": "",
+      "user_name": "神不在場有限公司",
+      "user_email": "waldner9527@taog-game.com",
+      "store_self_tel": "04-22230406",
+      "store_create_at": "2025-03-13 22:09:12"
     },
     {
       "store_id": 6,
@@ -426,7 +446,11 @@
       "store_address": "",
       "store_email": "",
       "store_tel": "",
-      "store_open_time": ""
+      "store_open_time": "",
+      "user_name": "密思創意行銷股份有限公司",
+      "user_email": "missgameservices@gmail.com",
+      "store_self_tel": "0986617820",
+      "store_create_at": "2025-03-13 22:10:45"
     },
     {
       "store_id": 7,
@@ -442,7 +466,11 @@
       "store_address": "",
       "store_email": "",
       "store_tel": "",
-      "store_open_time": ""
+      "store_open_time": "",
+      "user_name": "zzz@dream94zz.com",
+      "user_email": "zzz@dream94zz.com",
+      "store_self_tel": "02-25529422",
+      "store_create_at": "2025-03-13 22:11:31"
     },
     {
       "store_id": 8,
@@ -458,7 +486,11 @@
       "store_address": "",
       "store_email": "",
       "store_tel": "",
-      "store_open_time": ""
+      "store_open_time": "",
+      "user_name": "濤濤來工作室",
+      "user_email": "ttlescapestudio@gmail.com",
+      "store_self_tel": "0912850770",
+      "store_create_at": "2025-03-13 22:11:55"
     },
     {
       "store_id": 9,
@@ -474,7 +506,11 @@
       "store_address": "",
       "store_email": "",
       "store_tel": "",
-      "store_open_time": ""
+      "store_open_time": "",
+      "user_name": "BGLOCK推理解謎館",
+      "user_email": "bglock602@gmail.com",
+      "store_self_tel": "04-22133896",
+      "store_create_at": "2025-03-13 22:12:03"
     },
     {
       "store_id": 10,
@@ -490,7 +526,11 @@
       "store_address": "",
       "store_email": "",
       "store_tel": "",
-      "store_open_time": ""
+      "store_open_time": "",
+      "user_name": "尋寶人森",
+      "user_email": "test@hex.com",
+      "store_self_tel": "0956066879",
+      "store_create_at": "2025-03-13 22:12:45"
     }
   ],
   "gamesData": [
@@ -2159,16 +2199,6 @@
       "comment_isSpoilered": false,
       "coment_content": "一起來看屋",
       "commet_played_time": "2025-03-13"
-    },
-    {
-      "comment_id": 6,
-      "coment_star": 5,
-      "game_id": 18,
-      "user_id": 11,
-      "comment_isPass": true,
-      "comment_isSpoilered": false,
-      "coment_content": "看屋",
-      "commet_played_time": "2025-03-12"
     }
   ],
   "groupsData": [
