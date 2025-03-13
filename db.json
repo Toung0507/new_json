@@ -2199,6 +2199,16 @@
       "comment_isSpoilered": false,
       "coment_content": "一起來看屋",
       "commet_played_time": "2025-03-13"
+    },
+    {
+      "comment_id": 6,
+      "user_id": 10,
+      "game_id": 2,
+      "comment_isSpoilered": false,
+      "coment_content": "gogo去玩吧!\n保證值回票價",
+      "coment_star": 2,
+      "commet_played_time": "2025-03-05",
+      "comment_isPass": true
     }
   ],
   "groupsData": [
