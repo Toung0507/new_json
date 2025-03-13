@@ -2159,6 +2159,16 @@
       "comment_isSpoilered": false,
       "coment_content": "一起來看屋",
       "commet_played_time": "2025-03-13"
+    },
+    {
+      "comment_id": 6,
+      "coment_star": 5,
+      "game_id": 18,
+      "user_id": 11,
+      "comment_isPass": true,
+      "comment_isSpoilered": false,
+      "coment_content": "看屋",
+      "commet_played_time": "2025-03-12"
     }
   ],
   "groupsData": [
