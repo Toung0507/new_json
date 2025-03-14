@@ -187,7 +187,7 @@
       "user_tel": "04-22230406",
       "user_sex": "",
       "user_create_at": "2025-03-12 13:52:59",
-      "user_update_at": "",
+      "user_update_at": "2025-03-15 01:35:50",
       "id": 5
     },
     {
@@ -416,7 +416,7 @@
     {
       "store_id": 5,
       "user_id": 5,
-      "store_contact": "鄭先生",
+      "store_contact": "鄭先生喔",
       "store_method": "統一編號",
       "store_tax_id": "90549850",
       "store_isAuth": "processing",
@@ -431,7 +431,8 @@
       "user_name": "神不在場有限公司",
       "user_email": "waldner9527@taog-game.com",
       "store_self_tel": "04-22230406",
-      "store_create_at": "2025-03-13 22:09:12"
+      "store_create_at": "2025-03-13 22:09:12",
+      "store_update_at": "2025-03-15 01:35:50"
     },
     {
       "store_id": 6,
