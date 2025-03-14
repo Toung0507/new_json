@@ -2197,18 +2197,18 @@
       "user_id": 11,
       "comment_isPass": true,
       "comment_isSpoilered": false,
-      "coment_content": "一起來看屋喔",
+      "coment_content": "一起來看屋",
       "commet_played_time": "2025-03-13"
     },
     {
       "comment_id": 6,
-      "user_id": 10,
-      "game_id": 2,
+      "coment_star": 5,
+      "game_id": 18,
+      "user_id": 11,
+      "comment_isPass": true,
       "comment_isSpoilered": false,
-      "coment_content": "gogo去玩吧!\n保證值回票價",
-      "coment_star": 2,
-      "commet_played_time": "2025-03-05",
-      "comment_isPass": true
+      "coment_content": "看屋",
+      "commet_played_time": "2025-03-12"
     }
   ],
   "groupsData": [
@@ -2225,9 +2225,7 @@
       "group_noob": true,
       "group_cancel": false,
       "group_member": "4",
-      "group_participants": [
-        11
-      ],
+      "group_participants": [],
       "group_isSuccessful": true
     },
     {
@@ -2243,7 +2241,10 @@
       "group_noob": false,
       "group_cancel": false,
       "group_member": "8",
-      "group_participants": [],
+      "group_participants": [
+        11,
+        11
+      ],
       "group_isSuccessful": null
     },
     {
@@ -2259,9 +2260,7 @@
       "group_noob": true,
       "group_cancel": false,
       "group_member": "6",
-      "group_participants": [
-        11
-      ],
+      "group_participants": [],
       "group_isSuccessful": null
     },
     {
@@ -2277,9 +2276,7 @@
       "group_noob": false,
       "group_cancel": false,
       "group_member": "6",
-      "group_participants": [
-        11
-      ],
+      "group_participants": [],
       "group_isSuccessful": null
     },
     {
@@ -2313,9 +2310,7 @@
       "group_noob": true,
       "group_cancel": true,
       "group_member": "5",
-      "group_participants": [
-        11
-      ],
+      "group_participants": [],
       "group_isSuccessful": true
     },
     {
@@ -2331,9 +2326,7 @@
       "group_noob": true,
       "group_cancel": false,
       "group_member": "3",
-      "group_participants": [
-        11
-      ],
+      "group_participants": [],
       "group_isSuccessful": null
     },
     {
@@ -2349,9 +2342,7 @@
       "group_noob": false,
       "group_cancel": false,
       "group_member": "5",
-      "group_participants": [
-        11
-      ],
+      "group_participants": [],
       "group_isSuccessful": null
     },
     {
