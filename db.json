@@ -2225,7 +2225,9 @@
       "group_noob": true,
       "group_cancel": false,
       "group_member": "4",
-      "group_participants": [],
+      "group_participants": [
+        11
+      ],
       "group_isSuccessful": true
     },
     {
