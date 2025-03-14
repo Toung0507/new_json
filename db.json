@@ -2341,7 +2341,9 @@
       "group_noob": false,
       "group_cancel": false,
       "group_member": "5",
-      "group_participants": [],
+      "group_participants": [
+        10
+      ],
       "group_isSuccessful": null
     },
     {
