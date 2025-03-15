@@ -290,7 +290,7 @@
     },
     {
       "user_email": "hanchen923@hotmail.com",
-      "user_password": "$2a$10$VteNYxtPeiss.RT2ZQhXGeWvxgqUd4QI2G2rkR/bATai8.OBEu58C",
+      "user_password": "$2a$10$OyBPd7wiUttnDSM7X4wPl..d//PxJLQiAAL/Zt8whv.Rb2Qwk3aI2",
       "user_id": 13,
       "user_role": "會員",
       "user_reg_method": "信箱",
@@ -299,7 +299,7 @@
       "user_tel": "0987654321",
       "user_sex": "男",
       "user_create_at": "2025-03-12 14:20:12",
-      "user_update_at": "",
+      "user_update_at": "2025-03-15 22:35:37",
       "id": 13
     },
     {
