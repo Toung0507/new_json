@@ -350,12 +350,12 @@
       "user_id": 17,
       "user_role": "店家",
       "user_reg_method": "信箱",
-      "user_name": "幻境迷蹤10",
+      "user_name": "幻境迷蹤",
       "user_img": "",
       "user_tel": "04-12345678",
       "user_sex": "",
       "user_create_at": "2025-03-15 13:22:01",
-      "user_update_at": "2025-03-15 15:59:36",
+      "user_update_at": "2025-03-15 16:21:04",
       "id": 17
     }
   ],
@@ -577,7 +577,7 @@
       "store_email": "",
       "store_tel": "",
       "store_open_time": "",
-      "store_update_at": "2025-03-15 15:47:52"
+      "store_update_at": "2025-03-15 16:21:04"
     }
   ],
   "gamesData": [
