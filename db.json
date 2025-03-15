@@ -346,7 +346,7 @@
     },
     {
       "user_email": "123456@gmail.com",
-      "user_password": "$2a$10$SCBrcsLedqU.kPYDpiyDHeyKC81mC0Qz.yA.NFEWMcTmrpU.iFDuK",
+      "user_password": "$2a$10$MUIBsmuZLn/CMN9tZ0FJkusX//Y0Qk9/YMPN8SCGGLupcH/1C4Nba",
       "user_id": 17,
       "user_role": "店家",
       "user_reg_method": "信箱",
@@ -355,7 +355,7 @@
       "user_tel": "04-12345678",
       "user_sex": "",
       "user_create_at": "2025-03-15 13:22:01",
-      "user_update_at": "2025-03-15 15:47:52",
+      "user_update_at": "2025-03-15 15:59:36",
       "id": 17
     }
   ],
