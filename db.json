@@ -2412,7 +2412,8 @@
       "group_cancel": false,
       "group_member": "5",
       "group_participants": [
-        10
+        10,
+        15
       ],
       "group_isSuccessful": null
     },
