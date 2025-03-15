@@ -178,7 +178,7 @@
     },
     {
       "user_email": "waldner9527@taog-game.com",
-      "user_password": "$2a$10$lDKIlx1RaQFuF/FKVRGXsOupv7ORmtbEDA2cRAJt20Dc9UVHp1WJa",
+      "user_password": "$2a$10$py2XnqUdUCW39thxAJ8z1eNVb/Kfp7uxcrfdSUXrB4siUyJDpysQa",
       "user_id": 5,
       "user_role": "店家",
       "user_reg_method": "信箱",
@@ -187,7 +187,7 @@
       "user_tel": "04-22230406",
       "user_sex": "",
       "user_create_at": "2025-03-12 13:52:59",
-      "user_update_at": "2025-03-15 14:58:09",
+      "user_update_at": "2025-03-15 15:03:46",
       "id": 5
     },
     {
