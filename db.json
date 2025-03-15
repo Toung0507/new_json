@@ -1573,6 +1573,30 @@
       "game_isStock": true,
       "game_website": "",
       "game_min_price": 500
+    },
+    {
+      "game_id": 38,
+      "store_id": null,
+      "game_name": "465",
+      "game_address": "789",
+      "game_tel": "798",
+      "game_time": "120",
+      "game_minNum_Players": 0,
+      "game_maxNum_Players": "80",
+      "game_dif_tag": 1,
+      "game_main_tag1": 3,
+      "game_main_tag2": 7,
+      "game_score": 0,
+      "game_img": [],
+      "game_isLimited": true,
+      "game_start_date": "2024/12/31",
+      "game_end_date": "",
+      "game_info": "",
+      "game_remark": "",
+      "game_score_num": 0,
+      "game_isStock": true,
+      "game_website": "",
+      "game_min_price": 500
     }
   ],
   "pricesData": [
