@@ -2153,16 +2153,6 @@
   ],
   "commentsData": [
     {
-      "comment_id": 1,
-      "user_id": 10,
-      "game_id": 1,
-      "comment_isSpoilered": true,
-      "coment_content": "真好玩真好玩",
-      "coment_star": 4.8,
-      "commet_played_time": "2025-02-01",
-      "comment_isPass": true
-    },
-    {
       "comment_id": 2,
       "user_id": 99,
       "game_id": 13,
