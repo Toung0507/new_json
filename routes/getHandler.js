@@ -43,7 +43,7 @@ module.exports = (router, db) => {
                 "groupsData": "game_id"
             },
             "usersData": {
-                "storesData": "store_id",
+                "storesData": "user_id",
                 "groupsData": "user_id",
                 "commentsData": "user_id"
             },
