@@ -2334,7 +2334,8 @@
       "group_cancel": false,
       "group_member": "4",
       "group_participants": [
-        16
+        16,
+        10
       ],
       "group_isSuccessful": null
     },
