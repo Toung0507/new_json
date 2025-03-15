@@ -1471,6 +1471,29 @@
       "game_score_num": 96,
       "game_isStock": false,
       "game_website": "https://bglock602.simplybook.asia/v2/#book/location/1/service/7/count/1/"
+    },
+    {
+      "game_id": 34,
+      "store_id": 2,
+      "game_name": "密室B",
+      "game_address": "台中市",
+      "game_tel": "041234567",
+      "game_time": "60",
+      "game_minNum_Players": "2",
+      "game_maxNum_Players": "1",
+      "game_dif_tag": 1,
+      "game_main_tag1": 3,
+      "game_main_tag2": 7,
+      "game_score": 0,
+      "game_img": [],
+      "game_isLimited": true,
+      "game_start_date": "2024/12/31",
+      "game_end_date": "",
+      "game_info": "",
+      "game_remark": "",
+      "game_score_num": 0,
+      "game_isStock": true,
+      "game_website": ""
     }
   ],
   "pricesData": [
