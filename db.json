@@ -343,6 +343,20 @@
       "user_create_at": "2025-03-15 12:55:35",
       "user_update_at": "2025-03-15 13:07:20",
       "id": 16
+    },
+    {
+      "user_email": "123456@gmail.com",
+      "user_password": "$2a$10$SCBrcsLedqU.kPYDpiyDHeyKC81mC0Qz.yA.NFEWMcTmrpU.iFDuK",
+      "user_id": 17,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "幻境迷蹤",
+      "user_img": "",
+      "user_tel": "04-12345678",
+      "user_sex": "",
+      "user_create_at": "2025-03-15 13:22:01",
+      "user_update_at": "",
+      "id": 17
     }
   ],
   "storesData": [
@@ -547,6 +561,22 @@
       "user_email": "test@hex.com",
       "store_self_tel": "0956066879",
       "store_create_at": "2025-03-13 22:12:45"
+    },
+    {
+      "store_id": 11,
+      "user_id": 17,
+      "store_contact": "方小姐",
+      "store_method": "其他",
+      "store_tax_id": "",
+      "store_isAuth": "processing",
+      "store_documentation": "https://getbootstrap.com/docs/5.3/utilities/display/#how-it-works",
+      "store_self_address": "臺中市 西屯區 多仁里 120號",
+      "store_website": "https://new-json.onrender.com/api-docs/#/%E6%8F%AA%E5%9C%98%E7%9B%B8%E9%97%9C/get_groupsData",
+      "store_name": "",
+      "store_address": "",
+      "store_email": "",
+      "store_tel": "",
+      "store_open_time": ""
     }
   ],
   "gamesData": [
