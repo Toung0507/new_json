@@ -252,12 +252,12 @@
       "user_id": 10,
       "user_role": "會員",
       "user_reg_method": "信箱",
-      "user_name": "Toung123",
+      "user_name": "Toung",
       "user_img": "",
       "user_tel": "",
-      "user_sex": "不提供",
+      "user_sex": "女",
       "user_create_at": "2025-03-12 14:18:09",
-      "user_update_at": "2025-03-16 10:24:04",
+      "user_update_at": "2025-03-15 15:40:53",
       "id": 10
     },
     {
@@ -2282,16 +2282,6 @@
       "comment_isSpoilered": false,
       "coment_content": "讚",
       "commet_played_time": "2025-03-06"
-    },
-    {
-      "comment_id": 8,
-      "coment_star": 4,
-      "game_id": 13,
-      "user_id": 10,
-      "comment_isPass": true,
-      "comment_isSpoilered": true,
-      "coment_content": "很好玩~",
-      "commet_played_time": "2025-03-05"
     }
   ],
   "groupsData": [
@@ -2363,8 +2353,7 @@
       "group_member": "6",
       "group_participants": [
         16,
-        13,
-        5
+        13
       ],
       "group_isSuccessful": null
     },
