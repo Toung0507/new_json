@@ -2511,6 +2511,22 @@
       "group_member": "7",
       "group_participants": [],
       "group_isSuccessful": null
+    },
+    {
+      "group_id": 13,
+      "user_id": 12,
+      "game_id": 20,
+      "game_name": "病變",
+      "game_address": "台中市西區公益路130號3樓",
+      "group_end_at": "2025-06-01",
+      "group_active_date": "2025-06-02",
+      "group_channel": "abc.discord.com",
+      "group_philosophy": "病變擴散，急需神隊友解密救援！極限逃脫挑戰你的膽量與智慧！",
+      "group_noob": false,
+      "group_cancel": false,
+      "group_member": "4",
+      "group_participants": [],
+      "group_isSuccessful": null
     }
   ],
   "authorizedStore": [
