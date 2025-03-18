@@ -2479,6 +2479,22 @@
         10
       ],
       "group_isSuccessful": null
+    },
+    {
+      "group_id": 11,
+      "user_id": 10,
+      "game_id": 16,
+      "game_name": "月夜獨嚎",
+      "game_address": "台北市萬華區康定路62號4樓",
+      "group_end_at": "2025-05-01",
+      "group_active_date": "2025-05-02",
+      "group_channel": "abc.discord.com",
+      "group_philosophy": "月夜降臨，孤狼現身！急徵神隊友，一起闖密室解謎，今晚不脫不歸！",
+      "group_noob": false,
+      "group_cancel": false,
+      "group_member": "8",
+      "group_participants": [],
+      "group_isSuccessful": null
     }
   ],
   "authorizedStore": [
