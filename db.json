@@ -2527,6 +2527,22 @@
       "group_member": "4",
       "group_participants": [],
       "group_isSuccessful": null
+    },
+    {
+      "group_id": 14,
+      "user_id": 13,
+      "game_id": 22,
+      "game_name": "咒雨",
+      "game_address": "台北市大同區民生西路300號4樓",
+      "group_end_at": "2025-06-10",
+      "group_active_date": "2025-06-12",
+      "group_channel": "abc.discord.com",
+      "group_philosophy": "咒雨降臨，厄運逼近！揪團神隊友，聯手解咒破局，逃出生天！",
+      "group_noob": true,
+      "group_cancel": false,
+      "group_member": "3",
+      "group_participants": [],
+      "group_isSuccessful": null
     }
   ],
   "authorizedStore": [
