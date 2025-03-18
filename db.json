@@ -2623,6 +2623,22 @@
       "group_member": "4",
       "group_participants": [],
       "group_isSuccessful": null
+    },
+    {
+      "group_id": 20,
+      "user_id": 11,
+      "game_id": 9,
+      "game_name": "觀落陰",
+      "game_address": "台北市萬華區漢中街24號（西門徒步區）",
+      "group_end_at": "2025-09-01",
+      "group_active_date": "2025-09-02",
+      "group_channel": "abc.discord.com",
+      "group_philosophy": "觀落陰的禁忌之旅，陰間在等你，你敢來嗎？",
+      "group_noob": true,
+      "group_cancel": false,
+      "group_member": "5",
+      "group_participants": [],
+      "group_isSuccessful": null
     }
   ],
   "authorizedStore": [
