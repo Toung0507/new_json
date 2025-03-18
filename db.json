@@ -2559,6 +2559,22 @@
       "group_member": "5",
       "group_participants": [],
       "group_isSuccessful": null
+    },
+    {
+      "group_id": 16,
+      "user_id": 11,
+      "game_id": 26,
+      "game_name": "壹零玖伍：禁錮之宅",
+      "game_address": "台中市東區東光園路602號",
+      "group_end_at": "2025-07-15",
+      "group_active_date": "2025-07-19",
+      "group_channel": "abc.discord.com",
+      "group_philosophy": "誤闖荒宅，暗藏玄機！尋寶變逃命，急徵神隊友！",
+      "group_noob": false,
+      "group_cancel": false,
+      "group_member": "7",
+      "group_participants": [],
+      "group_isSuccessful": null
     }
   ],
   "authorizedStore": [
