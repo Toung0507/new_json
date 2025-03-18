@@ -2607,6 +2607,22 @@
       "group_member": "5",
       "group_participants": [],
       "group_isSuccessful": null
+    },
+    {
+      "group_id": 19,
+      "user_id": 10,
+      "game_id": 29,
+      "game_name": "暴雨謀殺案",
+      "game_address": "台中市東區東光園路602號",
+      "group_end_at": "2025-08-20",
+      "group_active_date": "2025-08-25",
+      "group_channel": "abc.discord.com",
+      "group_philosophy": "記憶消逝，真相難尋；誰殺了她？我需要你的幫助！",
+      "group_noob": false,
+      "group_cancel": false,
+      "group_member": "4",
+      "group_participants": [],
+      "group_isSuccessful": null
     }
   ],
   "authorizedStore": [
