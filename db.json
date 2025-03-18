@@ -2543,6 +2543,22 @@
       "group_member": "3",
       "group_participants": [],
       "group_isSuccessful": null
+    },
+    {
+      "group_id": 15,
+      "user_id": 10,
+      "game_id": 23,
+      "game_name": "籠中鳥",
+      "game_address": "台北市大同區延平北路二段202號3樓",
+      "group_end_at": "2025-07-01",
+      "group_active_date": "2025-07-02",
+      "group_channel": "abc.discord.com",
+      "group_philosophy": "童謠再響，鳥籠重現！誰是你背後的那個人？",
+      "group_noob": false,
+      "group_cancel": false,
+      "group_member": "5",
+      "group_participants": [],
+      "group_isSuccessful": null
     }
   ],
   "authorizedStore": [
