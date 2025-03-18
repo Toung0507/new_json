@@ -2282,6 +2282,16 @@
       "comment_isSpoilered": false,
       "coment_content": "讚",
       "commet_played_time": "2025-03-06"
+    },
+    {
+      "comment_id": 8,
+      "coment_star": 4,
+      "game_id": 32,
+      "user_id": 10,
+      "comment_isPass": true,
+      "comment_isSpoilered": false,
+      "coment_content": "超好玩",
+      "commet_played_time": "2025-03-05"
     }
   ],
   "groupsData": [
@@ -2335,7 +2345,9 @@
       "group_noob": true,
       "group_cancel": true,
       "group_member": "6",
-      "group_participants": [],
+      "group_participants": [
+        10
+      ],
       "group_isSuccessful": false
     },
     {
