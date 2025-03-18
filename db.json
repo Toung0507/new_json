@@ -2591,6 +2591,22 @@
       "group_member": "3",
       "group_participants": [],
       "group_isSuccessful": null
+    },
+    {
+      "group_id": 18,
+      "user_id": 13,
+      "game_id": 30,
+      "game_name": "怪奇雜貨舖",
+      "game_address": "台中市中區綠川西街59巷2號B1",
+      "group_end_at": "2025-08-10",
+      "group_active_date": "2025-08-11",
+      "group_channel": "abc.discord.com",
+      "group_philosophy": "急徵膽大缺錢神隊友，高薪打工？有膽你就來！",
+      "group_noob": true,
+      "group_cancel": false,
+      "group_member": "5",
+      "group_participants": [],
+      "group_isSuccessful": null
     }
   ],
   "authorizedStore": [
