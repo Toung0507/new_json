@@ -2495,6 +2495,22 @@
       "group_member": "8",
       "group_participants": [],
       "group_isSuccessful": null
+    },
+    {
+      "group_id": 12,
+      "user_id": 11,
+      "game_id": 17,
+      "game_name": "SHINOBI忍",
+      "game_address": "台北市萬華區康定路62號9樓",
+      "group_end_at": "2025-05-10",
+      "group_active_date": "2025-05-11",
+      "group_channel": "abc.discord.com",
+      "group_philosophy": "暗影降臨，忍者集結！徵求神隊友潛入SHINOBI忍，挑戰極限逃脫！",
+      "group_noob": false,
+      "group_cancel": false,
+      "group_member": "7",
+      "group_participants": [],
+      "group_isSuccessful": null
     }
   ],
   "authorizedStore": [
