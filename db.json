@@ -1596,6 +1596,31 @@
       "game_score_num": 0,
       "game_isStock": false,
       "game_website": "https://bglock602.simplybook.asia/v2/#book/location/1/service/7/count/1/"
+    },
+    {
+      "game_id": 39,
+      "store_id": 5,
+      "game_name": "132",
+      "game_address": "465",
+      "game_tel": "0974123456",
+      "game_time": 120,
+      "game_minNum_Players": 4,
+      "game_maxNum_Players": 8,
+      "game_dif_tag": 2,
+      "game_main_tag1": 1,
+      "game_main_tag2": 7,
+      "game_score": 5,
+      "game_img": [
+        "https://bglock602.simplybook.asia/v2/#book/location/1/service/7/count/1/.png"
+      ],
+      "game_isLimited": "1",
+      "game_start_date": "2025-02-23",
+      "game_end_date": "2025-03-14",
+      "game_info": "132",
+      "game_remark": "",
+      "game_score_num": 0,
+      "game_isStock": false,
+      "game_website": "https://bglock602.simplybook.asia/v2/#book/location/1/service/7/count/1/"
     }
   ],
   "pricesData": [
@@ -2345,6 +2370,24 @@
       "price_day_type": "",
       "price_mix": 282,
       "price_people": "8人"
+    },
+    {
+      "price_id": 85,
+      "game_id": 39,
+      "price_is_difference": 1,
+      "price_count": 1,
+      "price_day_type": "weekday",
+      "price_mix": 100,
+      "price_people": "1-4人"
+    },
+    {
+      "price_id": 86,
+      "game_id": 39,
+      "price_is_difference": 1,
+      "price_count": 2,
+      "price_day_type": "weekend",
+      "price_mix": 200,
+      "price_people": "5-10人"
     }
   ],
   "commentsData": [
