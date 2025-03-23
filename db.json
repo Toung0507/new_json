@@ -1496,6 +1496,31 @@
       "game_score_num": 0,
       "game_isStock": false,
       "game_website": "https://i2.wp.com/content.escape.bar/wp-content/uploads/2022/11/%E9%80%83%E8%84%AB%E5%90%A7banner_%E5%AE%89%E9%9B%85-1.jpg?fit=1200%2C630&ssl=1"
+    },
+    {
+      "game_id": 35,
+      "store_id": 5,
+      "game_name": "132",
+      "game_address": "465",
+      "game_tel": "0974123456",
+      "game_time": 120,
+      "game_minNum_Players": 4,
+      "game_maxNum_Players": 8,
+      "game_dif_tag": 2,
+      "game_main_tag1": 1,
+      "game_main_tag2": 10,
+      "game_score": 5,
+      "game_img": [
+        "https://bglock602.simplybook.asia/v2/#book/location/1/service/7/count/1/.png"
+      ],
+      "game_isLimited": "1",
+      "game_start_date": "2025-03-19",
+      "game_end_date": "2025-03-25",
+      "game_info": "000",
+      "game_remark": "",
+      "game_score_num": 0,
+      "game_isStock": false,
+      "game_website": "https://bglock602.simplybook.asia/v2/#book/location/1/service/7/count/1/"
     }
   ],
   "pricesData": [
