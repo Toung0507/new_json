@@ -1471,6 +1471,31 @@
       "game_score_num": 96,
       "game_isStock": false,
       "game_website": "https://bglock602.simplybook.asia/v2/#book/location/1/service/7/count/1/"
+    },
+    {
+      "game_id": 34,
+      "store_id": 0,
+      "game_name": "測試",
+      "game_address": "測試地址",
+      "game_tel": "0974123456",
+      "game_time": 120,
+      "game_minNum_Players": 4,
+      "game_maxNum_Players": 8,
+      "game_dif_tag": "3",
+      "game_main_tag1": 3,
+      "game_main_tag2": 9,
+      "game_score": 5,
+      "game_img": [
+        "https://i2.wp.com/content.escape.bar/wp-content/uploads/2022/11/%E9%80%83%E8%84%AB%E5%90%A7banner_%E5%AE%89%E9%9B%85-1.jpg"
+      ],
+      "game_isLimited": "0",
+      "game_start_date": "2025-03-20",
+      "game_end_date": "2025-03-21",
+      "game_info": "介紹",
+      "game_remark": "",
+      "game_score_num": 0,
+      "game_isStock": false,
+      "game_website": "https://i2.wp.com/content.escape.bar/wp-content/uploads/2022/11/%E9%80%83%E8%84%AB%E5%90%A7banner_%E5%AE%89%E9%9B%85-1.jpg?fit=1200%2C630&ssl=1"
     }
   ],
   "pricesData": [
