@@ -2213,15 +2213,6 @@
       "price_people": "7人"
     },
     {
-      "price_id": 85,
-      "game_id": 39,
-      "price_is_difference": 1,
-      "price_count": 1,
-      "price_day_type": "weekday",
-      "price_mix": 100,
-      "price_people": "1-4人"
-    },
-    {
       "price_id": 86,
       "game_id": 39,
       "price_is_difference": 1,
