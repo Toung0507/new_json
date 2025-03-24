@@ -1613,7 +1613,7 @@
       "game_img": [
         "https://bglock602.simplybook.asia/v2/#book/location/1/service/7/count/1/.png"
       ],
-      "game_isLimited": "1",
+      "game_isLimited": "limited",
       "game_start_date": "2025-02-23",
       "game_end_date": "2025-03-14",
       "game_info": "132",
