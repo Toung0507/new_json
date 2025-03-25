@@ -1462,9 +1462,9 @@
       "game_img": [
         "https://plus.unsplash.com/premium_photo-1675705698856-4e15ed5506d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.png"
       ],
-      "game_isLimited": "0",
+      "game_isLimited": "1",
       "game_start_date": "2025-04-01",
-      "game_end_date": null,
+      "game_end_date": "2025-11-30",
       "game_info": "一場神秘的時光旅行將您帶回了1930年的上海，陷入了一場黑幫爭權與禁忌科學交織的陰謀之中。\n你們必須破解時光裝置的密碼，避免歷史被篡改，並逃離即將崩解的時光裂縫。\n每一秒都關乎未來的命運，您能否成功完成任務，拯救時空的秩序？",
       "game_remark": "",
       "game_score_num": 0,
