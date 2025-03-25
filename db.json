@@ -1470,6 +1470,31 @@
       "game_score_num": 0,
       "game_isStock": false,
       "game_website": "https://plus.unsplash.com/premium_photo-1675705698856-4e15ed5506d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "game_id": 34,
+      "store_id": 5,
+      "game_name": "地底迷城",
+      "game_address": "台南市安平區永華路二段6號8樓",
+      "game_tel": "0974123456",
+      "game_time": 120,
+      "game_minNum_Players": 4,
+      "game_maxNum_Players": 8,
+      "game_dif_tag": 1,
+      "game_main_tag1": 3,
+      "game_main_tag2": 11,
+      "game_score": 5,
+      "game_img": [
+        "https://images.unsplash.com/photo-1560371012-887f41479a45?q=80&w=2157&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.png"
+      ],
+      "game_isLimited": "0",
+      "game_start_date": "2025-02-01",
+      "game_end_date": null,
+      "game_info": "您誤入一座古老的地底迷城，傳說中這裡埋藏著無價的寶藏，但同時也充滿危機。\n你們需要合作破解古代機關，穿越隱秘通道，解開謎題以揭示真相。\n時間有限，能否順利逃脫迷城，掌握傳說中的秘密？",
+      "game_remark": "希望可以審核成功",
+      "game_score_num": 0,
+      "game_isStock": false,
+      "game_website": "https://images.unsplash.com/photo-1560371012-887f41479a45?q=80&w=2157&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ],
   "pricesData": [
@@ -2218,6 +2243,24 @@
       "price_count": 1,
       "price_day_type": "",
       "price_mix": 700,
+      "price_people": "/人"
+    },
+    {
+      "price_id": 85,
+      "game_id": 34,
+      "price_is_difference": 1,
+      "price_count": 1,
+      "price_day_type": "weekday",
+      "price_mix": 800,
+      "price_people": "/人"
+    },
+    {
+      "price_id": 86,
+      "game_id": 34,
+      "price_is_difference": 1,
+      "price_count": 2,
+      "price_day_type": "weekend",
+      "price_mix": 900,
       "price_people": "/人"
     }
   ],
