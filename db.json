@@ -1456,8 +1456,8 @@
       "game_minNum_Players": 2,
       "game_maxNum_Players": 6,
       "game_dif_tag": 2,
-      "game_main_tag1": 9,
-      "game_main_tag2": 1,
+      "game_main_tag1": 1,
+      "game_main_tag2": 12,
       "game_score": 5,
       "game_img": [
         "https://plus.unsplash.com/premium_photo-1675705698856-4e15ed5506d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.png"
