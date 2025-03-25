@@ -2212,15 +2212,6 @@
       "price_people": "7人"
     },
     {
-      "price_id": 91,
-      "game_id": "33",
-      "price_is_difference": 1,
-      "price_count": 1,
-      "price_day_type": "weekday",
-      "price_mix": 4000,
-      "price_people": "/場"
-    },
-    {
       "price_id": 92,
       "game_id": "33",
       "price_is_difference": 1,
