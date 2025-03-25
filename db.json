@@ -366,7 +366,7 @@
             "store_contact": "吳先生",
             "store_method": "統一編號",
             "store_tax_id": "54292497",
-            "store_isAuth": "processing",
+            "store_isAuth": "pass",
             "store_documentation": "",
             "store_self_address": "臺北市 松山區 南京東路五段399號9樓",
             "store_website": "https://stupidparticle.com/",
@@ -508,7 +508,7 @@
             "store_contact": "楊先生",
             "store_method": "統一編號",
             "store_tax_id": "50525142",
-            "store_isAuth": "processing",
+            "store_isAuth": "pass",
             "store_documentation": "",
             "store_self_address": "新竹市 東區 頂竹里東南街96巷5弄7號1樓",
             "store_website": "https://www.ttlescapestudio.com/",
@@ -528,7 +528,7 @@
             "store_contact": "魏小姐",
             "store_method": "統一編號",
             "store_tax_id": "60232567",
-            "store_isAuth": "processing",
+            "store_isAuth": "pass",
             "store_documentation": "",
             "store_self_address": "臺中市 中區 柳川里光復路197號",
             "store_website": "https://bglock602.simplybook.asia/v2/",
@@ -548,7 +548,7 @@
             "store_contact": "1234",
             "store_method": "統一編號",
             "store_tax_id": "12345432",
-            "store_isAuth": "processing",
+            "store_isAuth": "pass",
             "store_documentation": "e13",
             "store_self_address": "彰化縣 溪湖鎮",
             "store_website": "https://ernie923.github.io/",
@@ -1449,28 +1449,52 @@
         {
             "game_id": 33,
             "store_id": 5,
-            "game_name": "幻影人-尚未上架",
-            "game_address": "台中市中區綠川西街59巷2號B1",
-            "game_tel": "",
+            "game_name": "時光逆旅",
+            "game_address": "臺中市中區光復里平等街32號",
+            "game_tel": "04-22230406",
             "game_time": 120,
             "game_minNum_Players": 2,
-            "game_maxNum_Players": 5,
-            "game_dif_tag": 1,
-            "game_main_tag1": 8,
-            "game_main_tag2": 2,
-            "game_score": 3.7,
+            "game_maxNum_Players": 6,
+            "game_dif_tag": 2,
+            "game_main_tag1": 12,
+            "game_main_tag2": 10,
+            "game_score": 5,
             "game_img": [
-                "https://i0.wp.com/content.escape.bar/wp-content/uploads/2024/12/BGLOCK-%E5%AE%88%E9%9D%88%E4%BA%BA-02.png?fit=1200%2C630&ssl=1",
-                "https://i2.wp.com/content.escape.bar/wp-content/uploads/2024/12/BGLOCK-%E5%AE%88%E9%9D%88%E4%BA%BA-01.jpg?resize=819%2C1024&ssl=1"
+                "https://plus.unsplash.com/premium_photo-1675705698856-4e15ed5506d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.png"
             ],
-            "game_isLimited": false,
-            "game_start_date": "2024-12-09",
-            "game_end_date": "",
-            "game_info": "「幻影人」邀您進入未知的境地，在光影交錯中揭開神秘謎題。\n真相與幻象交織，每一步都考驗您的智慧與膽識！",
+            "game_isLimited": "0",
+            "game_start_date": "2025-04-01",
+            "game_end_date": "2025-11-30",
+            "game_info": "一場神秘的時光旅行將您帶回了1930年的上海，陷入了一場黑幫爭權與禁忌科學交織的陰謀之中。\n你們必須破解時光裝置的密碼，避免歷史被篡改，並逃離即將崩解的時光裂縫。\n每一秒都關乎未來的命運，您能否成功完成任務，拯救時空的秩序？",
             "game_remark": "",
-            "game_score_num": 96,
+            "game_score_num": 0,
             "game_isStock": false,
-            "game_website": "https://bglock602.simplybook.asia/v2/#book/location/1/service/7/count/1/"
+            "game_website": "https://plus.unsplash.com/premium_photo-1675705698856-4e15ed5506d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "game_id": 34,
+            "store_id": 5,
+            "game_name": "地底迷城",
+            "game_address": "台南市安平區永華路二段6號8樓",
+            "game_tel": "0974123456",
+            "game_time": 120,
+            "game_minNum_Players": 4,
+            "game_maxNum_Players": 8,
+            "game_dif_tag": 1,
+            "game_main_tag1": 3,
+            "game_main_tag2": 11,
+            "game_score": 5,
+            "game_img": [
+                "https://images.unsplash.com/photo-1560371012-887f41479a45?q=80&w=2157&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.png"
+            ],
+            "game_isLimited": "0",
+            "game_start_date": "2025-02-01",
+            "game_end_date": null,
+            "game_info": "您誤入一座古老的地底迷城，傳說中這裡埋藏著無價的寶藏，但同時也充滿危機。\n你們需要合作破解古代機關，穿越隱秘通道，解開謎題以揭示真相。\n時間有限，能否順利逃脫迷城，掌握傳說中的秘密？",
+            "game_remark": "希望可以審核成功",
+            "game_score_num": 0,
+            "game_isStock": false,
+            "game_website": "https://images.unsplash.com/photo-1560371012-887f41479a45?q=80&w=2157&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
     ],
     "pricesData": [
@@ -2220,12 +2244,39 @@
             "price_day_type": "",
             "price_mix": 282,
             "price_people": "8人"
+        },
+        {
+            "price_id": 85,
+            "game_id": 33,
+            "price_is_difference": 0,
+            "price_count": 1,
+            "price_day_type": "",
+            "price_mix": 700,
+            "price_people": "/人"
+        },
+        {
+            "price_id": 86,
+            "game_id": 34,
+            "price_is_difference": 1,
+            "price_count": 1,
+            "price_day_type": "weekday",
+            "price_mix": 800,
+            "price_people": "/人"
+        },
+        {
+            "price_id": 87,
+            "game_id": 34,
+            "price_is_difference": 1,
+            "price_count": 2,
+            "price_day_type": "weekend",
+            "price_mix": 900,
+            "price_people": "/人"
         }
     ],
     "commentsData": [
         {
             "comment_id": 2,
-            "user_id": 99,
+            "user_id": 9,
             "game_id": 13,
             "comment_isSpoilered": false,
             "coment_content": "超好玩",
@@ -2235,7 +2286,7 @@
         },
         {
             "comment_id": 3,
-            "user_id": 99,
+            "user_id": 9,
             "game_id": 13,
             "comment_isSpoilered": true,
             "coment_content": "超超好玩",
@@ -2282,6 +2333,86 @@
             "comment_isSpoilered": false,
             "coment_content": "讚",
             "commet_played_time": "2025-03-06"
+        },
+        {
+            "comment_id": 8,
+            "coment_star": 4,
+            "game_id": 32,
+            "user_id": 10,
+            "comment_isPass": true,
+            "comment_isSpoilered": false,
+            "coment_content": "超好玩",
+            "commet_played_time": "2025-03-05"
+        },
+        {
+            "comment_id": 9,
+            "coment_star": 5,
+            "game_id": 27,
+            "user_id": 10,
+            "comment_isPass": true,
+            "comment_isSpoilered": false,
+            "coment_content": "這款密室遊戲真的令人驚艷！\n作為新任錦衣衛，不僅能深入探索王宅的陰謀，還能揭開傀儡之謎。\n劇情緊湊，場景設計精美，解謎過程充滿挑戰又極具沉浸感，彷彿置身於奇幻冒險之中。\n絕對是一場難忘的體驗！",
+            "commet_played_time": "2025-03-13"
+        },
+        {
+            "comment_id": 10,
+            "coment_star": 5,
+            "game_id": 22,
+            "user_id": 16,
+            "comment_isPass": true,
+            "comment_isSpoilered": false,
+            "coment_content": "「夢遊王國全新美夢」讓人全程沉浸於詭譎又引人入勝的故事中。\n從日式場景的設計到聲光效果，每一處細節都精雕細琢，帶來絕佳的感官體驗。\n解謎環節富有挑戰但不失樂趣，讓玩家在探索與推理中逐步揭示這場大雨詛咒背後的真相，彷彿置身於夢境與現實交錯的奇幻世界中，令人意猶未盡！",
+            "commet_played_time": "2025-03-13"
+        },
+        {
+            "comment_id": 11,
+            "coment_star": 5,
+            "game_id": 22,
+            "user_id": 11,
+            "comment_isPass": true,
+            "comment_isSpoilered": true,
+            "coment_content": "「夢遊王國全新美夢」的核心謎題圍繞晴天娃娃與雨神的傳說展開。\n最震撼的發現莫過於玩家自身竟然是解開詛咒的關鍵之一！\n每次掛上晴天娃娃時，場景的改變與雨神現身的細節令人屏息。\n最終揭曉的「咒雨」真相結合情感與代價的主題，讓人不禁重新審視這場詛咒的意義。\n全程不僅是挑戰智慧，更是一場情感與命運的對弈！",
+            "commet_played_time": "2025-03-13"
+        },
+        {
+            "comment_id": 12,
+            "coment_star": 4,
+            "game_id": 30,
+            "user_id": 13,
+            "comment_isPass": true,
+            "comment_isSpoilered": false,
+            "coment_content": "「怪奇雜貨舖」是一場充滿趣味與挑戰的體驗！場景設計獨特，道具巧妙，讓玩家彷彿置身於奇異世界中。\n解謎環節巧妙且富有趣味，每一步都讓人沉浸其中，並激發團隊合作與探索熱情。\n絕對是一場難忘的冒險！",
+            "commet_played_time": "2025-03-20"
+        },
+        {
+            "comment_id": 13,
+            "coment_star": 5,
+            "game_id": 30,
+            "user_id": 16,
+            "comment_isPass": true,
+            "comment_isSpoilered": true,
+            "coment_content": "「怪奇雜貨舖」的核心在於搬運超大道具與破解精巧機關鎖頭！\n在遊戲過程中，每個燈具和道具都暗藏線索，而最終解開關鍵謎題後才發現，這些雜貨竟然組成了完美的逃生路徑！\n結局更是反轉驚喜，讓人拍案叫絕。",
+            "commet_played_time": "2025-03-18"
+        },
+        {
+            "comment_id": 14,
+            "coment_star": 5,
+            "game_id": 1,
+            "user_id": 10,
+            "comment_isPass": true,
+            "comment_isSpoilered": false,
+            "coment_content": "「童話維護局」是一場充滿童話奇想與調查緊張感的冒險！\n從破洞進入魔書的設計別出心裁，讓人迅速融入這個異想天開的世界。\n解謎過程既具挑戰性又充滿童話細節，每一步都讓人回味無窮，完美平衡了劇情與遊戲的樂趣！",
+            "commet_played_time": "2025-03-25"
+        },
+        {
+            "comment_id": 15,
+            "coment_star": 4,
+            "game_id": 1,
+            "user_id": 12,
+            "comment_isPass": true,
+            "comment_isSpoilered": true,
+            "coment_content": "「童話維護局」在進入魔書後揭露了令人震驚的真相，\n原來異常的魔書背後藏著一場關於童話角色反抗的陰謀！\n每個破洞場景不僅重現了經典童話情節，還潛藏了角色們對現狀的不滿與訴求。\n最終的選擇更讓玩家站在正義與共情的交叉點上，挑戰內心的堅持與價值觀，\n讓整場遊戲極富意義與反思。",
+            "commet_played_time": "2025-03-26"
         }
     ],
     "groupsData": [
@@ -2335,9 +2466,7 @@
             "group_noob": true,
             "group_cancel": true,
             "group_member": "6",
-            "group_participants": [
-                10
-            ],
+            "group_participants": [],
             "group_isSuccessful": false
         },
         {
@@ -2354,8 +2483,7 @@
             "group_cancel": false,
             "group_member": "6",
             "group_participants": [
-                16,
-                13
+                16
             ],
             "group_isSuccessful": null
         },
@@ -2443,7 +2571,6 @@
             "group_cancel": false,
             "group_member": "5",
             "group_participants": [
-                11,
                 10,
                 12,
                 14
@@ -2464,10 +2591,169 @@
             "group_cancel": false,
             "group_member": "8",
             "group_participants": [
-                12,
                 11,
                 10
             ],
+            "group_isSuccessful": null
+        },
+        {
+            "group_id": 11,
+            "user_id": 10,
+            "game_id": 16,
+            "game_name": "月夜獨嚎",
+            "game_address": "台北市萬華區康定路62號4樓",
+            "group_end_at": "2025-05-01",
+            "group_active_date": "2025-05-02",
+            "group_channel": "abc.discord.com",
+            "group_philosophy": "月夜降臨，孤狼現身！急徵神隊友，一起闖密室解謎，今晚不脫不歸！",
+            "group_noob": false,
+            "group_cancel": false,
+            "group_member": "8",
+            "group_participants": [],
+            "group_isSuccessful": null
+        },
+        {
+            "group_id": 12,
+            "user_id": 11,
+            "game_id": 17,
+            "game_name": "SHINOBI忍",
+            "game_address": "台北市萬華區康定路62號9樓",
+            "group_end_at": "2025-05-10",
+            "group_active_date": "2025-05-11",
+            "group_channel": "abc.discord.com",
+            "group_philosophy": "暗影降臨，忍者集結！徵求神隊友潛入SHINOBI忍，挑戰極限逃脫！",
+            "group_noob": false,
+            "group_cancel": false,
+            "group_member": "7",
+            "group_participants": [],
+            "group_isSuccessful": null
+        },
+        {
+            "group_id": 13,
+            "user_id": 12,
+            "game_id": 20,
+            "game_name": "病變",
+            "game_address": "台中市西區公益路130號3樓",
+            "group_end_at": "2025-06-01",
+            "group_active_date": "2025-06-02",
+            "group_channel": "abc.discord.com",
+            "group_philosophy": "病變擴散，急需神隊友解密救援！極限逃脫挑戰你的膽量與智慧！",
+            "group_noob": false,
+            "group_cancel": false,
+            "group_member": "4",
+            "group_participants": [],
+            "group_isSuccessful": null
+        },
+        {
+            "group_id": 14,
+            "user_id": 13,
+            "game_id": 22,
+            "game_name": "咒雨",
+            "game_address": "台北市大同區民生西路300號4樓",
+            "group_end_at": "2025-06-10",
+            "group_active_date": "2025-06-12",
+            "group_channel": "abc.discord.com",
+            "group_philosophy": "咒雨降臨，厄運逼近！揪團神隊友，聯手解咒破局，逃出生天！",
+            "group_noob": true,
+            "group_cancel": false,
+            "group_member": "3",
+            "group_participants": [],
+            "group_isSuccessful": null
+        },
+        {
+            "group_id": 15,
+            "user_id": 10,
+            "game_id": 23,
+            "game_name": "籠中鳥",
+            "game_address": "台北市大同區延平北路二段202號3樓",
+            "group_end_at": "2025-07-01",
+            "group_active_date": "2025-07-02",
+            "group_channel": "abc.discord.com",
+            "group_philosophy": "童謠再響，鳥籠重現！誰是你背後的那個人？",
+            "group_noob": false,
+            "group_cancel": false,
+            "group_member": "5",
+            "group_participants": [],
+            "group_isSuccessful": null
+        },
+        {
+            "group_id": 16,
+            "user_id": 11,
+            "game_id": 26,
+            "game_name": "壹零玖伍：禁錮之宅",
+            "game_address": "台中市東區東光園路602號",
+            "group_end_at": "2025-07-15",
+            "group_active_date": "2025-07-19",
+            "group_channel": "abc.discord.com",
+            "group_philosophy": "誤闖荒宅，暗藏玄機！尋寶變逃命，急徵神隊友！",
+            "group_noob": false,
+            "group_cancel": false,
+            "group_member": "7",
+            "group_participants": [],
+            "group_isSuccessful": null
+        },
+        {
+            "group_id": 17,
+            "user_id": 12,
+            "game_id": 27,
+            "game_name": "錦衣御行",
+            "game_address": "台中市東區東光園路602號",
+            "group_end_at": "2025-08-01",
+            "group_active_date": "2025-08-02",
+            "group_channel": "abc.discord.com",
+            "group_philosophy": "錦衣夜探王宅，傀儡之謎待解，急徵神隊友！",
+            "group_noob": false,
+            "group_cancel": false,
+            "group_member": "3",
+            "group_participants": [],
+            "group_isSuccessful": null
+        },
+        {
+            "group_id": 18,
+            "user_id": 13,
+            "game_id": 30,
+            "game_name": "怪奇雜貨舖",
+            "game_address": "台中市中區綠川西街59巷2號B1",
+            "group_end_at": "2025-08-10",
+            "group_active_date": "2025-08-11",
+            "group_channel": "abc.discord.com",
+            "group_philosophy": "急徵膽大缺錢神隊友，高薪打工？有膽你就來！",
+            "group_noob": true,
+            "group_cancel": false,
+            "group_member": "5",
+            "group_participants": [],
+            "group_isSuccessful": null
+        },
+        {
+            "group_id": 19,
+            "user_id": 10,
+            "game_id": 29,
+            "game_name": "暴雨謀殺案",
+            "game_address": "台中市東區東光園路602號",
+            "group_end_at": "2025-08-20",
+            "group_active_date": "2025-08-25",
+            "group_channel": "abc.discord.com",
+            "group_philosophy": "記憶消逝，真相難尋；誰殺了她？我需要你的幫助！",
+            "group_noob": false,
+            "group_cancel": false,
+            "group_member": "4",
+            "group_participants": [],
+            "group_isSuccessful": null
+        },
+        {
+            "group_id": 20,
+            "user_id": 11,
+            "game_id": 9,
+            "game_name": "觀落陰",
+            "game_address": "台北市萬華區漢中街24號（西門徒步區）",
+            "group_end_at": "2025-09-01",
+            "group_active_date": "2025-09-02",
+            "group_channel": "abc.discord.com",
+            "group_philosophy": "觀落陰的禁忌之旅，陰間在等你，你敢來嗎？",
+            "group_noob": true,
+            "group_cancel": false,
+            "group_member": "5",
+            "group_participants": [],
             "group_isSuccessful": null
         }
     ],
