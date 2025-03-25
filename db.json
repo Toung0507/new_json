@@ -2212,13 +2212,13 @@
       "price_people": "7人"
     },
     {
-      "price_id": 95,
+      "price_id": 96,
       "game_id": 33,
       "price_is_difference": 0,
       "price_count": 1,
       "price_day_type": "",
-      "price_mix": 800,
-      "price_people": "/人"
+      "price_mix": 6000,
+      "price_people": "/場"
     }
   ],
   "commentsData": [
