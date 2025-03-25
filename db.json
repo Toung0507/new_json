@@ -2221,40 +2221,22 @@
       "price_people": "5-10人"
     },
     {
-      "price_id": 87,
-      "game_id": 33,
+      "price_id": 91,
+      "game_id": "33",
       "price_is_difference": 1,
       "price_count": 1,
       "price_day_type": "weekday",
-      "price_mix": 700,
-      "price_people": "2-4人"
+      "price_mix": 4000,
+      "price_people": "/場"
     },
     {
-      "price_id": 88,
-      "game_id": 33,
+      "price_id": 92,
+      "game_id": "33",
       "price_is_difference": 1,
       "price_count": 2,
-      "price_day_type": "weekday",
-      "price_mix": 600,
-      "price_people": "5-6人"
-    },
-    {
-      "price_id": 89,
-      "game_id": 33,
-      "price_is_difference": 1,
-      "price_count": 3,
       "price_day_type": "weekend",
-      "price_mix": 800,
-      "price_people": "2-4人"
-    },
-    {
-      "price_id": 90,
-      "game_id": 33,
-      "price_is_difference": 1,
-      "price_count": 4,
-      "price_day_type": "weekend",
-      "price_mix": 700,
-      "price_people": "5-6人"
+      "price_mix": 5000,
+      "price_people": "/場"
     }
   ],
   "commentsData": [
