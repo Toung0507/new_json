@@ -339,9 +339,9 @@
       "user_name": "貓貓",
       "user_img": "",
       "user_tel": "",
-      "user_sex": "女",
+      "user_sex": "男",
       "user_create_at": "2025-03-15 12:55:35",
-      "user_update_at": "2025-03-26 20:20:01",
+      "user_update_at": "2025-03-15 13:07:20",
       "id": 16
     },
     {
@@ -2535,7 +2535,8 @@
       "group_cancel": false,
       "group_member": "3",
       "group_participants": [
-        14
+        14,
+        5
       ],
       "group_isSuccessful": null
     },
