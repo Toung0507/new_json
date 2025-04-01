@@ -2335,16 +2335,6 @@
       "commet_played_time": "2025-03-06"
     },
     {
-      "comment_id": 8,
-      "coment_star": 4,
-      "game_id": 32,
-      "user_id": 10,
-      "comment_isPass": true,
-      "comment_isSpoilered": false,
-      "coment_content": "超好玩",
-      "commet_played_time": "2025-03-05"
-    },
-    {
       "comment_id": 9,
       "coment_star": 5,
       "game_id": 27,
