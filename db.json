@@ -374,7 +374,7 @@
     },
     {
       "user_email": "250401@gmail.com",
-      "user_password": "$2a$10$TTvQ3Dzs7cmug3seuhZxvu1Hrk4Buwnor8Agn0VPn4K.i6v5BCaA.",
+      "user_password": "$2a$10$beanCDG9QcEMHBkYFT0x/.itTq7qNiZEizSbGfFd8M6QiywamxM.O",
       "user_id": 19,
       "user_role": "店家",
       "user_reg_method": "信箱",
@@ -383,7 +383,7 @@
       "user_tel": "0974123456",
       "user_sex": "",
       "user_create_at": "2025-04-01 11:10:14",
-      "user_update_at": "",
+      "user_update_at": "2025-04-01 11:13:35",
       "id": 19
     }
   ],
