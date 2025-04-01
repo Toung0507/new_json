@@ -371,6 +371,20 @@
       "user_create_at": "2025-04-01 11:01:30",
       "user_update_at": "",
       "id": 18
+    },
+    {
+      "user_email": "250401@gmail.com",
+      "user_password": "$2a$10$TTvQ3Dzs7cmug3seuhZxvu1Hrk4Buwnor8Agn0VPn4K.i6v5BCaA.",
+      "user_id": 19,
+      "user_role": "店家",
+      "user_reg_method": "信箱",
+      "user_name": "愚人節店家",
+      "user_img": "",
+      "user_tel": "0974123456",
+      "user_sex": "",
+      "user_create_at": "2025-04-01 11:10:14",
+      "user_update_at": "",
+      "id": 19
     }
   ],
   "storesData": [
@@ -592,6 +606,22 @@
       "store_tel": "",
       "store_open_time": "",
       "store_update_at": "2025-03-15 16:21:04"
+    },
+    {
+      "store_id": 12,
+      "user_id": 19,
+      "store_contact": "於小姐",
+      "store_method": "統一編號",
+      "store_tax_id": "83300307",
+      "store_isAuth": "processing",
+      "store_documentation": "",
+      "store_self_address": "桃園市 龍潭區 123號",
+      "store_website": "https://code.visualstudio.com/docs/supporting/troubleshoot-terminal-launch",
+      "store_name": "",
+      "store_address": "",
+      "store_email": "",
+      "store_tel": "",
+      "store_open_time": ""
     }
   ],
   "gamesData": [
