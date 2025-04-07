@@ -254,10 +254,10 @@
       "user_reg_method": "信箱",
       "user_name": "Toung",
       "user_img": "",
-      "user_tel": "0974031465",
+      "user_tel": "",
       "user_sex": "女",
       "user_create_at": "2025-03-12 14:18:09",
-      "user_update_at": "2025-04-01 10:42:02",
+      "user_update_at": "2025-03-15 15:40:53",
       "id": 10
     },
     {
@@ -357,34 +357,6 @@
       "user_create_at": "2025-03-15 13:22:01",
       "user_update_at": "2025-03-15 16:21:04",
       "id": 17
-    },
-    {
-      "user_email": "0401@gmail.com",
-      "user_password": "$2a$10$OXSIb2wuXW07qGZXuvtY2OsIkvT9vIPJ/F1Ial/Y7XZPOECG9R0NO",
-      "user_id": 18,
-      "user_role": "會員",
-      "user_reg_method": "信箱",
-      "user_name": "愚人節快樂",
-      "user_img": "",
-      "user_tel": "",
-      "user_sex": "不提供",
-      "user_create_at": "2025-04-01 11:01:30",
-      "user_update_at": "",
-      "id": 18
-    },
-    {
-      "user_email": "250401@gmail.com",
-      "user_password": "$2a$10$beanCDG9QcEMHBkYFT0x/.itTq7qNiZEizSbGfFd8M6QiywamxM.O",
-      "user_id": 19,
-      "user_role": "店家",
-      "user_reg_method": "信箱",
-      "user_name": "愚人節店家",
-      "user_img": "",
-      "user_tel": "0974123456",
-      "user_sex": "",
-      "user_create_at": "2025-04-01 11:10:14",
-      "user_update_at": "2025-04-01 11:13:35",
-      "id": 19
     }
   ],
   "storesData": [
@@ -606,23 +578,6 @@
       "store_tel": "",
       "store_open_time": "",
       "store_update_at": "2025-03-15 16:21:04"
-    },
-    {
-      "store_id": 12,
-      "user_id": 19,
-      "store_contact": "於小姐",
-      "store_method": "統一編號",
-      "store_tax_id": "83300307",
-      "store_isAuth": "processing",
-      "store_documentation": "",
-      "store_self_address": "桃園市 龍潭區 123號",
-      "store_website": "https://code.visualstudio.com/docs/supporting/troubleshoot-terminal-launch",
-      "store_name": "只開一天的店家",
-      "store_address": "嘉義縣 大林鎮",
-      "store_email": "250401@gmail.com",
-      "store_tel": "0974123456",
-      "store_open_time": "",
-      "store_update_at": "2025-04-01 11:12:48"
     }
   ],
   "gamesData": [
@@ -2380,6 +2335,16 @@
       "commet_played_time": "2025-03-06"
     },
     {
+      "comment_id": 8,
+      "coment_star": 4,
+      "game_id": 32,
+      "user_id": 10,
+      "comment_isPass": true,
+      "comment_isSpoilered": false,
+      "coment_content": "超好玩",
+      "commet_played_time": "2025-03-05"
+    },
+    {
       "comment_id": 9,
       "coment_star": 5,
       "game_id": 27,
@@ -2644,7 +2609,9 @@
       "group_noob": false,
       "group_cancel": false,
       "group_member": "8",
-      "group_participants": [],
+      "group_participants": [
+        16
+      ],
       "group_isSuccessful": null
     },
     {
@@ -2676,9 +2643,7 @@
       "group_noob": false,
       "group_cancel": false,
       "group_member": "4",
-      "group_participants": [
-        18
-      ],
+      "group_participants": [],
       "group_isSuccessful": null
     },
     {
