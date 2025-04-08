@@ -357,6 +357,20 @@
       "user_create_at": "2025-03-15 13:22:01",
       "user_update_at": "2025-03-15 16:21:04",
       "id": 17
+    },
+    {
+      "user_email": "test@gmail.com",
+      "user_password": "$2a$10$urQCYzZmcsRC3BToFXNIK.edgyPKVrlNTufJxiZzeYygu.kyw8nze",
+      "user_id": 18,
+      "user_role": "會員",
+      "user_reg_method": "信箱",
+      "user_name": "test",
+      "user_img": "",
+      "user_tel": "",
+      "user_sex": "女",
+      "user_create_at": "2025-04-08 19:46:14",
+      "user_update_at": "",
+      "id": 18
     }
   ],
   "storesData": [
@@ -2628,7 +2642,8 @@
       "group_cancel": false,
       "group_member": "7",
       "group_participants": [
-        5
+        5,
+        18
       ],
       "group_isSuccessful": null
     },
