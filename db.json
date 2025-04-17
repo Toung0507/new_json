@@ -248,7 +248,7 @@
     },
     {
       "user_email": "spexial110@gmail.com",
-      "user_password": "$2a$10$ja54jkMiyrimJkHDa68Ewe.VUYYJ4aadPyXABdIoZdpZDjk5pGjtq",
+      "user_password": "$2a$10$EPVUd02LSEFhqfCTTBvvbey6aTnF.0oAr0aMcF2bbfYL8AiB/TztW",
       "user_id": 10,
       "user_role": "會員",
       "user_reg_method": "信箱",
@@ -257,7 +257,7 @@
       "user_tel": "",
       "user_sex": "女",
       "user_create_at": "2025-03-12 14:18:09",
-      "user_update_at": "2025-04-18 00:04:13",
+      "user_update_at": "2025-04-18 00:06:55",
       "id": 10
     },
     {
