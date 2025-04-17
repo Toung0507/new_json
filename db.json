@@ -357,20 +357,6 @@
       "user_create_at": "2025-03-15 13:22:01",
       "user_update_at": "2025-03-15 16:21:04",
       "id": 17
-    },
-    {
-      "user_email": "test@gmail.com",
-      "user_password": "$2a$10$urQCYzZmcsRC3BToFXNIK.edgyPKVrlNTufJxiZzeYygu.kyw8nze",
-      "user_id": 18,
-      "user_role": "會員",
-      "user_reg_method": "信箱",
-      "user_name": "test",
-      "user_img": "",
-      "user_tel": "",
-      "user_sex": "女",
-      "user_create_at": "2025-04-08 19:46:14",
-      "user_update_at": "",
-      "id": 18
     }
   ],
   "storesData": [
@@ -2431,12 +2417,12 @@
     {
       "comment_id": 16,
       "coment_star": 5,
-      "game_id": 13,
-      "user_id": 18,
-      "comment_isPass": false,
-      "comment_isSpoilered": false,
-      "coment_content": "test",
-      "commet_played_time": "2025-04-15"
+      "game_id": 2,
+      "user_id": 11,
+      "comment_isPass": true,
+      "comment_isSpoilered": true,
+      "coment_content": "超級好玩超級好玩超級好玩",
+      "commet_played_time": "2025-04-16"
     }
   ],
   "groupsData": [
@@ -2633,9 +2619,7 @@
       "group_noob": false,
       "group_cancel": false,
       "group_member": "8",
-      "group_participants": [
-        16
-      ],
+      "group_participants": [],
       "group_isSuccessful": null
     },
     {
@@ -2651,10 +2635,7 @@
       "group_noob": false,
       "group_cancel": false,
       "group_member": "7",
-      "group_participants": [
-        5,
-        18
-      ],
+      "group_participants": [],
       "group_isSuccessful": null
     },
     {
