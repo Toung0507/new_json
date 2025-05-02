@@ -2603,7 +2603,8 @@
       "group_cancel": false,
       "group_member": "7",
       "group_participants": [
-        10
+        10,
+        16
       ],
       "group_isSuccessful": null
     },
