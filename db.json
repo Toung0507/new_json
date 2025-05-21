@@ -2306,12 +2306,12 @@
     },
     {
       "comment_id": 4,
-      "coment_star": 4,
+      "coment_star": 5,
       "game_id": 32,
       "user_id": 10,
       "comment_isPass": true,
       "comment_isSpoilered": false,
-      "coment_content": "守靈人超好玩，一定要來玩",
+      "coment_content": "超好玩，一定要來體驗一次",
       "commet_played_time": "2025-03-05"
     },
     {
@@ -2602,10 +2602,7 @@
       "group_noob": false,
       "group_cancel": false,
       "group_member": "7",
-      "group_participants": [
-        10,
-        16
-      ],
+      "group_participants": [],
       "group_isSuccessful": null
     },
     {
@@ -2669,9 +2666,7 @@
       "group_noob": false,
       "group_cancel": false,
       "group_member": "7",
-      "group_participants": [
-        16
-      ],
+      "group_participants": [],
       "group_isSuccessful": null
     },
     {
